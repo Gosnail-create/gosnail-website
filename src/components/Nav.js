@@ -23,7 +23,7 @@ export default function Nav() {
       </div>
       <div className="nav-links">
         <Link href="/#chi-siamo">Chi Siamo</Link>
-        <Link href="/#soluzioni">Soluzioni</Link>
+        <Link href="/zoho-one">Zoho One</Link>
         <Link href="/il-metodo">Il Nostro Metodo</Link>
       </div>
       <Link href="/contatti" className="nav-cta">Contattaci</Link>
