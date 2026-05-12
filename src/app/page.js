@@ -62,11 +62,6 @@ export default function HomePage() {
         <div className="ed-deco-blob ed-deco-blob--celestial" style={{ width: 240, height: 240, bottom: '5%', right: '40%', opacity: 0.3 }}></div>
 
         <div className="ed-hero-grid">
-          <div className="ed-hero-meta">
-            <span className="ed-pill">Zoho Authorized Partner — Italia</span>
-            <span className="ed-eyebrow-mono" style={{ color: 'var(--ink-soft)' }}>N. 01 — MMXXV</span>
-          </div>
-
           <div className="ed-hero-left">
             <h1 className="ed-display ed-reveal ed-reveal-1">
               Tecnologia e processi unificati per la <em>crescita</em> della tua <strong>azienda</strong>.

@@ -1101,23 +1101,18 @@ footer::before {
 .ed-hero {
   background: var(--bg-glacier);
   min-height: 100vh;
-  padding: 140px 56px 100px;
+  padding: 160px 56px 100px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 .ed-hero-grid {
-  max-width: 1320px; margin: 0 auto;
+  max-width: 1320px; margin: 0 auto; width: 100%;
   display: grid;
   grid-template-columns: 1.1fr 1fr;
   gap: 64px;
   align-items: center;
-}
-.ed-hero-meta {
-  display: flex; justify-content: space-between; align-items: baseline;
-  border-top: 1px solid rgba(15,22,56,0.18);
-  padding-top: 16px;
-  margin-bottom: 32px;
-  grid-column: 1 / -1;
 }
 .ed-hero-left h1 {
   font-size: clamp(2.6rem, 5.5vw, 5.2rem);
