@@ -288,7 +288,7 @@ export default function HomePage() {
           <div className="ed-testimonial-col">
             <div className="ed-pill ed-reveal" style={{ marginBottom: 24 }}>Le persone al centro</div>
             <h3 className="ed-reveal ed-reveal-1">
-              Il software lo usiamo noi, ma lavora per <em>le tue persone</em>.
+              Cambiare software è facile. Cambiare il <em>modo di lavorare</em>, meno.
             </h3>
             <p className="ed-body ed-reveal ed-reveal-2" style={{ marginBottom: 32, color: 'var(--ink-soft)' }}>
               Il software è la parte facile. La parte difficile è far sì che tutte le persone adottino e sfruttino davvero la tecnologia. Per questo lavoriamo con il team intero, non solo con chi firma.
