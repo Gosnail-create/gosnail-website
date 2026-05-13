@@ -27,17 +27,17 @@ const C = {
 }
 
 const problems = [
-  { n: '01', title: 'Dati frammentati, decisioni cieche', text: 'Le informazioni vitali sono sparse tra email, file Excel e software che non dialogano. Ricostruire la verità dei numeri richiede ore di lavoro manuale.' },
+  { n: '01', title: 'Dati frammentati, decisioni cieche', text: 'I numeri non quadrano mai al primo colpo. Servono ore di confronto tra Excel, email e gestionali per arrivare a un dato affidabile.' },
   { n: '02', title: 'Processi manuali che drenano tempo', text: 'Il team spende troppo tempo in data entry e copia-incolla, distogliendosi dalle attività che generano valore reale per il business.' },
-  { n: '03', title: 'Reparti che lavorano in parallelo', text: 'Vendite, marketing e amministrazione su binari paralleli. Incomprensioni, ritardi nelle risposte, opportunità di business perse.' },
+  { n: '03', title: 'Reparti che lavorano in parallelo', text: 'Vendite e amministrazione non parlano. Marketing non sa cosa fa il commerciale. I clienti aspettano, e qualcuno si stanca di aspettare.' },
   { n: '04', title: 'Management che naviga a vista', text: "Senza una visione d'insieme, la direzione reagisce alle urgenze invece di guidare l'azienda con strategia e dati." },
 ]
 
 const pillars = [
   { n: '01', title: 'Analisi dei processi', text: 'Prima di installare qualsiasi software, studiamo come lavori per ottimizzare i flussi aziendali. La tecnologia viene dopo.' },
-  { n: '02', title: 'Personalizzazione su misura', text: 'Adattiamo la piattaforma alla tua realtà, non il contrario. Zoho cucito sui tuoi processi unici, non viceversa.' },
+  { n: '02', title: 'Personalizzazione su misura', text: 'Adattiamo la piattaforma a come lavori tu, non il contrario, per modellare Zoho sui tuoi processi e sulla tua organizzazione.' },
   { n: '03', title: 'Cultura del dato', text: 'Formiamo le tue persone per renderle autonome. Il miglior software è inutile se non viene compreso e adottato.' },
-  { n: '04', title: 'Supporto continuo', text: 'Non spariamo dopo il go-live. Affianchiamo i tuoi team nel tempo, monitorando KPI e iterando sui flussi.' },
+  { n: '04', title: 'Supporto continuo', text: 'Dopo il go-live restiamo al tuo fianco. Ogni due o tre mesi facciamo il punto insieme: cosa funziona, cosa va aggiustato, dove possiamo migliorare.' },
 ]
 
 const services = [
@@ -67,7 +67,7 @@ export default function HomePage() {
               Tecnologia e processi unificati per la <em>crescita</em> della tua <strong>azienda</strong>.
             </h1>
             <p className="ed-hero-intro ed-reveal ed-reveal-2">
-              Siamo il partner strategico che trasforma i tuoi dati e i tuoi flussi di lavoro in un motore di efficienza, controllo e sviluppo commerciale. Non vendiamo software — guidiamo trasformazioni.
+              Lavoriamo con aziende che vogliono mettere ordine nei dati e nei processi. Il nostro mestiere non è installare software: è ridisegnare il modo in cui le persone lavorano.
             </p>
             <div className="ed-hero-cta-row ed-reveal ed-reveal-3">
               <Link href="/contatti" className="btn-ed-primary">
@@ -250,7 +250,7 @@ export default function HomePage() {
                 <em>Dove</em> facciamo<br />la differenza.
               </h2>
               <p className="ed-reveal ed-reveal-2">
-                Sei aree dove l&apos;ecosistema Zoho, configurato con metodo, trasforma il caos operativo in vantaggio competitivo.
+                Sei aree in cui interveniamo. La piattaforma è Zoho, ma quello che cambia il lavoro quotidiano è come lo configuriamo intorno alla tua azienda.
               </p>
             </div>
           </div>
@@ -291,7 +291,7 @@ export default function HomePage() {
               Il software lo usiamo noi, ma lavora per <em>le tue persone</em>.
             </h3>
             <p className="ed-body ed-reveal ed-reveal-2" style={{ marginBottom: 32, color: 'var(--ink-soft)' }}>
-              Sappiamo che la vera sfida non è la tecnologia — è l&apos;adozione. Per questo affianchiamo ogni team nel cambiamento.
+              Il software è la parte facile. La parte difficile è far sì che tutte le persone adottino e sfruttino davvero la tecnologia. Per questo lavoriamo con il team intero, non solo con chi firma.
             </p>
             <div className="ed-principle ed-reveal ed-reveal-3">
               <div className="ed-principle-num">A.</div>
@@ -311,7 +311,7 @@ export default function HomePage() {
               <div className="ed-principle-num">C.</div>
               <div>
                 <h4>Risultati misurabili</h4>
-                <p>Ogni intervento porta a un ROI calcolabile — non &ldquo;siti belli&rdquo;, ma infrastrutture che scalano.</p>
+                <p>Ogni intervento porta a un ROI calcolabile. Nei mesi successivi monitoriamo i numeri per capire cosa è davvero cambiato in azienda.</p>
               </div>
             </div>
           </div>
@@ -369,7 +369,7 @@ export default function HomePage() {
             Pronto a digitalizzare<br />i tuoi <em>processi</em>?
           </h2>
           <p className="ed-reveal ed-reveal-2">
-            Non lasciare che la tecnologia sia un limite. Parliamo dei tuoi obiettivi e costruiamo l&apos;infrastruttura su misura.
+            Parliamo dei tuoi obiettivi. Ci racconti dove sei, ti diciamo se possiamo davvero esserti utili.
           </p>
           <div className="ed-hero-cta-row ed-reveal ed-reveal-3" style={{ justifyContent: 'center' }}>
             <Link href="/contatti" className="btn-ed-primary">
