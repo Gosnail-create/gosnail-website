@@ -1790,7 +1790,7 @@ footer::before {
 .ed-section-flow { position: relative; }
 
 .ed-curve-divider {
-  display: block; width: 100%; height: 100px;
+  display: block; width: 100%;
   position: relative; z-index: 3;
   margin-top: -1px; margin-bottom: -1px;
 }

@@ -1,20 +1,21 @@
 /**
  * Organic SVG dividers that flow between sections.
- * Each accepts a `from` and `to` color matching the surrounding sections.
+ * Larger viewBox heights + dramatic S-curves so they keep an organic blob
+ * shape even when stretched across wide desktop viewports.
  */
 
 export function CurveDivider({ from, to, flip = false, accent }) {
   const transform = flip ? 'scale(1, -1)' : ''
   return (
-    <div className="ed-curve-divider" aria-hidden style={{ background: from }}>
-      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" style={{ transform }}>
+    <div className="ed-curve-divider" aria-hidden style={{ background: from, height: 160 }}>
+      <svg viewBox="0 0 1440 160" preserveAspectRatio="none" style={{ transform }}>
         <path
-          d="M0,0 C320,90 640,90 720,50 C800,10 1120,10 1440,80 L1440,100 L0,100 Z"
+          d="M0,50 C320,200 720,-10 1080,90 C1240,140 1360,110 1440,70 L1440,160 L0,160 Z"
           fill={to}
         />
         {accent && (
           <path
-            d="M180,40 Q280,70 380,38 T580,42"
+            d="M240,85 Q420,140 620,75 T960,95"
             stroke={accent}
             strokeWidth="3"
             strokeLinecap="round"
@@ -29,10 +30,10 @@ export function CurveDivider({ from, to, flip = false, accent }) {
 
 export function BlobDivider({ from, to }) {
   return (
-    <div className="ed-curve-divider" style={{ height: 140, background: from }} aria-hidden>
-      <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+    <div className="ed-curve-divider" style={{ height: 220, background: from }} aria-hidden>
+      <svg viewBox="0 0 1440 220" preserveAspectRatio="none">
         <path
-          d="M0,0 C200,100 400,140 720,90 C1040,40 1240,80 1440,30 L1440,140 L0,140 Z"
+          d="M0,90 C260,260 540,-30 820,140 C1080,290 1280,40 1440,110 L1440,220 L0,220 Z"
           fill={to}
         />
       </svg>
