@@ -182,7 +182,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }} className="ed-solution-split-wrapper">
+          <div className="ed-solution-split">
             <div>
               {pillars.map((p, i) => (
                 <div key={p.n} className={`ed-pillar ed-reveal ed-reveal-${i + 1}`}>
@@ -195,12 +195,11 @@ export default function HomePage() {
               ))}
             </div>
 
-            <div className="ed-reveal ed-reveal-2" style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-              <div style={{ borderRadius: 20, overflow: 'hidden', boxShadow: '0 30px 60px rgba(0,0,0,0.4)', aspectRatio: '4 / 3', position: 'relative' }}>
+            <div className="ed-approach-visual ed-reveal ed-reveal-2">
+              <div className="ed-approach-image">
                 <img
                   src={IMG.dashboard}
                   alt="Dashboard analitica unificata"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
               </div>
 

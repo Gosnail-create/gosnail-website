@@ -1785,6 +1785,24 @@ footer::before {
 .ed-reveal-5 { transition-delay: 400ms; }
 .ed-reveal-6 { transition-delay: 480ms; }
 
+/* ── APPROACH visual column (image + flow) ── */
+.ed-approach-visual {
+  display: flex; flex-direction: column; gap: 24px;
+  width: 100%;
+}
+.ed-approach-image {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+  aspect-ratio: 4 / 3;
+  position: relative;
+  width: 100%;
+}
+.ed-approach-image img {
+  width: 100%; height: 100%; object-fit: cover;
+  display: block;
+}
+
 /* ── ORGANIC SECTION TRANSITIONS ── */
 /* Each section uses ::before / ::after curves to dissolve into next */
 .ed-section-flow { position: relative; }
