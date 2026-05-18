@@ -2492,6 +2492,171 @@ footer::before {
   color: rgba(15,22,56,0.3);
 }
 
+/* ── ECOSYSTEM TABS — interactive showcase ── */
+.ed-tabs {
+  margin-top: 56px;
+}
+
+/* Tab bar */
+.ed-tabs-bar {
+  display: flex;
+  gap: 4px;
+  padding: 8px;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid rgba(15,22,56,0.08);
+  border-radius: 999px;
+  margin-bottom: 56px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  backdrop-filter: blur(8px);
+}
+.ed-tabs-bar::-webkit-scrollbar { display: none; }
+.ed-tabs-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  flex-shrink: 0;
+  padding: 12px 22px;
+  border: none; background: transparent;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 14px; font-weight: 600;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: all 250ms ease;
+  white-space: nowrap;
+  position: relative;
+}
+.ed-tabs-btn:hover { color: var(--ink); background: rgba(15,22,56,0.04); }
+.ed-tabs-btn.active {
+  background: var(--tab-accent, var(--coral));
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.ed-tabs-btn.active .ed-tabs-btn-icon,
+.ed-tabs-btn.active .ed-tabs-btn-label { color: #fff; }
+.ed-tabs-btn-icon { display: inline-flex; align-items: center; }
+.ed-tabs-btn-label { letter-spacing: -0.005em; }
+
+/* Content panel */
+.ed-tabs-panel {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 64px;
+  align-items: center;
+  animation: ed-tab-fade 400ms ease;
+}
+@keyframes ed-tab-fade {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.ed-tabs-text {
+  padding: 16px 0;
+}
+.ed-tabs-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 500;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-variation-settings: 'opsz' 96, 'SOFT' 80, 'WONK' 1;
+  position: relative;
+  padding-bottom: 16px;
+}
+.ed-tabs-title::after {
+  content: '';
+  display: block; position: absolute;
+  bottom: 0; left: 0;
+  width: 60px; height: 3px;
+  background: var(--tab-accent, var(--coral));
+  border-radius: 2px;
+}
+.ed-tabs-desc {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+.ed-tabs-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 12px; font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--tab-accent, var(--coral));
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--tab-accent, var(--coral));
+  transition: gap 200ms ease;
+  margin-bottom: 36px;
+}
+.ed-tabs-link:hover { gap: 14px; }
+
+.ed-tabs-apps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 32px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(15,22,56,0.08);
+}
+.ed-tabs-app {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 8px;
+  min-width: 64px;
+  transition: transform 200ms ease;
+}
+.ed-tabs-app:hover { transform: translateY(-2px); }
+.ed-tabs-app-icon {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.8);
+  border: 1px solid rgba(15,22,56,0.08);
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 12px rgba(15,22,56,0.06);
+}
+.ed-tabs-app-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--ink-soft);
+  text-align: center;
+}
+
+/* Image side */
+.ed-tabs-image {
+  position: relative;
+  border-radius: 24px;
+  overflow: visible;
+  aspect-ratio: 4 / 3;
+}
+.ed-tabs-image img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 30px 70px rgba(15,22,56,0.18);
+  position: relative; z-index: 2;
+}
+.ed-tabs-image-glow {
+  position: absolute;
+  inset: 20px;
+  border-radius: 24px;
+  filter: blur(60px);
+  opacity: 0.35;
+  z-index: 1;
+  transform: translate(-20px, 20px);
+  transition: background 400ms ease;
+}
+
+/* Responsive tabs */
+@media (max-width: 900px) {
+  .ed-tabs-bar { border-radius: 16px; }
+  .ed-tabs-panel { grid-template-columns: 1fr; gap: 40px; }
+  .ed-tabs-image { max-width: 100%; }
+  .ed-tabs-apps { gap: 20px; }
+}
+
 /* ── RESPONSIVE editorial ── */
 @media (max-width: 1024px) {
   .ed-nav-links { display: none; }

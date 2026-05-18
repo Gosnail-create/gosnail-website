@@ -2,10 +2,8 @@ import Link from 'next/link'
 import EdNav from '@/components/EdNav'
 import EdFooter from '@/components/EdFooter'
 import EdEffects from '@/components/EdEffects'
+import EcosystemTabs from '@/components/EcosystemTabs'
 import { CurveDivider, BlobDivider, BrushStroke } from '@/components/OrganicShapes'
-import {
-  Briefcase, Megaphone, BarChart3, FolderKanban, Headphones, Receipt, Users,
-} from 'lucide-react'
 
 const IMG = {
   hero: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&auto=format&fit=crop',
@@ -86,15 +84,6 @@ const benefits = [
   { n: '04', title: 'Un solo abbonamento per tutto', text: 'Sostituisci decine di abbonamenti software con un\'unica licenza per dipendente. Sai esattamente quanto spendi, come scalerà se assumi, niente sorprese alla scadenza.' },
 ]
 
-const apps = [
-  { icon: <Briefcase size={22} color="#7A65CF" />, bg: '#EDE9FB', title: 'Vendite & Marketing', desc: 'CRM, Marketing Automation, Campagne Email, Social Media, Sondaggi' },
-  { icon: <Users size={22} color="#349ABA" />, bg: '#DFF1F7', title: 'Risorse Umane', desc: 'Gestione dipendenti, recruitment, presenze' },
-  { icon: <BarChart3 size={22} color="#FF6B6B" />, bg: '#FFE4E4', title: 'Analytics & Sviluppo', desc: 'Analisi avanzata dei dati, sviluppo di app personalizzate' },
-  { icon: <FolderKanban size={22} color="#7A65CF" />, bg: '#EDE9FB', title: 'Produttività & Collaborazione', desc: 'Progetti, cloud storage, chat, email e calendario' },
-  { icon: <Headphones size={22} color="#349ABA" />, bg: '#DFF1F7', title: 'Assistenza Clienti', desc: 'Helpdesk multicanale, chat dal vivo, accesso remoto' },
-  { icon: <Receipt size={22} color="#FF6B6B" />, bg: '#FFE4E4', title: 'Finanza & Operations', desc: 'Contabilità, fatturazione SDI, gestione spese, inventario' },
-]
-
 const faqs = [
   { q: "Cos'è esattamente Zoho One?", a: 'Zoho One è la suite aziendale di Zoho Corporation: oltre 45 applicazioni integrate in un\'unica piattaforma. Sostituisce decine di software separati con una soluzione dove vendite, marketing, finanza, HR, assistenza e operazioni condividono nativamente gli stessi dati. Un solo login, un solo abbonamento per dipendente.' },
   { q: 'Quanto costa Zoho One in Italia?', a: 'Esistono due piani. Il piano "Tutti i Dipendenti" è il più conveniente: circa €34 a dipendente al mese con fatturazione annuale, ma richiede di licenziare l\'intero organico. Il piano "Utenti Flessibili" parte da circa €83 a utente al mese e permette di pagare solo per chi effettivamente usa la piattaforma. Per il prezzo aggiornato in EUR contattaci.' },
@@ -113,9 +102,10 @@ export default function ZohoOnePage() {
       <EdNav />
 
       {/* ═══════════ HERO ═══════════ */}
-      <section className="ed-hero">
-        <div className="ed-deco-blob ed-deco-blob--purple" style={{ width: 320, height: 320, top: '10%', left: '-5%', opacity: 0.35 }}></div>
-        <div className="ed-deco-blob ed-deco-blob--celestial" style={{ width: 260, height: 260, bottom: '5%', right: '40%', opacity: 0.3 }}></div>
+      <section className="ed-hero" style={{ background: 'var(--bg-lavender)' }}>
+        <div className="ed-deco-blob ed-deco-blob--purple" style={{ width: 360, height: 360, top: '5%', left: '-8%', opacity: 0.4 }}></div>
+        <div className="ed-deco-blob ed-deco-blob--coral" style={{ width: 240, height: 240, top: '40%', right: '-5%', opacity: 0.25 }}></div>
+        <div className="ed-deco-blob ed-deco-blob--celestial" style={{ width: 200, height: 200, bottom: '5%', left: '35%', opacity: 0.2 }}></div>
 
         <div className="ed-hero-grid">
           <div className="ed-hero-left">
@@ -140,7 +130,7 @@ export default function ZohoOnePage() {
             <div className="ed-shape-blob-purple"></div>
             <div className="ed-shape-blob-celestial"></div>
             <div className="ed-hero-photo">
-              <img src={IMG.hero} alt="Team aziendale che lavora su Zoho One" loading="eager" />
+              <img src={IMG.dashboard} alt="Dashboard unificata di Zoho One" loading="eager" />
             </div>
             <BrushStroke className="ed-shape-brush-coral" color={C.coral} />
           </div>
@@ -162,10 +152,10 @@ export default function ZohoOnePage() {
         </div>
       </section>
 
-      <CurveDivider from={C.glacier} to={C.lavender} accent={C.purple} />
+      <CurveDivider from={C.lavender} to={C.glacier} accent={C.purple} />
 
       {/* ═══════════ PROBLEMA ═══════════ */}
-      <section className="ed-section ed-section--lavender">
+      <section className="ed-section">
         <div className="ed-deco-blob ed-deco-blob--purple" style={{ width: 360, height: 360, top: '-10%', right: '-8%', opacity: 0.3 }}></div>
         <div className="ed-section-inner">
           <div className="ed-section-header">
@@ -188,10 +178,10 @@ export default function ZohoOnePage() {
         </div>
       </section>
 
-      <CurveDivider from={C.lavender} to={C.glacier} />
+      <CurveDivider from={C.glacier} to={C.lavender} />
 
       {/* ═══════════ SOLUZIONE ═══════════ */}
-      <section className="ed-section">
+      <section className="ed-section ed-section--lavender">
         <div className="ed-deco-blob ed-deco-blob--celestial" style={{ width: 340, height: 340, top: '20%', right: '-8%', opacity: 0.25 }}></div>
         <div className="ed-section-inner">
           <div className="ed-section-header">
@@ -230,10 +220,10 @@ export default function ZohoOnePage() {
         </div>
       </section>
 
-      <CurveDivider from={C.glacier} to={C.lavender} accent={C.coral} />
+      <CurveDivider from={C.lavender} to={C.glacier} accent={C.coral} />
 
       {/* ═══════════ A CHI È RIVOLTO ═══════════ */}
-      <section className="ed-section ed-section--lavender">
+      <section className="ed-section">
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <div className="ed-section-header-num ed-reveal">N. 04 — A chi è rivolto</div>
@@ -259,10 +249,10 @@ export default function ZohoOnePage() {
         </div>
       </section>
 
-      <CurveDivider from={C.lavender} to={C.glacier} />
+      <CurveDivider from={C.glacier} to={C.lavender} />
 
       {/* ═══════════ 4 BENEFICI ═══════════ */}
-      <section id="benefici" className="ed-section">
+      <section id="benefici" className="ed-section ed-section--lavender">
         <div className="ed-deco-blob ed-deco-blob--purple" style={{ width: 320, height: 320, bottom: '-10%', left: '-5%', opacity: 0.25 }}></div>
         <div className="ed-section-inner">
           <div className="ed-section-header">
@@ -291,36 +281,28 @@ export default function ZohoOnePage() {
         </div>
       </section>
 
-      <CurveDivider from={C.glacier} to={C.lavender} />
+      <CurveDivider from={C.lavender} to={C.glacier} />
 
-      {/* ═══════════ ECOSISTEMA 45+ APP ═══════════ */}
-      <section className="ed-section ed-section--lavender">
+      {/* ═══════════ ECOSISTEMA 45+ APP — interactive tabs ═══════════ */}
+      <section className="ed-section">
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <div className="ed-section-header-num ed-reveal">N. 06 — L'ecosistema</div>
             <div className="ed-section-header-title">
               <h2 className="ed-h2 ed-reveal ed-reveal-1">
-                Oltre 45 applicazioni per<br /><em>ogni esigenza aziendale</em>.
+                Tutti i team. <em>Insieme</em>.<br />Meglio di prima.
               </h2>
               <p className="ed-reveal ed-reveal-2">
-                Sei aree funzionali, oltre quarantacinque app integrate nativamente, un solo abbonamento per dipendente.
+                Sette aree funzionali, oltre quarantacinque app integrate nativamente. Esplora ogni reparto per scoprire gli strumenti inclusi nella suite.
               </p>
             </div>
           </div>
 
-          <div className="ed-apps-grid">
-            {apps.map((a, i) => (
-              <div key={a.title} className={`ed-app-card ed-reveal ed-reveal-${(i % 3) + 1}`}>
-                <div className="ed-app-card-icon" style={{ background: a.bg }}>{a.icon}</div>
-                <h3>{a.title}</h3>
-                <p>{a.desc}</p>
-              </div>
-            ))}
-          </div>
+          <EcosystemTabs />
         </div>
       </section>
 
-      <BlobDivider from={C.lavender} to={C.ocean} />
+      <BlobDivider from={C.glacier} to={C.ocean} />
 
       {/* ═══════════ PARTNERSHIP QUOTE ═══════════ */}
       <section className="ed-pullquote">
@@ -346,7 +328,7 @@ export default function ZohoOnePage() {
       <BlobDivider from={C.ocean} to={C.glacier} />
 
       {/* ═══════════ PRICING ═══════════ */}
-      <section className="ed-section">
+      <section className="ed-section ed-section--lavender">
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <div className="ed-section-header-num ed-reveal">N. 07 — Pricing</div>
@@ -409,10 +391,10 @@ export default function ZohoOnePage() {
         </div>
       </section>
 
-      <CurveDivider from={C.glacier} to={C.lavender} />
+      <CurveDivider from={C.lavender} to={C.glacier} />
 
       {/* ═══════════ COMPARISON TABLE ═══════════ */}
-      <section className="ed-section ed-section--lavender">
+      <section className="ed-section">
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <div className="ed-section-header-num ed-reveal">N. 08 — Zoho One vs il mercato</div>
@@ -458,10 +440,10 @@ export default function ZohoOnePage() {
         </div>
       </section>
 
-      <CurveDivider from={C.lavender} to={C.glacier} />
+      <CurveDivider from={C.glacier} to={C.lavender} />
 
       {/* ═══════════ FAQ ═══════════ */}
-      <section className="ed-section">
+      <section className="ed-section ed-section--lavender">
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <div className="ed-section-header-num ed-reveal">N. 09 — Domande frequenti</div>
@@ -483,7 +465,7 @@ export default function ZohoOnePage() {
         </div>
       </section>
 
-      <CurveDivider from={C.glacier} to={C.linen} />
+      <CurveDivider from={C.lavender} to={C.linen} />
 
       {/* ═══════════ CTA FINALE ═══════════ */}
       <section className="ed-cta">
