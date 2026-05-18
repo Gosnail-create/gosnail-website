@@ -102,13 +102,16 @@ export default function ZohoOnePage() {
       <EdNav />
 
       {/* ═══════════ HERO ═══════════ */}
-      <section className="ed-hero" style={{ background: 'var(--bg-lavender)' }}>
+      <section className="ed-hero ed-hero--pillar" style={{ background: 'var(--bg-lavender)' }}>
         <div className="ed-deco-blob ed-deco-blob--purple" style={{ width: 360, height: 360, top: '5%', left: '-8%', opacity: 0.4 }}></div>
         <div className="ed-deco-blob ed-deco-blob--coral" style={{ width: 240, height: 240, top: '40%', right: '-5%', opacity: 0.25 }}></div>
         <div className="ed-deco-blob ed-deco-blob--celestial" style={{ width: 200, height: 200, bottom: '5%', left: '35%', opacity: 0.2 }}></div>
 
         <div className="ed-hero-grid">
           <div className="ed-hero-left">
+            <div className="ed-hero-eyebrow ed-reveal">
+              <span>Pillar / Zoho One</span>
+            </div>
             <h1 className="ed-display ed-reveal ed-reveal-1">
               Un unico <em>sistema operativo</em> per gestire e far crescere la tua azienda.
             </h1>
@@ -126,19 +129,39 @@ export default function ZohoOnePage() {
             </div>
           </div>
 
-          <div className="ed-hero-visual ed-reveal ed-reveal-2">
-            <div className="ed-shape-blob-purple"></div>
-            <div className="ed-shape-blob-celestial"></div>
-            <div className="ed-hero-photo">
-              <img src={IMG.dashboard} alt="Dashboard unificata di Zoho One" loading="eager" />
+          {/* Product diorama: central wordmark + orbiting app icons + partner stamp */}
+          <div className="ed-diorama ed-reveal ed-reveal-2">
+            <div className="ed-diorama-glow"></div>
+
+            <div className="ed-diorama-center">
+              <div className="ed-diorama-zoho-text">Zoho</div>
+              <div className="ed-diorama-one-text"><em>One</em></div>
             </div>
-            <BrushStroke className="ed-shape-brush-coral" color={C.coral} />
+
+            <div className="ed-diorama-icons">
+              <div className="ed-diorama-icon ed-diorama-icon--1"><img src="/assets/zoho-products/icons/crm.svg" alt="Zoho CRM" /></div>
+              <div className="ed-diorama-icon ed-diorama-icon--2"><img src="/assets/zoho-products/icons/campaigns.svg" alt="Zoho Campaigns" /></div>
+              <div className="ed-diorama-icon ed-diorama-icon--3"><img src="/assets/zoho-products/icons/books.svg" alt="Zoho Books" /></div>
+              <div className="ed-diorama-icon ed-diorama-icon--4"><img src="/assets/zoho-products/icons/desk.svg" alt="Zoho Desk" /></div>
+              <div className="ed-diorama-icon ed-diorama-icon--5"><img src="/assets/zoho-products/icons/analytics.svg" alt="Zoho Analytics" /></div>
+              <div className="ed-diorama-icon ed-diorama-icon--6"><img src="/assets/zoho-products/icons/people.svg" alt="Zoho People" /></div>
+              <div className="ed-diorama-icon ed-diorama-icon--7"><img src="/assets/zoho-products/icons/projects.svg" alt="Zoho Projects" /></div>
+              <div className="ed-diorama-icon ed-diorama-icon--8"><img src="/assets/zoho-products/icons/cliq.svg" alt="Zoho Cliq" /></div>
+            </div>
+
+            <div className="ed-diorama-stamp">
+              <img src="/assets/zoho-authorized-partner.svg" alt="Zoho Authorized Partner" />
+              <div className="ed-diorama-stamp-text">
+                <span className="ed-diorama-stamp-label">Implementato da</span>
+                <span className="ed-diorama-stamp-name">Gosnail</span>
+              </div>
+            </div>
           </div>
 
           <div className="ed-stats">
             <div className="ed-reveal ed-reveal-4">
               <div className="ed-stat-num">45<small>+</small></div>
-              <div className="ed-stat-label">App incluse</div>
+              <div className="ed-stat-label">App incluse nella suite</div>
             </div>
             <div className="ed-reveal ed-reveal-5">
               <div className="ed-stat-num">75<small>k+</small></div>
@@ -146,7 +169,7 @@ export default function ZohoOnePage() {
             </div>
             <div className="ed-reveal ed-reveal-6">
               <div className="ed-stat-num" style={{ fontStyle: 'italic' }}>Una<small>.</small></div>
-              <div className="ed-stat-label">Licenza per tutto</div>
+              <div className="ed-stat-label">Licenza, tutta l'azienda</div>
             </div>
           </div>
         </div>

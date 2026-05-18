@@ -2492,6 +2492,182 @@ footer::before {
   color: rgba(15,22,56,0.3);
 }
 
+/* ── HERO EYEBROW (pillar page label) ── */
+.ed-hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin-bottom: 28px;
+  padding-left: 36px;
+  position: relative;
+}
+.ed-hero-eyebrow::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 50%;
+  width: 24px; height: 2px;
+  background: var(--coral);
+  border-radius: 2px;
+}
+
+/* ── HERO DIORAMA — Zoho One product showcase ── */
+.ed-diorama {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Background ambient glow */
+.ed-diorama-glow {
+  position: absolute;
+  inset: 8%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(122,101,207,0.18) 0%, transparent 65%);
+  filter: blur(20px);
+  z-index: 0;
+}
+
+/* Center wordmark "Zoho One" */
+.ed-diorama-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 1;
+}
+.ed-diorama-zoho-text {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  opacity: 0.92;
+}
+.ed-diorama-one-text {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 5.5vw, 4.6rem);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--coral);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  font-variation-settings: 'opsz' 144, 'SOFT' 100, 'WONK' 1;
+  margin-top: -8px;
+}
+
+/* Floating Zoho app icons cluster */
+.ed-diorama-icons {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.ed-diorama-icon {
+  position: absolute;
+  width: 68px; height: 68px;
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid rgba(15,22,56,0.06);
+  box-shadow: 0 14px 32px rgba(15,22,56,0.14);
+  display: flex; align-items: center; justify-content: center;
+  padding: 12px;
+  transition: transform 300ms ease, box-shadow 300ms ease;
+  animation: ed-diorama-float 7s ease-in-out infinite;
+}
+.ed-diorama-icon:hover {
+  transform: scale(1.08) translateY(-4px);
+  box-shadow: 0 22px 48px rgba(15,22,56,0.22);
+  z-index: 10;
+}
+.ed-diorama-icon img {
+  width: 100%; height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Asymmetric positioning + size variation for depth */
+.ed-diorama-icon--1 { top: 2%;   left: 10%;  animation-delay: 0s;   width: 72px; height: 72px; }
+.ed-diorama-icon--2 { top: 8%;   right: 8%;  animation-delay: 1.2s; width: 60px; height: 60px; }
+.ed-diorama-icon--3 { top: 32%;  left: -4%;  animation-delay: 2.4s; }
+.ed-diorama-icon--4 { top: 38%;  right: -2%; animation-delay: 0.8s; width: 64px; height: 64px; }
+.ed-diorama-icon--5 { bottom: 28%; left: 18%; animation-delay: 1.8s; width: 60px; height: 60px; }
+.ed-diorama-icon--6 { bottom: 24%; right: 16%; animation-delay: 3s; }
+.ed-diorama-icon--7 { bottom: 6%; left: 6%; animation-delay: 2s; width: 64px; height: 64px; }
+.ed-diorama-icon--8 { bottom: 2%; right: 12%; animation-delay: 0.4s; width: 70px; height: 70px; }
+
+@keyframes ed-diorama-float {
+  0%, 100% { transform: translateY(0) rotate(-1deg); }
+  50%      { transform: translateY(-8px) rotate(1deg); }
+}
+
+/* Partner attribution stamp */
+.ed-diorama-stamp {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex; align-items: center; gap: 14px;
+  padding: 12px 20px 12px 14px;
+  background: #fff;
+  border-radius: 999px;
+  box-shadow: 0 16px 40px rgba(15,22,56,0.16);
+  border: 1px solid rgba(15,22,56,0.06);
+  z-index: 5;
+  white-space: nowrap;
+}
+.ed-diorama-stamp img {
+  height: 28px; width: auto; display: block;
+}
+.ed-diorama-stamp-text {
+  display: flex; flex-direction: column; gap: 0;
+  padding-left: 14px;
+  border-left: 1px solid rgba(15,22,56,0.1);
+}
+.ed-diorama-stamp-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  line-height: 1.4;
+}
+.ed-diorama-stamp-name {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1;
+  font-variation-settings: 'opsz' 96, 'SOFT' 80, 'WONK' 1;
+}
+
+/* Pillar hero needs more vertical breathing room for the diorama stamp */
+.ed-hero--pillar {
+  padding-bottom: 140px;
+}
+
+/* Stats more dramatic on pillar hero */
+.ed-hero--pillar .ed-stat-num {
+  font-size: clamp(3.2rem, 6vw, 5rem);
+}
+
+@media (max-width: 900px) {
+  .ed-diorama { max-width: 360px; }
+  .ed-diorama-icon { width: 54px; height: 54px; padding: 10px; }
+  .ed-diorama-icon--1 { width: 60px; height: 60px; }
+  .ed-diorama-icon--4 { width: 56px; height: 56px; }
+  .ed-diorama-icon--8 { width: 58px; height: 58px; }
+}
+
 /* ── ECOSYSTEM TABS — interactive showcase ── */
 .ed-tabs {
   margin-top: 56px;
