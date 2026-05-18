@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
+import EdNav from '@/components/EdNav'
+import EdFooter from '@/components/EdFooter'
 import ClientEffects from '@/components/ClientEffects'
 
 export const metadata = {
@@ -50,7 +50,7 @@ export default function IlMetodoPage() {
   return (
     <>
       <ClientEffects />
-      <Nav />
+      <EdNav />
 
       {/* ── HERO ── */}
       <section className="method-hero" style={{ paddingTop: 108 }}>
@@ -94,7 +94,7 @@ export default function IlMetodoPage() {
         </div>
       </div>
 
-      <Footer />
+      <EdFooter />
     </>
   )
 }

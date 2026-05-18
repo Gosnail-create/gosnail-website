@@ -11,22 +11,27 @@ export default function EdFooter() {
           <div className="ed-footer-zoho">Zoho Authorized Partner</div>
         </div>
         <div className="ed-footer-col">
-          <h5>Studio</h5>
-          <Link href="/il-metodo">Il Nostro Metodo</Link>
-          <Link href="/#approccio">Perché Sceglierci</Link>
-        </div>
-        <div className="ed-footer-col">
-          <h5>Soluzioni</h5>
+          <h5>Suite</h5>
           <Link href="/zoho-one">Zoho One</Link>
-          <Link href="#">Zoho CRM Plus</Link>
-          <Link href="#">Area Vendite</Link>
-          <Link href="#">Marketing</Link>
+          <Link href="/zoho-crm-plus">Zoho CRM Plus</Link>
         </div>
         <div className="ed-footer-col">
-          <h5>Contatti</h5>
-          <Link href="/contatti">Prenota una demo</Link>
+          <h5>Per dipartimento</h5>
+          <Link href="/vendite">Vendite</Link>
+          <Link href="/marketing">Marketing</Link>
+          <Link href="/business-intelligence">Business Intelligence</Link>
+          <Link href="/finanza">Finanza &amp; Contabilità</Link>
+          <Link href="/customer-service">Customer Service</Link>
+          <Link href="/operations">Operations</Link>
+          <Link href="/risorse-umane">Risorse Umane</Link>
+        </div>
+        <div className="ed-footer-col">
+          <h5>Studio</h5>
+          <Link href="/il-metodo">Il Metodo</Link>
+          <Link href="/chi-siamo">Chi Siamo</Link>
+          <Link href="/blog">Blog</Link>
+          <Link href="/contatti">Contatti</Link>
           <a href="mailto:info@gosnail.it">info@gosnail.it</a>
-          <a href="#">Via Nazionale, 40 — Tavagnacco UD</a>
         </div>
       </div>
       <div className="ed-footer-bottom">

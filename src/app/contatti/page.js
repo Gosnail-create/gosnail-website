@@ -1,5 +1,5 @@
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
+import EdNav from '@/components/EdNav'
+import EdFooter from '@/components/EdFooter'
 import ClientEffects from '@/components/ClientEffects'
 import ContactForm from '@/components/ContactForm'
 import { MapPin, Mail } from 'lucide-react'
@@ -13,7 +13,7 @@ export default function ContattiPage() {
   return (
     <>
       <ClientEffects />
-      <Nav />
+      <EdNav />
 
       <section className="contact" style={{ paddingTop: 108 }}>
         <div className="section-inner">
@@ -69,7 +69,7 @@ export default function ContattiPage() {
         </div>
       </section>
 
-      <Footer />
+      <EdFooter />
     </>
   )
 }

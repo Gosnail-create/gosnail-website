@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
+import EdNav from '@/components/EdNav'
+import EdFooter from '@/components/EdFooter'
 import ClientEffects from '@/components/ClientEffects'
 import {
   TrendingUp, Database, Users, Receipt,
@@ -257,7 +257,7 @@ export default function ZohoOnePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <ClientEffects />
-      <Nav />
+      <EdNav />
 
       {/* ── HERO ── */}
       <section className="hero" style={{ minHeight: '80vh' }}>
@@ -670,7 +670,7 @@ export default function ZohoOnePage() {
         </div>
       </div>
 
-      <Footer />
+      <EdFooter />
     </>
   )
 }
