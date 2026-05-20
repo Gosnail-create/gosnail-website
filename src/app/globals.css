@@ -1310,6 +1310,20 @@ footer::before {
 .ed-section--ocean .ed-section-header-body p,
 .ed-section--night .ed-section-header-body p { color: rgba(255,255,255,0.85); }
 
+/* Centered single-column variant — for shorter / more dramatic headers */
+.ed-section-header--centered {
+  display: block;
+  text-align: center;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ed-section-header--centered > .ed-h2 { margin: 0 auto 24px; }
+.ed-section-header--centered .ed-section-header-body {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
 @media (max-width: 900px) {
   .ed-section-header { grid-template-columns: 1fr; gap: 24px; margin-bottom: 56px; }
 }
@@ -1421,18 +1435,20 @@ footer::before {
   content: ''; width: 32px; height: 1px; background: var(--coral);
 }
 
-/* Pull quote body paragraph utility (replaces inline styles) */
-.ed-pullquote-body {
+/* Pull quote body paragraph utility — higher specificity to override .ed-pullquote p */
+.ed-pullquote p.ed-pullquote-body {
   font-family: var(--font-body);
-  font-size: clamp(1.08rem, 1.3vw, 1.2rem);
+  font-size: clamp(1.05rem, 1.25vw, 1.18rem);
   line-height: 1.7;
   color: rgba(255,255,255,0.88);
   font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
   margin-top: 20px;
   max-width: 760px;
   font-variation-settings: normal;
 }
-.ed-pullquote-body:first-of-type { margin-top: 40px; }
+.ed-pullquote p.ed-pullquote-body:first-of-type { margin-top: 40px; }
 
 /* Pull quote signature: logo + attribution */
 .ed-pullquote-signature {
@@ -2131,12 +2147,12 @@ footer::before {
 }
 .ed-split-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-/* Problem highlight — single paragraph with coral side bar */
+/* Highlight box — soft tinted background with thin matching border */
 .ed-problem-highlight {
-  margin-top: 32px; padding: 24px 32px;
-  background: rgba(255,90,77,0.08);
-  border-left: 4px solid var(--coral);
-  border-radius: 0 16px 16px 0;
+  margin-top: 32px; padding: 22px 26px;
+  background: rgba(255,107,107,0.08);
+  border: 1px solid rgba(255,107,107,0.28);
+  border-radius: 16px;
   max-width: 820px;
 }
 .ed-problem-highlight p {
@@ -2149,36 +2165,36 @@ footer::before {
   margin: 0;
 }
 
-/* Target audience cards — horizontal with icon (4 in 2x2 grid) */
+/* Target audience cards — single row, vertical layout, alternating backgrounds */
 .ed-targets-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   margin-top: 56px;
 }
 .ed-target-card {
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 20px;
-  align-items: start;
-  padding: 26px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 28px 24px;
   background: #fff;
   border: 1px solid rgba(15,22,56,0.08);
-  border-radius: 16px;
-  transition: all 250ms ease;
+  border-radius: 18px;
+  transition: transform 250ms ease, box-shadow 250ms ease;
+  min-height: 220px;
 }
 .ed-target-card:hover {
-  border-color: rgba(255,107,107,0.4);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(15,22,56,0.08);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(15,22,56,0.1);
 }
 .ed-target-card-icon {
   width: 48px; height: 48px;
   border-radius: 12px;
-  background: var(--bg-glacier);
+  background: var(--bg-lavender);
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
 }
+.ed-target-card-text { margin-top: auto; }
 .ed-target-card h3 {
   font-family: var(--font-body);
   font-size: 1.05rem;
@@ -2191,8 +2207,28 @@ footer::before {
 .ed-target-card p {
   font-family: var(--font-body);
   font-size: 14px;
-  line-height: 1.65;
+  line-height: 1.6;
   color: var(--ink-soft);
+}
+
+/* Variants for visual rhythm */
+.ed-target-card--lavender { background: var(--bg-lavender); border-color: rgba(122,101,207,0.15); }
+.ed-target-card--lavender .ed-target-card-icon { background: #fff; }
+
+.ed-target-card--night { background: var(--bg-night); border-color: transparent; }
+.ed-target-card--night h3 { color: #fff; }
+.ed-target-card--night p { color: rgba(255,255,255,0.78); }
+.ed-target-card--night .ed-target-card-icon { background: rgba(255,255,255,0.1); }
+
+.ed-target-card--linen { background: var(--bg-linen); border-color: rgba(255,107,107,0.15); }
+.ed-target-card--linen .ed-target-card-icon { background: #fff; }
+
+@media (max-width: 1024px) {
+  .ed-targets-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .ed-targets-grid { grid-template-columns: 1fr; }
+  .ed-target-card { min-height: auto; }
 }
 
 /* Benefits — numbered list cards (4 in 2x2 grid) */
@@ -2402,8 +2438,8 @@ footer::before {
   margin: 28px auto 0;
   padding: 22px 28px;
   background: rgba(122,101,207,0.08);
-  border-left: 4px solid var(--purple);
-  border-radius: 0 16px 16px 0;
+  border: 1px solid rgba(122,101,207,0.25);
+  border-radius: 16px;
 }
 .ed-pricing-callout p {
   font-family: var(--font-body);

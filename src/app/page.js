@@ -168,7 +168,7 @@ export default function HomePage() {
       <section className="ed-section ed-section--night" id="approccio">
         <div className="ed-deco-blob ed-deco-blob--purple" style={{ width: 400, height: 400, top: '20%', left: '-10%', opacity: 0.35 }}></div>
         <div className="ed-section-inner">
-          <div className="ed-section-header">
+          <div className="ed-section-header ed-section-header--centered">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
               Un unico sistema operativo<br /><em>per tutta la tua azienda</em>.
             </h2>

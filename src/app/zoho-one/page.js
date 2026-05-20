@@ -72,17 +72,17 @@ const jsonLd = {
 }
 
 const targets = [
-  { icon: <TrendingUp size={22} color="#7A65CF" />, title: 'Imprese in crescita', text: 'Hanno bisogno di strumenti che crescano con loro, invece di doverli cambiare ogni due anni.' },
-  { icon: <BarChart3 size={22} color="#349ABA" />, title: 'Chi vuole decidere sui numeri', text: 'Stanco di incrociare tre file Excel ogni volta che serve un dato affidabile per una riunione.' },
-  { icon: <Network size={22} color="#FF6B6B" />, title: 'Team che devono parlarsi', text: 'Vendite, marketing e amministrazione che oggi vivono in mondi separati e perdono opportunità.' },
-  { icon: <Zap size={22} color="#7A65CF" />, title: 'Aziende stanche degli sprechi', text: 'Basta data entry manuale e abbonamenti software che si moltiplicano senza che nessuno sappia bene perché.' },
+  { variant: '',         icon: <TrendingUp size={22} color="#7A65CF" />, title: 'Imprese in crescita', text: 'Hanno bisogno di strumenti che crescano con loro, invece di doverli cambiare ogni due anni.' },
+  { variant: 'lavender', icon: <BarChart3 size={22} color="#7A65CF" />, title: 'Chi vuole decidere sui numeri', text: 'Stanco di incrociare tre file Excel ogni volta che serve un dato affidabile per una riunione.' },
+  { variant: 'night',    icon: <Network size={22} color="#FF6B6B" />, title: 'Team che devono parlarsi', text: 'Vendite, marketing e amministrazione che oggi vivono in mondi separati e perdono opportunità.' },
+  { variant: 'linen',    icon: <Zap size={22} color="#FF6B6B" />, title: 'Aziende stanche degli sprechi', text: 'Basta data entry manuale e abbonamenti software che si moltiplicano senza che nessuno sappia bene perché.' },
 ]
 
 const benefits = [
-  { n: '01', accent: 'celestial', title: 'Una visione unica del business', text: 'I dati di vendite, marketing, finanza e assistenza in un\'unica dashboard. Vedi cosa succede in azienda in tempo reale, senza dover rincorrere report da chissà chi.' },
-  { n: '02', accent: 'purple', title: 'Automazione che attraversa i reparti', text: 'Un ordine chiuso nel CRM genera la fattura in Books e apre il progetto in Projects. Senza copia-incolla, senza email tra colleghi per chiedersi le cose.' },
-  { n: '03', accent: 'coral', title: 'Reparti che si parlano sul serio', text: 'L\'assistenza vede cosa il cliente ha comprato. Il commerciale vede i ticket aperti. Tutti lavorano sugli stessi dati, in tempo reale.' },
-  { n: '04', accent: 'coral', title: 'Un solo abbonamento per tutto', text: 'Sostituisci decine di abbonamenti software con un\'unica licenza per dipendente. Sai esattamente quanto spendi, come scalerà se assumi, niente sorprese alla scadenza.' },
+  { n: '01', title: 'Una visione unica del business', text: 'I dati di vendite, marketing, finanza e assistenza in un\'unica dashboard. Vedi cosa succede in azienda in tempo reale, senza dover rincorrere report da chissà chi.' },
+  { n: '02', title: 'Automazione che attraversa i reparti', text: 'Un ordine chiuso nel CRM genera la fattura in Books e apre il progetto in Projects. Senza copia-incolla, senza email tra colleghi per chiedersi le cose.' },
+  { n: '03', title: 'Reparti che si parlano sul serio', text: 'L\'assistenza vede cosa il cliente ha comprato. Il commerciale vede i ticket aperti. Tutti lavorano sugli stessi dati, in tempo reale.' },
+  { n: '04', title: 'Un solo abbonamento per tutto', text: 'Sostituisci decine di abbonamenti software con un\'unica licenza per dipendente. Sai esattamente quanto spendi, come scalerà se assumi, niente sorprese alla scadenza.' },
 ]
 
 const faqs = [
@@ -203,7 +203,7 @@ export default function ZohoOnePage() {
       <section className="ed-section ed-section--lavender">
         <div className="ed-deco-blob ed-deco-blob--celestial" style={{ width: 340, height: 340, top: '20%', right: '-8%', opacity: 0.25 }}></div>
         <div className="ed-section-inner">
-          <div className="ed-section-header">
+          <div className="ed-section-header ed-section-header--centered">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
               Zoho One, il sistema operativo<br /><em>unico</em> del tuo business.
             </h2>
@@ -256,9 +256,9 @@ export default function ZohoOnePage() {
 
           <div className="ed-targets-grid">
             {targets.map((t, i) => (
-              <div key={t.title} className={`ed-target-card ed-reveal ed-reveal-${(i % 4) + 1}`}>
+              <div key={t.title} className={`ed-target-card ${t.variant ? `ed-target-card--${t.variant}` : ''} ed-reveal ed-reveal-${(i % 4) + 1}`}>
                 <div className="ed-target-card-icon">{t.icon}</div>
-                <div>
+                <div className="ed-target-card-text">
                   <h3>{t.title}</h3>
                   <p>{t.text}</p>
                 </div>
@@ -273,7 +273,7 @@ export default function ZohoOnePage() {
       {/* ═══════════ 4 BENEFICI ═══════════ */}
       <section id="benefici" className="ed-section" style={{ background: 'var(--bg-linen)' }}>
         <div className="ed-section-inner">
-          <div className="ed-section-header">
+          <div className="ed-section-header ed-section-header--centered">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
               Cosa cambia davvero quando<br /><em>tutto è in un unico posto</em>.
             </h2>
@@ -286,7 +286,7 @@ export default function ZohoOnePage() {
 
           <div className="ed-benefits">
             {benefits.map((b, i) => (
-              <div key={b.n} className={`ed-benefit ed-benefit--${b.accent} ed-reveal ed-reveal-${(i % 4) + 1}`}>
+              <div key={b.n} className={`ed-benefit ed-reveal ed-reveal-${(i % 4) + 1}`}>
                 <div className="ed-benefit-num">{b.n}</div>
                 <div className="ed-benefit-body">
                   <h3>{b.title}</h3>
@@ -416,7 +416,7 @@ export default function ZohoOnePage() {
       {/* ═══════════ COMPARISON TABLE ═══════════ */}
       <section className="ed-section">
         <div className="ed-section-inner">
-          <div className="ed-section-header">
+          <div className="ed-section-header ed-section-header--centered">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
               Perché le PMI scelgono<br /><em>Zoho One</em> rispetto agli altri.
             </h2>
@@ -467,7 +467,7 @@ export default function ZohoOnePage() {
       {/* ═══════════ FAQ ═══════════ */}
       <section className="ed-section ed-section--lavender">
         <div className="ed-section-inner">
-          <div className="ed-section-header">
+          <div className="ed-section-header ed-section-header--centered">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
               Le cose che ti starai chiedendo<br /><em>su Zoho One</em>.
             </h2>
