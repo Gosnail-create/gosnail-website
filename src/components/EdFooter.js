@@ -9,7 +9,7 @@ export default function EdFooter() {
           <Image src="/assets/Gosnail-logo-white.svg" alt="Gosnail" width={150} height={35} />
           <p>Il partner strategico per la trasformazione digitale delle medie imprese italiane con l&apos;ecosistema Zoho.</p>
           <div className="ed-footer-zoho-logo">
-            <img src="/assets/zoho-authorized-partner.svg" alt="Zoho Authorized Partner" />
+            <img src="/assets/zoho-authorized-partner-square.svg" alt="Zoho Authorized Partner" />
           </div>
         </div>
         <div className="ed-footer-col">
