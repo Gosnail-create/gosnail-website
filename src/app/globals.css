@@ -1809,12 +1809,12 @@ footer::before {
 .ed-footer-zoho-logo {
   display: inline-block;
   background: #fff;
-  border-radius: 10px;
-  padding: 10px 16px;
+  border-radius: 16px;
+  padding: 16px;
   margin-top: 24px;
 }
 .ed-footer-zoho-logo img {
-  height: 28px;
+  height: 140px;
   width: auto;
   display: block;
 }
