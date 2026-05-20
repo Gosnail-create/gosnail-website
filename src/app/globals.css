@@ -1769,7 +1769,7 @@ footer::before {
   padding-bottom: 64px;
   border-bottom: 1px solid rgba(242,235,220,0.12);
 }
-.ed-footer-brand img { height: 28px; margin-bottom: 20px; }
+.ed-footer-brand img { height: auto; width: 200px; margin-bottom: 20px; }
 .ed-footer-brand p {
   font-family: var(--font-body);
   font-size: 16px;
@@ -1807,7 +1807,9 @@ footer::before {
   color: rgba(242,235,220,0.5);
 }
 .ed-footer-zoho-logo {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: #fff;
   border-radius: 16px;
   padding: 16px;
@@ -1815,7 +1817,7 @@ footer::before {
 }
 .ed-footer-zoho-logo img {
   height: 140px;
-  width: auto;
+  width: 140px;
   display: block;
 }
 
