@@ -14,14 +14,14 @@ const IMG = {
   testimonialF: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80&auto=format&fit=crop&crop=faces',
 }
 
-// ── Color tokens used in section transitions ──
+// ── Color tokens — palette brand Gosnail ──
 const C = {
-  glacier:  '#EDF2F7',
-  lavender: '#F1EEFA',
+  glacier:  '#F0F4F8',
+  lavender: '#F5F4FA',
   ocean:    '#1C318C',
   night:    '#111D52',
   linen:    '#F6F3F0',
-  coral:    '#FF5A4D',
+  coral:    '#FF6B6B',
   purple:   '#7A65CF',
   celestial:'#349ABA',
 }
@@ -119,10 +119,8 @@ export default function HomePage() {
 
       {/* ════════════════════════ PROBLEMS ════════════════════════ */}
       <section className="ed-section ed-section--lavender" id="problemi" style={{ padding: '120px 56px' }}>
-        <div className="ed-deco-blob ed-deco-blob--purple" style={{ width: 360, height: 360, top: '-10%', right: '-8%', opacity: 0.35 }}></div>
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-num ed-reveal">N. 02 — Il Problema</div>
             <div className="ed-section-header-title">
               <h2 className="ed-h2 ed-reveal ed-reveal-1">
                 La complessità tecnologica<br />è il <em>nemico nascosto</em> della crescita.
@@ -171,7 +169,6 @@ export default function HomePage() {
         <div className="ed-deco-blob ed-deco-blob--purple" style={{ width: 400, height: 400, top: '20%', left: '-10%', opacity: 0.35 }}></div>
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-num ed-reveal">N. 03 — L'Approccio</div>
             <div className="ed-section-header-title">
               <h2 className="ed-h2 ed-reveal ed-reveal-1">
                 Un unico sistema operativo<br /><em>per tutta la tua azienda</em>.
@@ -243,7 +240,6 @@ export default function HomePage() {
         <div className="ed-deco-blob ed-deco-blob--celestial" style={{ width: 380, height: 380, bottom: '-12%', right: '-8%', opacity: 0.3 }}></div>
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-num ed-reveal">N. 04 — Aree di intervento</div>
             <div className="ed-section-header-title">
               <h2 className="ed-h2 ed-reveal ed-reveal-1">
                 <em>Dove</em> facciamo<br />la differenza.

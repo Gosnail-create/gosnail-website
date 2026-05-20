@@ -884,29 +884,29 @@ footer::before {
   --font-body:    var(--font-body), 'Poppins', system-ui, sans-serif;
   --font-mono:    var(--font-mono), 'JetBrains Mono', ui-monospace, monospace;
 
-  /* Editorial palette — rebalanced May 2026 */
-  --ink:         #0F1638;            /* type primary */
-  --ink-soft:    #2A3260;            /* darker than before for better contrast */
-  --ink-mute:    #5A638F;            /* for tertiary text only */
+  /* Brand palette — allineato al design system Gosnail */
+  --ink:         #111D52;            /* type primary = brand night */
+  --ink-soft:    #3D4680;            /* fg-secondary brand */
+  --ink-mute:    #7A82B0;            /* fg-muted brand */
 
-  /* Light backgrounds — cool, brand-aligned */
-  --bg-glacier:  #EDF2F7;            /* primary light, cooler than glacier base */
+  /* Light backgrounds — brand */
+  --bg-glacier:  #F0F4F8;            /* brand glacier */
   --bg-glacier-2:#E4EBF2;
-  --bg-lavender: #F1EEFA;            /* slightly stronger lavender */
+  --bg-lavender: #F5F4FA;            /* brand lavender */
   --bg-lavender-2:#E5DEFA;
-  --bg-linen:    #F6F3F0;            /* warm cream — reserved for closing */
+  --bg-linen:    #F6F3F0;            /* brand linen */
 
   /* Dark backgrounds — brand */
-  --bg-ocean:    #1C318C;            /* ocean blue, medium dark */
-  --bg-night:    #111D52;            /* deep night */
-  --bg-night-2:  #0A1230;            /* deepest */
+  --bg-ocean:    #1C318C;            /* brand ocean */
+  --bg-night:    #111D52;            /* brand night */
+  --bg-night-2:  #0A1230;            /* derivative deeper night */
 
-  /* Accents — brand palette restored */
-  --coral:       #FF5A4D;
+  /* Accents — brand palette */
+  --coral:       #FF6B6B;            /* brand coral */
   --coral-soft:  #FFB8B0;
-  --purple:      #7A65CF;
+  --purple:      #7A65CF;            /* brand purple */
   --purple-soft: #B5A8E6;
-  --celestial:   #349ABA;
+  --celestial:   #349ABA;            /* brand celestial */
   --celestial-soft: #8FC8DA;
 }
 
@@ -1293,20 +1293,8 @@ footer::before {
   position: relative; z-index: 2;
 }
 .ed-section-header {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 80px;
-  align-items: start;
-  margin-bottom: 100px;
-}
-.ed-section-header-num {
-  font-family: var(--font-mono);
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  color: var(--coral);
-  padding-top: 12px;
-  border-top: 1px solid var(--coral);
+  margin-bottom: 80px;
+  max-width: 880px;
 }
 .ed-section-header-title { max-width: 880px; }
 .ed-section-header-title p {

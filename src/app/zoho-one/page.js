@@ -12,12 +12,12 @@ const IMG = {
 }
 
 const C = {
-  glacier:  '#EDF2F7',
-  lavender: '#F1EEFA',
+  glacier:  '#F0F4F8',
+  lavender: '#F5F4FA',
   ocean:    '#1C318C',
   night:    '#111D52',
   linen:    '#F6F3F0',
-  coral:    '#FF5A4D',
+  coral:    '#FF6B6B',
   purple:   '#7A65CF',
   celestial:'#349ABA',
 }
@@ -109,9 +109,6 @@ export default function ZohoOnePage() {
 
         <div className="ed-hero-grid">
           <div className="ed-hero-left">
-            <div className="ed-hero-eyebrow ed-reveal">
-              <span>Pillar / Zoho One</span>
-            </div>
             <h1 className="ed-display ed-reveal ed-reveal-1">
               Un unico <em>sistema operativo</em> per gestire e far crescere la tua azienda.
             </h1>
@@ -181,7 +178,6 @@ export default function ZohoOnePage() {
       <section className="ed-section">
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-num ed-reveal">N. 02 — Il Problema</div>
             <div className="ed-section-header-title">
               <h2 className="ed-h2 ed-reveal ed-reveal-1">
                 La frammentazione tecnologica<br />è il <em>nemico nascosto</em> della crescita.
@@ -207,7 +203,6 @@ export default function ZohoOnePage() {
         <div className="ed-deco-blob ed-deco-blob--celestial" style={{ width: 340, height: 340, top: '20%', right: '-8%', opacity: 0.25 }}></div>
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-num ed-reveal">N. 03 — La Soluzione</div>
             <div className="ed-section-header-title">
               <h2 className="ed-h2 ed-reveal ed-reveal-1">
                 Zoho One, il sistema operativo<br /><em>unico</em> del tuo business.
@@ -248,7 +243,6 @@ export default function ZohoOnePage() {
       <section className="ed-section">
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-num ed-reveal">N. 04 — A chi è rivolto</div>
             <div className="ed-section-header-title">
               <h2 className="ed-h2 ed-reveal ed-reveal-1">
                 È la scelta giusta se ti riconosci<br />in <em>una di queste situazioni</em>.
@@ -277,7 +271,6 @@ export default function ZohoOnePage() {
       <section id="benefici" className="ed-section ed-section--lavender">
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-num ed-reveal">N. 05 — Il Valore</div>
             <div className="ed-section-header-title">
               <h2 className="ed-h2 ed-reveal ed-reveal-1">
                 Cosa cambia davvero quando<br /><em>tutto è in un unico posto</em>.
@@ -308,7 +301,6 @@ export default function ZohoOnePage() {
       <section className="ed-section">
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-num ed-reveal">N. 06 — L'ecosistema</div>
             <div className="ed-section-header-title">
               <h2 className="ed-h2 ed-reveal ed-reveal-1">
                 Tutti i team. <em>Insieme</em>.<br />Meglio di prima.
@@ -352,7 +344,6 @@ export default function ZohoOnePage() {
       <section className="ed-section ed-section--lavender">
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-num ed-reveal">N. 07 — Pricing</div>
             <div className="ed-section-header-title">
               <h2 className="ed-h2 ed-reveal ed-reveal-1">
                 Un prezzo. Tutto incluso.<br /><em>Nessuna sorpresa</em>.
@@ -418,7 +409,6 @@ export default function ZohoOnePage() {
       <section className="ed-section">
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-num ed-reveal">N. 08 — Zoho One vs il mercato</div>
             <div className="ed-section-header-title">
               <h2 className="ed-h2 ed-reveal ed-reveal-1">
                 Perché le PMI scelgono<br /><em>Zoho One</em> rispetto agli altri.
@@ -467,7 +457,6 @@ export default function ZohoOnePage() {
       <section className="ed-section ed-section--lavender">
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-num ed-reveal">N. 09 — Domande frequenti</div>
             <div className="ed-section-header-title">
               <h2 className="ed-h2 ed-reveal ed-reveal-1">
                 Le cose che ti starai chiedendo<br /><em>su Zoho One</em>.
