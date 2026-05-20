@@ -945,7 +945,7 @@ footer::before {
   font-family: var(--font-display);
   font-weight: 400;
   letter-spacing: -0.025em;
-  line-height: 1.02;
+  line-height: 1.1;
   font-variation-settings: 'opsz' 144, 'SOFT' 50, 'WONK' 0;
   color: var(--ink);
 }
@@ -965,7 +965,7 @@ footer::before {
   font-family: var(--font-display);
   font-weight: 500;
   font-size: clamp(2rem, 4vw, 3.4rem);
-  line-height: 1.05;
+  line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--ink);
   font-variation-settings: 'opsz' 96, 'SOFT' 30, 'WONK' 0;
@@ -991,7 +991,7 @@ footer::before {
 }
 .ed-eyebrow-mono {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -1119,12 +1119,12 @@ footer::before {
   margin: 0 0 32px;
 }
 .ed-hero-intro {
-  font-size: clamp(1.05rem, 1.25vw, 1.18rem);
+  font-size: clamp(1.125rem, 1.5vw, 1.25rem);
   line-height: 1.7;
   color: var(--ink-soft);
   margin-bottom: 40px;
   font-weight: 400;
-  max-width: 540px;
+  max-width: 560px;
 }
 .ed-hero-cta-row {
   display: flex; gap: 16px; flex-wrap: wrap; align-items: center;
@@ -1250,7 +1250,7 @@ footer::before {
 }
 .ed-stat-label {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink-soft);
@@ -1302,7 +1302,7 @@ footer::before {
 .ed-section-header > .ed-h2 { margin: 0; max-width: none; }
 .ed-section-header-body p {
   font-family: var(--font-body);
-  font-size: clamp(1.08rem, 1.3vw, 1.18rem);
+  font-size: clamp(1.125rem, 1.5vw, 1.25rem);
   line-height: 1.7;
   color: var(--ink-soft);
 }
@@ -1388,7 +1388,7 @@ footer::before {
 }
 .ed-problem p {
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.7;
   color: var(--ink-soft);
 }
@@ -1438,7 +1438,7 @@ footer::before {
 /* Pull quote body paragraph utility — higher specificity to override .ed-pullquote p */
 .ed-pullquote p.ed-pullquote-body {
   font-family: var(--font-body);
-  font-size: clamp(1.05rem, 1.25vw, 1.18rem);
+  font-size: clamp(1.125rem, 1.5vw, 1.25rem);
   line-height: 1.7;
   color: rgba(255,255,255,0.88);
   font-style: normal;
@@ -1506,9 +1506,9 @@ footer::before {
 }
 .ed-pillar p {
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255,255,255,0.78);
 }
 .ed-flow {
   border: 1px solid rgba(255,255,255,0.15);
@@ -1660,7 +1660,7 @@ footer::before {
 }
 .ed-principle p {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.65;
   color: var(--ink-soft);
 }
@@ -1715,7 +1715,7 @@ footer::before {
 }
 .ed-testimonial-card-text {
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   font-style: italic;
   font-weight: 400;
   line-height: 1.55;
@@ -1773,10 +1773,10 @@ footer::before {
 .ed-footer-brand img { height: 28px; margin-bottom: 20px; }
 .ed-footer-brand p {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.7;
-  color: rgba(242,235,220,0.7);
-  max-width: 280px;
+  color: rgba(242,235,220,0.75);
+  max-width: 300px;
 }
 .ed-footer-col h5 {
   font-family: var(--font-mono);
@@ -1790,7 +1790,7 @@ footer::before {
 .ed-footer-col a {
   display: block;
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   color: rgba(242,235,220,0.85);
   text-decoration: none;
   margin-bottom: 12px;
@@ -2175,13 +2175,13 @@ footer::before {
 .ed-target-card {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  padding: 28px 24px;
+  gap: 28px;
+  padding: 32px 28px;
   background: #fff;
   border: 1px solid rgba(15,22,56,0.08);
   border-radius: 18px;
   transition: transform 250ms ease, box-shadow 250ms ease;
-  min-height: 220px;
+  min-height: 260px;
 }
 .ed-target-card:hover {
   transform: translateY(-4px);
@@ -2197,16 +2197,16 @@ footer::before {
 .ed-target-card-text { margin-top: auto; }
 .ed-target-card h3 {
   font-family: var(--font-body);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--ink);
-  margin-bottom: 8px;
+  margin-bottom: 14px;
   line-height: 1.3;
   letter-spacing: -0.005em;
 }
 .ed-target-card p {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
   color: var(--ink-soft);
 }
@@ -2269,7 +2269,7 @@ footer::before {
 }
 .ed-benefit-body p {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.75;
   color: var(--ink-soft);
 }
@@ -2313,7 +2313,7 @@ footer::before {
 }
 .ed-app-card p {
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.65;
   color: var(--ink-soft);
 }
@@ -2384,7 +2384,7 @@ footer::before {
 }
 .ed-pricing-desc {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.7;
   color: var(--ink-soft);
   margin-bottom: 28px;
@@ -2397,7 +2397,7 @@ footer::before {
 }
 .ed-pricing-features li {
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   color: var(--ink-soft);
   padding-left: 24px;
@@ -2476,10 +2476,10 @@ footer::before {
   color: var(--coral);
 }
 .ed-comparison-table tbody td {
-  padding: 16px 20px;
+  padding: 18px 20px;
   border-bottom: 1px solid rgba(15,22,56,0.08);
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: 16px;
   color: var(--ink-soft);
   vertical-align: top;
   line-height: 1.5;
@@ -2544,7 +2544,7 @@ footer::before {
 }
 .ed-faq-a {
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.75;
   color: var(--ink-soft);
   padding: 0 0 28px;
@@ -2857,7 +2857,7 @@ footer::before {
 }
 .ed-tabs-desc {
   font-family: var(--font-body);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.75;
   color: var(--ink-soft);
   margin-bottom: 28px;
