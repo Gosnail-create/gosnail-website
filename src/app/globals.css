@@ -1460,14 +1460,13 @@ footer::before {
 }
 .ed-pullquote-signature-logo {
   background: #fff;
-  border-radius: 10px;
-  padding: 12px 16px;
-  height: 56px;
+  border-radius: 12px;
+  padding: 14px 18px;
   display: inline-flex;
   align-items: center;
 }
 .ed-pullquote-signature-logo img {
-  height: 32px;
+  height: 60px;
   width: auto;
   display: block;
 }

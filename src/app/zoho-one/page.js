@@ -340,7 +340,7 @@ export default function ZohoOnePage() {
               <img src="/assets/zoho-authorized-partner.svg" alt="Zoho Authorized Partner" />
             </div>
             <div className="ed-pullquote-attr">
-              Il team Gosnail · Tavagnacco, UD
+              Il team Gosnail
             </div>
           </div>
         </div>
