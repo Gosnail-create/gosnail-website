@@ -179,7 +179,6 @@ export default function ZohoOnePage() {
 
       {/* ═══════════ PROBLEMA ═══════════ */}
       <section className="ed-section">
-        <div className="ed-deco-blob ed-deco-blob--purple" style={{ width: 360, height: 360, top: '-10%', right: '-8%', opacity: 0.3 }}></div>
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <div className="ed-section-header-num ed-reveal">N. 02 — Il Problema</div>
@@ -276,7 +275,6 @@ export default function ZohoOnePage() {
 
       {/* ═══════════ 4 BENEFICI ═══════════ */}
       <section id="benefici" className="ed-section ed-section--lavender">
-        <div className="ed-deco-blob ed-deco-blob--purple" style={{ width: 320, height: 320, bottom: '-10%', left: '-5%', opacity: 0.25 }}></div>
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <div className="ed-section-header-num ed-reveal">N. 05 — Il Valore</div>
