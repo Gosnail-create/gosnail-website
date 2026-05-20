@@ -4,6 +4,7 @@ import EdFooter from '@/components/EdFooter'
 import EdEffects from '@/components/EdEffects'
 import EcosystemTabs from '@/components/EcosystemTabs'
 import { CurveDivider, BlobDivider, BrushStroke } from '@/components/OrganicShapes'
+import { TrendingUp, BarChart3, Network, Zap } from 'lucide-react'
 
 const IMG = {
   hero: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80&auto=format&fit=crop',
@@ -52,14 +53,14 @@ const jsonLd = {
       description: 'Suite aziendale con oltre 45 applicazioni enterprise integrate: CRM, marketing, finanza, HR, helpdesk, analytics e collaborazione.',
       brand: { '@type': 'Brand', name: 'Zoho Corporation' },
       offers: { '@type': 'Offer', priceCurrency: 'EUR',
-        priceSpecification: { '@type': 'PriceSpecification', price: '34', priceCurrency: 'EUR', description: 'Prezzo indicativo per dipendente al mese, fatturazione annuale' },
+        priceSpecification: { '@type': 'PriceSpecification', price: '37', priceCurrency: 'EUR', description: 'Prezzo per dipendente al mese, fatturazione annuale (piano Tutti i Dipendenti)' },
         seller: { '@type': 'Organization', name: 'Gosnail S.r.l.' } },
     },
     {
       '@type': 'FAQPage',
       mainEntity: [
         { '@type': 'Question', name: 'Cos\'è Zoho One?', acceptedAnswer: { '@type': 'Answer', text: 'Zoho One è la suite aziendale di Zoho Corporation: oltre 45 applicazioni integrate in un\'unica piattaforma per gestire vendite, marketing, finanza, risorse umane, assistenza clienti e operazioni. Sostituisce decine di software separati con una soluzione unificata dove ogni dato e processo fluisce tra i reparti senza interruzioni.' }},
-        { '@type': 'Question', name: 'Quanto costa Zoho One in Italia?', acceptedAnswer: { '@type': 'Answer', text: 'Zoho One ha due piani. Il piano "Tutti i Dipendenti" parte da circa €34/dipendente/mese con fatturazione annuale e richiede la licenza per tutti i dipendenti dell\'azienda. Il piano "Utenti Flessibili" parte da circa €83/utente/mese e permette di licenziare solo gli utenti effettivi. Per il prezzo aggiornato in EUR contatta Gosnail.' }},
+        { '@type': 'Question', name: 'Quanto costa Zoho One in Italia?', acceptedAnswer: { '@type': 'Answer', text: 'Zoho One ha due piani. Il piano "Tutti i Dipendenti" costa €37/dipendente/mese con fatturazione annuale e richiede la licenza per tutti i dipendenti dell\'azienda. Il piano "Utenti Flessibili" costa €90/utente/mese e permette di licenziare solo gli utenti effettivi. Per dettagli sul piano più adatto contatta Gosnail.' }},
         { '@type': 'Question', name: 'Quante app include Zoho One?', acceptedAnswer: { '@type': 'Answer', text: 'Oltre 45 applicazioni organizzate in 6 aree: CRM e marketing, risorse umane, analytics e sviluppo, produttività e collaborazione, assistenza clienti, finanza e contabilità.' }},
         { '@type': 'Question', name: 'Zoho One è conforme al GDPR?', acceptedAnswer: { '@type': 'Answer', text: 'Sì. Zoho ha data center in Europa (Paesi Bassi), non vende mai i dati degli utenti, non include pubblicità e ha nominato un Data Protection Officer. Per le aziende italiane, Gosnail configura Zoho One con residenza dei dati esclusivamente in EU.' }},
         { '@type': 'Question', name: 'Cosa differenzia Gosnail da altri partner Zoho?', acceptedAnswer: { '@type': 'Answer', text: 'Gosnail è partner autorizzato Zoho in Italia e adotta un approccio consulenziale. Analizziamo i processi del cliente, disegniamo la soluzione su misura e formiamo il team per garantire un\'adozione completa. Il successo di un progetto Zoho One dipende dalla configurazione personalizzata, non dalla licenza.' }},
@@ -71,22 +72,22 @@ const jsonLd = {
 }
 
 const targets = [
-  { eyebrow: '01', title: 'Imprese in crescita', text: 'Hanno bisogno di strumenti che crescano con loro, invece di doverli cambiare ogni due anni.' },
-  { eyebrow: '02', title: 'Chi vuole decidere sui numeri', text: 'Stanco di incrociare tre file Excel ogni volta che serve un dato affidabile per una riunione.' },
-  { eyebrow: '03', title: 'Team che devono parlarsi', text: 'Vendite, marketing e amministrazione che oggi vivono in mondi separati e perdono opportunità.' },
-  { eyebrow: '04', title: 'Aziende stanche degli sprechi', text: 'Basta data entry manuale e abbonamenti software che si moltiplicano senza che nessuno sappia bene perché.' },
+  { icon: <TrendingUp size={22} color="#7A65CF" />, title: 'Imprese in crescita', text: 'Hanno bisogno di strumenti che crescano con loro, invece di doverli cambiare ogni due anni.' },
+  { icon: <BarChart3 size={22} color="#349ABA" />, title: 'Chi vuole decidere sui numeri', text: 'Stanco di incrociare tre file Excel ogni volta che serve un dato affidabile per una riunione.' },
+  { icon: <Network size={22} color="#FF6B6B" />, title: 'Team che devono parlarsi', text: 'Vendite, marketing e amministrazione che oggi vivono in mondi separati e perdono opportunità.' },
+  { icon: <Zap size={22} color="#7A65CF" />, title: 'Aziende stanche degli sprechi', text: 'Basta data entry manuale e abbonamenti software che si moltiplicano senza che nessuno sappia bene perché.' },
 ]
 
 const benefits = [
-  { n: '01', title: 'Una visione unica del business', text: 'I dati di vendite, marketing, finanza e assistenza in un\'unica dashboard. Vedi cosa succede in azienda in tempo reale, senza dover rincorrere report da chissà chi.' },
-  { n: '02', title: 'Automazione che attraversa i reparti', text: 'Un ordine chiuso nel CRM genera la fattura in Books e apre il progetto in Projects. Senza copia-incolla, senza email tra colleghi per chiedersi le cose.' },
-  { n: '03', title: 'Reparti che si parlano sul serio', text: 'L\'assistenza vede cosa il cliente ha comprato. Il commerciale vede i ticket aperti. Tutti lavorano sugli stessi dati, in tempo reale.' },
-  { n: '04', title: 'Un solo abbonamento per tutto', text: 'Sostituisci decine di abbonamenti software con un\'unica licenza per dipendente. Sai esattamente quanto spendi, come scalerà se assumi, niente sorprese alla scadenza.' },
+  { n: '01', accent: 'celestial', title: 'Una visione unica del business', text: 'I dati di vendite, marketing, finanza e assistenza in un\'unica dashboard. Vedi cosa succede in azienda in tempo reale, senza dover rincorrere report da chissà chi.' },
+  { n: '02', accent: 'purple', title: 'Automazione che attraversa i reparti', text: 'Un ordine chiuso nel CRM genera la fattura in Books e apre il progetto in Projects. Senza copia-incolla, senza email tra colleghi per chiedersi le cose.' },
+  { n: '03', accent: 'coral', title: 'Reparti che si parlano sul serio', text: 'L\'assistenza vede cosa il cliente ha comprato. Il commerciale vede i ticket aperti. Tutti lavorano sugli stessi dati, in tempo reale.' },
+  { n: '04', accent: 'coral', title: 'Un solo abbonamento per tutto', text: 'Sostituisci decine di abbonamenti software con un\'unica licenza per dipendente. Sai esattamente quanto spendi, come scalerà se assumi, niente sorprese alla scadenza.' },
 ]
 
 const faqs = [
   { q: "Cos'è esattamente Zoho One?", a: 'Zoho One è la suite aziendale di Zoho Corporation: oltre 45 applicazioni integrate in un\'unica piattaforma. Sostituisce decine di software separati con una soluzione dove vendite, marketing, finanza, HR, assistenza e operazioni condividono nativamente gli stessi dati. Un solo login, un solo abbonamento per dipendente.' },
-  { q: 'Quanto costa Zoho One in Italia?', a: 'Esistono due piani. Il piano "Tutti i Dipendenti" è il più conveniente: circa €34 a dipendente al mese con fatturazione annuale, ma richiede di licenziare l\'intero organico. Il piano "Utenti Flessibili" parte da circa €83 a utente al mese e permette di pagare solo per chi effettivamente usa la piattaforma. Per il prezzo aggiornato in EUR contattaci.' },
+  { q: 'Quanto costa Zoho One in Italia?', a: 'Esistono due piani. Il piano "Tutti i Dipendenti" è il più conveniente: €37 a dipendente al mese con fatturazione annuale, ma richiede di licenziare l\'intero organico. Il piano "Utenti Flessibili" costa €90 a utente al mese e permette di pagare solo per chi effettivamente usa la piattaforma.' },
   { q: 'Quante e quali app sono incluse?', a: 'Oltre 45 applicazioni che coprono ogni area aziendale: CRM e marketing automation (Zoho CRM, Campaigns, Social, Survey), risorse umane (People, Recruit, Shifts), analytics (Analytics, DataPrep), produttività e collaborazione (Projects, WorkDrive, Mail, Cliq, Meeting), assistenza clienti (Desk, SalesIQ, Assist), finanza e contabilità (Books, Expense, Inventory). Ogni app è integrata nativamente con le altre.' },
   { q: 'Zoho One è conforme al GDPR e alle normative italiane?', a: 'Sì, pienamente. Zoho ha data center in Europa (Paesi Bassi), non vende mai i dati degli utenti, non include pubblicità e ha nominato un Data Protection Officer. Per le aziende italiane configuriamo la residenza dei dati esclusivamente in EU. Zoho Books supporta la fatturazione elettronica europea: per l\'integrazione con il Sistema di Interscambio italiano forniamo configurazione e supporto specializzato.' },
   { q: "Perché scegliere Gosnail per l'implementazione?", a: 'Una licenza Zoho One è solo lo strumento. Il successo dipende da come la piattaforma viene configurata, personalizzata e integrata nei processi della tua azienda. Come Zoho Authorized Partner italiano, analizziamo il tuo modo di lavorare, disegniamo la soluzione su misura e formiamo il tuo team. Non ti vendiamo software, ti guidiamo in una trasformazione con ROI misurabile.' },
@@ -178,14 +179,14 @@ export default function ZohoOnePage() {
       <section className="ed-section">
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-title">
-              <h2 className="ed-h2 ed-reveal ed-reveal-1">
-                La frammentazione tecnologica<br />è il <em>nemico nascosto</em> della crescita.
-              </h2>
+            <h2 className="ed-h2 ed-reveal ed-reveal-1">
+              La frammentazione tecnologica<br />è il <em>nemico nascosto</em> della crescita.
+            </h2>
+            <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
                 La tua azienda probabilmente usa già diverse applicazioni cloud: una per il CRM, una per la contabilità, una per i progetti — e decine di fogli Excel a colmare i buchi.
               </p>
-              <p className="ed-reveal ed-reveal-3" style={{ marginTop: 16, fontFamily: 'var(--font-body)', fontSize: 'clamp(1.05rem,1.3vw,1.2rem)', lineHeight: 1.7, color: 'var(--ink-soft)' }}>
+              <p className="ed-reveal ed-reveal-3">
                 Ogni sistema ha i suoi costi, le sue password, i suoi dati isolati. Questo mosaico di strumenti che non si parlano crea inefficienze, rallenta le decisioni e impedisce al management di avere una visione affidabile dell&apos;azienda.
               </p>
               <div className="ed-problem-highlight ed-reveal ed-reveal-4">
@@ -203,10 +204,10 @@ export default function ZohoOnePage() {
         <div className="ed-deco-blob ed-deco-blob--celestial" style={{ width: 340, height: 340, top: '20%', right: '-8%', opacity: 0.25 }}></div>
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-title">
-              <h2 className="ed-h2 ed-reveal ed-reveal-1">
-                Zoho One, il sistema operativo<br /><em>unico</em> del tuo business.
-              </h2>
+            <h2 className="ed-h2 ed-reveal ed-reveal-1">
+              Zoho One, il sistema operativo<br /><em>unico</em> del tuo business.
+            </h2>
+            <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
                 Zoho One sostituisce decine di applicazioni con un&apos;unica suite integrata di oltre 45 strumenti che coprono ogni area aziendale. Dal primo contatto con un cliente alla fatturazione e al supporto post-vendita, ogni dato e ogni processo fluisce senza interruzioni tra i reparti.
               </p>
@@ -243,10 +244,10 @@ export default function ZohoOnePage() {
       <section className="ed-section">
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-title">
-              <h2 className="ed-h2 ed-reveal ed-reveal-1">
-                È la scelta giusta se ti riconosci<br />in <em>una di queste situazioni</em>.
-              </h2>
+            <h2 className="ed-h2 ed-reveal ed-reveal-1">
+              È la scelta giusta se ti riconosci<br />in <em>una di queste situazioni</em>.
+            </h2>
+            <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
                 Zoho One è pensato per aziende che hanno superato la fase di startup ma vogliono evitare di costruire un&apos;infrastruttura tecnologica frammentata e costosa.
               </p>
@@ -255,26 +256,28 @@ export default function ZohoOnePage() {
 
           <div className="ed-targets-grid">
             {targets.map((t, i) => (
-              <div key={t.eyebrow} className={`ed-target-card ed-reveal ed-reveal-${(i % 4) + 1}`}>
-                <div className="ed-target-card-eyebrow">{t.eyebrow}</div>
-                <h3>{t.title}</h3>
-                <p>{t.text}</p>
+              <div key={t.title} className={`ed-target-card ed-reveal ed-reveal-${(i % 4) + 1}`}>
+                <div className="ed-target-card-icon">{t.icon}</div>
+                <div>
+                  <h3>{t.title}</h3>
+                  <p>{t.text}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <CurveDivider from={C.glacier} to={C.lavender} />
+      <CurveDivider from={C.glacier} to={C.linen} />
 
       {/* ═══════════ 4 BENEFICI ═══════════ */}
-      <section id="benefici" className="ed-section ed-section--lavender">
+      <section id="benefici" className="ed-section" style={{ background: 'var(--bg-linen)' }}>
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-title">
-              <h2 className="ed-h2 ed-reveal ed-reveal-1">
-                Cosa cambia davvero quando<br /><em>tutto è in un unico posto</em>.
-              </h2>
+            <h2 className="ed-h2 ed-reveal ed-reveal-1">
+              Cosa cambia davvero quando<br /><em>tutto è in un unico posto</em>.
+            </h2>
+            <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
                 Unificare dati e processi, vendite e marketing, finanza e supporto vuol dire lavorare come un&apos;unica organizzazione efficiente.
               </p>
@@ -283,7 +286,7 @@ export default function ZohoOnePage() {
 
           <div className="ed-benefits">
             {benefits.map((b, i) => (
-              <div key={b.n} className={`ed-benefit ed-reveal ed-reveal-${(i % 4) + 1}`}>
+              <div key={b.n} className={`ed-benefit ed-benefit--${b.accent} ed-reveal ed-reveal-${(i % 4) + 1}`}>
                 <div className="ed-benefit-num">{b.n}</div>
                 <div className="ed-benefit-body">
                   <h3>{b.title}</h3>
@@ -295,16 +298,16 @@ export default function ZohoOnePage() {
         </div>
       </section>
 
-      <CurveDivider from={C.lavender} to={C.glacier} />
+      <CurveDivider from={C.linen} to={C.glacier} />
 
       {/* ═══════════ ECOSISTEMA 45+ APP — interactive tabs ═══════════ */}
       <section className="ed-section">
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-title">
-              <h2 className="ed-h2 ed-reveal ed-reveal-1">
-                Tutti i team. <em>Insieme</em>.<br />Meglio di prima.
-              </h2>
+            <h2 className="ed-h2 ed-reveal ed-reveal-1">
+              Tutti i team. <em>Insieme</em>.<br />Meglio di prima.
+            </h2>
+            <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
                 Sette aree funzionali, oltre quarantacinque app integrate nativamente. Esplora ogni reparto per scoprire gli strumenti inclusi nella suite.
               </p>
@@ -326,28 +329,33 @@ export default function ZohoOnePage() {
           <p className="ed-reveal ed-reveal-1">
             Una licenza Zoho One è uno strumento.<br />La nostra <em>partnership</em> è la strategia.
           </p>
-          <p className="ed-reveal ed-reveal-2" style={{ fontFamily: 'var(--font-body)', fontSize: '1.05rem', lineHeight: 1.75, color: 'rgba(255,255,255,0.78)', marginTop: 36, maxWidth: 760, fontStyle: 'normal' }}>
+          <p className="ed-pullquote-body ed-reveal ed-reveal-2">
             Avere accesso a oltre 45 applicazioni è solo il primo passo. Il vero successo di un progetto Zoho One dipende da come la piattaforma viene configurata, personalizzata e integrata nei tuoi processi.
           </p>
-          <p className="ed-reveal ed-reveal-3" style={{ fontFamily: 'var(--font-body)', fontSize: '1.05rem', lineHeight: 1.75, color: 'rgba(255,255,255,0.78)', marginTop: 16, maxWidth: 760, fontStyle: 'normal' }}>
+          <p className="ed-pullquote-body ed-reveal ed-reveal-3">
             Il nostro ruolo come partner è proprio questo: analizziamo il modo in cui lavori, disegniamo la soluzione su misura per la tua azienda e formiamo il tuo team. Non ti vendiamo software, ti guidiamo in una trasformazione.
           </p>
-          <div className="ed-pullquote-attr ed-reveal ed-reveal-4">
-            Il team Gosnail · Zoho Authorized Partner
+          <div className="ed-pullquote-signature ed-reveal ed-reveal-4">
+            <div className="ed-pullquote-signature-logo">
+              <img src="/assets/zoho-authorized-partner.svg" alt="Zoho Authorized Partner" />
+            </div>
+            <div className="ed-pullquote-attr">
+              Il team Gosnail · Tavagnacco, UD
+            </div>
           </div>
         </div>
       </section>
 
-      <BlobDivider from={C.ocean} to={C.glacier} />
+      <BlobDivider from={C.ocean} to={C.lavender} />
 
       {/* ═══════════ PRICING ═══════════ */}
       <section className="ed-section ed-section--lavender">
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-title">
-              <h2 className="ed-h2 ed-reveal ed-reveal-1">
-                Un prezzo. Tutto incluso.<br /><em>Nessuna sorpresa</em>.
-              </h2>
+            <h2 className="ed-h2 ed-reveal ed-reveal-1">
+              Un prezzo. Tutto incluso.<br /><em>Nessuna sorpresa</em>.
+            </h2>
+            <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
                 Zoho One ha due piani. Entrambi includono le stesse 45+ app. La differenza riguarda solo quanti utenti licenziare.
               </p>
@@ -359,7 +367,7 @@ export default function ZohoOnePage() {
               <div className="ed-pricing-badge">Più conveniente</div>
               <div className="ed-pricing-plan">Tutti i dipendenti</div>
               <div className="ed-pricing-price">
-                <span className="ed-pricing-amount">~€34</span>
+                <span className="ed-pricing-amount">€37</span>
                 <span className="ed-pricing-unit">/dipendente/mese</span>
               </div>
               <div className="ed-pricing-note">Fatturazione annuale · Licenza per tutti i dipendenti</div>
@@ -378,7 +386,7 @@ export default function ZohoOnePage() {
             <div className="ed-pricing-card ed-reveal ed-reveal-2">
               <div className="ed-pricing-plan">Utenti flessibili</div>
               <div className="ed-pricing-price">
-                <span className="ed-pricing-amount">~€83</span>
+                <span className="ed-pricing-amount">€90</span>
                 <span className="ed-pricing-unit">/utente/mese</span>
               </div>
               <div className="ed-pricing-note">Fatturazione annuale · Licenza per gli utenti effettivi</div>
@@ -397,7 +405,7 @@ export default function ZohoOnePage() {
 
           <div className="ed-pricing-callout ed-reveal">
             <p>
-              <strong>Confronto:</strong> una PMI da 20 persone che usa HubSpot, QuickBooks, Slack, BambooHR e altri tool spende mediamente €2.500–€4.000/mese. Con Zoho One (piano dipendenti) la stessa copertura costa circa <strong>€680/mese</strong>, tutto integrato e in italiano.
+              <strong>Confronto:</strong> una PMI da 20 persone che usa HubSpot, QuickBooks, Slack, BambooHR e altri tool spende mediamente €2.500–€4.000/mese. Con Zoho One (piano dipendenti) la stessa copertura costa <strong>€740/mese</strong>, tutto integrato e in italiano.
             </p>
           </div>
         </div>
@@ -409,10 +417,13 @@ export default function ZohoOnePage() {
       <section className="ed-section">
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-title">
-              <h2 className="ed-h2 ed-reveal ed-reveal-1">
-                Perché le PMI scelgono<br /><em>Zoho One</em> rispetto agli altri.
-              </h2>
+            <h2 className="ed-h2 ed-reveal ed-reveal-1">
+              Perché le PMI scelgono<br /><em>Zoho One</em> rispetto agli altri.
+            </h2>
+            <div className="ed-section-header-body">
+              <p className="ed-reveal ed-reveal-2">
+                Confronto tra le principali alternative sul mercato per una PMI italiana da circa 20 utenti.
+              </p>
             </div>
           </div>
 
@@ -435,8 +446,8 @@ export default function ZohoOnePage() {
                   ['Business Intelligence',           '✓ Zoho Analytics incluso',        '✗ Power BI a parte',             '✗ Tableau a parte'],
                   ['Integrazioni native',             '✓ Tutte le app si parlano',       '⚠ Richiedono Zapier/API',        '⚠ API costose e complesse'],
                   ['Dati in EU (GDPR)',               '✓ Data center NL',                '⚠ Opzionale a pagamento',        '⚠ Opzionale a pagamento'],
-                  ['Nessuna pubblicità sui dati',     '✓ Zero ads, zero data selling',   '⚠ Dati usati per ads',           '✓ No ads'],
-                  ['Stima (20 utenti)',               '~€680/mese (tutto incluso)',      '~€2.800/mese (equivalente)',     '~€3.500/mese (equivalente)'],
+                  ['Privacy e ads',                   '✓ Zero ads, zero data selling',   '⚠ Dati usati per ads',           '✓ No ads'],
+                  ['Stima (20 utenti)',               '~€740/mese (tutto incluso)',      '~€2.800/mese (equivalente)',     '~€3.500/mese (equivalente)'],
                 ].map(([feature, zoho, ms, sf], i) => (
                   <tr key={i}>
                     <td>{feature}</td>
@@ -457,19 +468,25 @@ export default function ZohoOnePage() {
       <section className="ed-section ed-section--lavender">
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-title">
-              <h2 className="ed-h2 ed-reveal ed-reveal-1">
-                Le cose che ti starai chiedendo<br /><em>su Zoho One</em>.
-              </h2>
+            <h2 className="ed-h2 ed-reveal ed-reveal-1">
+              Le cose che ti starai chiedendo<br /><em>su Zoho One</em>.
+            </h2>
+            <div className="ed-section-header-body">
+              <p className="ed-reveal ed-reveal-2">
+                Le risposte alle domande più comuni che riceviamo da chi sta valutando Zoho One. Clicca su una domanda per leggere la risposta.
+              </p>
             </div>
           </div>
 
           <div className="ed-faq-list">
             {faqs.map((faq, i) => (
-              <div key={i} className={`ed-faq-item ed-reveal ed-reveal-${(i % 3) + 1}`}>
-                <div className="ed-faq-q">{faq.q}</div>
+              <details key={i} className={`ed-faq-item ed-reveal ed-reveal-${(i % 3) + 1}`}>
+                <summary>
+                  <span className="ed-faq-q">{faq.q}</span>
+                  <span className="ed-faq-icon" aria-hidden>+</span>
+                </summary>
                 <div className="ed-faq-a">{faq.a}</div>
-              </div>
+              </details>
             ))}
           </div>
         </div>
@@ -479,8 +496,6 @@ export default function ZohoOnePage() {
 
       {/* ═══════════ CTA FINALE ═══════════ */}
       <section className="ed-cta">
-        <div className="ed-deco-blob ed-deco-blob--coral" style={{ width: 320, height: 320, top: '-5%', right: '10%', opacity: 0.25 }}></div>
-        <div className="ed-deco-blob ed-deco-blob--purple" style={{ width: 280, height: 280, bottom: '5%', left: '8%', opacity: 0.25 }}></div>
         <div className="ed-cta-inner">
           <h2 className="ed-reveal ed-reveal-1">
             Pronto a vedere come<br />Zoho One può <em>unificare</em><br />la tua azienda?

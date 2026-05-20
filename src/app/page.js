@@ -121,10 +121,10 @@ export default function HomePage() {
       <section className="ed-section ed-section--lavender" id="problemi" style={{ padding: '120px 56px' }}>
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-title">
-              <h2 className="ed-h2 ed-reveal ed-reveal-1">
-                La complessità tecnologica<br />è il <em>nemico nascosto</em> della crescita.
-              </h2>
+            <h2 className="ed-h2 ed-reveal ed-reveal-1">
+              La complessità tecnologica<br />è il <em>nemico nascosto</em> della crescita.
+            </h2>
+            <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
                 Aumentare i volumi senza aggiornare gli strumenti porta inevitabilmente a colli di bottiglia. Quattro ostacoli che riconosciamo in quasi ogni azienda italiana che cresce oltre i 30 dipendenti.
               </p>
@@ -169,10 +169,10 @@ export default function HomePage() {
         <div className="ed-deco-blob ed-deco-blob--purple" style={{ width: 400, height: 400, top: '20%', left: '-10%', opacity: 0.35 }}></div>
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-title">
-              <h2 className="ed-h2 ed-reveal ed-reveal-1">
-                Un unico sistema operativo<br /><em>per tutta la tua azienda</em>.
-              </h2>
+            <h2 className="ed-h2 ed-reveal ed-reveal-1">
+              Un unico sistema operativo<br /><em>per tutta la tua azienda</em>.
+            </h2>
+            <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
                 Immagina ogni reparto sulla stessa piattaforma. I dati fluiscono automaticamente dal marketing alle vendite fino alla fatturazione. Una sola fonte di verità.
               </p>
@@ -240,10 +240,10 @@ export default function HomePage() {
         <div className="ed-deco-blob ed-deco-blob--celestial" style={{ width: 380, height: 380, bottom: '-12%', right: '-8%', opacity: 0.3 }}></div>
         <div className="ed-section-inner">
           <div className="ed-section-header">
-            <div className="ed-section-header-title">
-              <h2 className="ed-h2 ed-reveal ed-reveal-1">
-                <em>Dove</em> facciamo<br />la differenza.
-              </h2>
+            <h2 className="ed-h2 ed-reveal ed-reveal-1">
+              <em>Dove</em> facciamo<br />la differenza.
+            </h2>
+            <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
                 Sei aree in cui interveniamo. La piattaforma è Zoho, ma quello che cambia il lavoro quotidiano è come lo configuriamo intorno alla tua azienda.
               </p>
@@ -273,8 +273,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Transition: glacier → lavender */}
-      <CurveDivider from={C.glacier} to={C.lavender} accent={C.coral} />
+      {/* Transition: glacier → linen */}
+      <CurveDivider from={C.glacier} to={C.linen} accent={C.coral} />
 
       {/* ════════════════════════ TESTIMONIALS ════════════════════════ */}
       <section className="ed-testimonials">
@@ -349,8 +349,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Transition: lavender → linen (warm finale) */}
-      <CurveDivider from={C.lavender} to={C.linen} />
+      {/* Testimonials and CTA share linen — no divider needed */}
 
       {/* ════════════════════════ FINAL CTA ════════════════════════ */}
       <section className="ed-cta">
