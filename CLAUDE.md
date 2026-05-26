@@ -1,5 +1,5 @@
 # CLAUDE.md — Gosnail Website
-
+Prima di scrivere qualsiasi testo, leggi docs/messaging.md. Identifica se la pagina è anima A o B (sezione 2) e segui l'angolo corrispondente (sezione 9).
 > File letto all'avvio di ogni sessione. Tienilo conciso. Il dettaglio sta in `docs/`.
 
 ## Cos'è questo progetto
