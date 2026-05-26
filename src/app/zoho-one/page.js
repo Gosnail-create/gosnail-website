@@ -144,7 +144,7 @@ export default function ZohoOnePage() {
               <div className="ed-diorama-icon ed-diorama-icon--5"><img src="/assets/zoho-products/icons/analytics.svg" alt="Zoho Analytics" /></div>
               <div className="ed-diorama-icon ed-diorama-icon--6"><img src="/assets/zoho-products/icons/people.svg" alt="Zoho People" /></div>
               <div className="ed-diorama-icon ed-diorama-icon--7"><img src="/assets/zoho-products/icons/projects.svg" alt="Zoho Projects" /></div>
-              <div className="ed-diorama-icon ed-diorama-icon--8"><img src="/assets/zoho-products/icons/cliq.svg" alt="Zoho Cliq" /></div>
+              <div className="ed-diorama-icon ed-diorama-icon--8"><img src="/assets/zoho-products/icons/workplace.svg" alt="Zoho Workplace" /></div>
             </div>
 
             <div className="ed-diorama-stamp">
