@@ -145,6 +145,9 @@ Siamo radicati nel Nord-Est italiano. Conosciamo il tessuto produttivo locale �
 ❌ Gerundi posticci: "Ottimizzando i processi, enabling la crescita..."
 ❌ Em dash a raffica
 ❌ "Ecosistema" usato più di una volta per pagina
+❌ Antitesi forzata "non è X, è Y" usata di riflesso (es. "non è un'idea astratta, è una suite concreta"). È la figura-firma del brand: tenerla solo dove pesa davvero, una o due volte per pagina, non a ogni paragrafo.
+❌ Frasi che annunciano la struttura del testo ("ecco cosa significa", "qui sotto vediamo", "come abbiamo detto", "in questa sezione"). Il lettore non ha bisogno del narratore.
+❌ Personificazione degli strumenti ripetuta ("software che non si parlano", "dati che vivono in...", "app che dialogano"). Una volta passa, tre volte è un tic.
 
 ### Pattern da usare
 ✅ Frasi che iniziano con il problema del cliente, non con noi
