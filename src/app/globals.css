@@ -1459,9 +1459,6 @@ footer::before {
   flex-wrap: wrap;
 }
 .ed-pullquote-signature-logo {
-  background: #fff;
-  border-radius: 12px;
-  padding: 14px 18px;
   display: inline-flex;
   align-items: center;
 }
@@ -1820,10 +1817,6 @@ footer::before {
 .ed-footer-zoho-logo {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  background: #fff;
-  border-radius: 10px;
-  padding: 12px 16px;
   margin-top: 24px;
 }
 .ed-footer-zoho-logo img {
