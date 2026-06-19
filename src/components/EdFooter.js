@@ -1,15 +1,17 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import ScrollTopButton from './ScrollTopButton'
 
 export default function EdFooter() {
   return (
+    <>
     <footer className="ed-footer">
       <div className="ed-footer-inner">
         <div className="ed-footer-brand">
           <Image src="/assets/Gosnail-logo-white.svg" alt="Gosnail" width={200} height={47} />
           <p>Il partner strategico per la trasformazione digitale delle medie imprese italiane con l&apos;ecosistema Zoho.</p>
           <div className="ed-footer-zoho-logo">
-            <img src="/assets/zoho-authorized-partner-square.svg" alt="Zoho Authorized Partner" />
+            <img src="/assets/zoho-authorized-partner.svg" alt="Zoho Authorized Partner" />
           </div>
         </div>
         <div className="ed-footer-col">
@@ -37,9 +39,14 @@ export default function EdFooter() {
         </div>
       </div>
       <div className="ed-footer-bottom">
-        <span>© 2025 Gosnail S.r.l. — P.IVA 03024380309</span>
-        <span>Privacy · Cookie</span>
+        <span>© 2025 Gosnail S.r.l. – P.IVA 03024380309</span>
+        <div className="ed-footer-legal">
+          <span>Privacy Policy</span>
+          <span>Cookie Policy</span>
+        </div>
       </div>
     </footer>
+    <ScrollTopButton />
+    </>
   )
 }

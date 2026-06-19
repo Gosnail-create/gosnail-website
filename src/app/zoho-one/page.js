@@ -24,9 +24,9 @@ const C = {
 }
 
 export const metadata = {
-  title: 'Zoho One Italia — Il Sistema Operativo per la Tua Azienda | Gosnail',
+  title: 'Zoho One per PMI: cos\'è, prezzi e implementazione | Gosnail',
   description:
-    'Zoho One sostituisce decine di applicazioni con un\'unica suite integrata di oltre 45 strumenti. Gosnail è il partner italiano autorizzato per implementazione, configurazione e formazione.',
+    'Zoho One mette tutta l\'azienda su un\'unica piattaforma di 45+ app. Gosnail, partner Zoho del Nord-Est, ti guida dalla strategia all\'adozione. Prenota una consulenza.',
   keywords: [
     'Zoho One Italia', 'partner Zoho certificato', 'implementazione Zoho One',
     'sistema operativo aziendale', 'suite gestionale PMI', 'frammentazione tecnologica',
@@ -59,13 +59,12 @@ const jsonLd = {
     {
       '@type': 'FAQPage',
       mainEntity: [
-        { '@type': 'Question', name: 'Cos\'è Zoho One?', acceptedAnswer: { '@type': 'Answer', text: 'Zoho One è la suite aziendale di Zoho Corporation: oltre 45 applicazioni integrate in un\'unica piattaforma per gestire vendite, marketing, finanza, risorse umane, assistenza clienti e operazioni. Sostituisce decine di software separati con una soluzione unificata dove ogni dato e processo fluisce tra i reparti senza interruzioni.' }},
-        { '@type': 'Question', name: 'Quanto costa Zoho One in Italia?', acceptedAnswer: { '@type': 'Answer', text: 'Zoho One ha due piani. Il piano "Tutti i Dipendenti" costa €37/dipendente/mese con fatturazione annuale e richiede la licenza per tutti i dipendenti dell\'azienda. Il piano "Utenti Flessibili" costa €90/utente/mese e permette di licenziare solo gli utenti effettivi. Per dettagli sul piano più adatto contatta Gosnail.' }},
-        { '@type': 'Question', name: 'Quante app include Zoho One?', acceptedAnswer: { '@type': 'Answer', text: 'Oltre 45 applicazioni organizzate in 6 aree: CRM e marketing, risorse umane, analytics e sviluppo, produttività e collaborazione, assistenza clienti, finanza e contabilità.' }},
-        { '@type': 'Question', name: 'Zoho One è conforme al GDPR?', acceptedAnswer: { '@type': 'Answer', text: 'Sì. Zoho ha data center in Europa (Paesi Bassi), non vende mai i dati degli utenti, non include pubblicità e ha nominato un Data Protection Officer. Per le aziende italiane, Gosnail configura Zoho One con residenza dei dati esclusivamente in EU.' }},
-        { '@type': 'Question', name: 'Cosa differenzia Gosnail da altri partner Zoho?', acceptedAnswer: { '@type': 'Answer', text: 'Gosnail è partner autorizzato Zoho in Italia e adotta un approccio consulenziale. Analizziamo i processi del cliente, disegniamo la soluzione su misura e formiamo il team per garantire un\'adozione completa. Il successo di un progetto Zoho One dipende dalla configurazione personalizzata, non dalla licenza.' }},
-        { '@type': 'Question', name: 'Qual è la differenza tra Zoho CRM e Zoho One?', acceptedAnswer: { '@type': 'Answer', text: 'Zoho CRM è una singola applicazione per le vendite. Zoho One include Zoho CRM più altre 44 applicazioni per coprire ogni funzione aziendale. Il costo di Zoho One è inferiore alla somma dei singoli moduli, e tutti i dati fluiscono automaticamente tra le applicazioni.' }},
-        { '@type': 'Question', name: 'Quanto dura un\'implementazione Zoho One?', acceptedAnswer: { '@type': 'Answer', text: 'Dipende dalla complessità. Un\'implementazione base (CRM più contabilità) richiede 4–8 settimane. Un progetto multi-reparto completo può richiedere 3–6 mesi. Gosnail segue un percorso in 5 fasi: analisi dei processi, mappatura dei flussi, configurazione su misura, formazione dei team e supporto post go-live.' }},
+        { '@type': 'Question', name: 'Cos\'è esattamente Zoho One?', acceptedAnswer: { '@type': 'Answer', text: 'È la piattaforma aziendale di Zoho: oltre 45 applicazioni integrate che coprono vendite, marketing, finanza, HR, assistenza e operations, condividendo nativamente gli stessi dati. Un solo login, un solo contratto, una sola fonte di verità per tutta l\'azienda.' }},
+        { '@type': 'Question', name: 'Quanto costa Zoho One in Italia?', acceptedAnswer: { '@type': 'Answer', text: 'Un\'unica edizione, due modelli di licenza con fatturazione annuale. «Tutti i dipendenti»: €37 a dipendente al mese, ma vanno licenziati tutti. «Utenti flessibili»: €90 a utente al mese, paghi solo chi la usa. Il costo dell\'implementazione è a parte e lo definiamo insieme in base al progetto.' }},
+        { '@type': 'Question', name: 'Zoho One è conforme al GDPR e alle normative italiane?', acceptedAnswer: { '@type': 'Answer', text: 'Sì. Zoho ha data center in Europa, non vende i dati degli utenti e non include pubblicità. Per le aziende italiane configuriamo la residenza dei dati in EU. Zoho Books supporta la fatturazione elettronica: per l\'integrazione con il Sistema di Interscambio (SDI) forniamo configurazione e supporto specializzato.' }},
+        { '@type': 'Question', name: 'Perché scegliere Gosnail per l\'implementazione?', acceptedAnswer: { '@type': 'Answer', text: 'Una licenza è solo lo strumento. Il risultato dipende da come la piattaforma viene disegnata sui tuoi processi, adottata dal team e fatta evolvere nel tempo. Come Zoho Authorized Partner analizziamo come lavori, configuriamo su misura e formiamo le persone. Siamo nel Nord-Est e raggiungiamo di persona le PMI in tutto il Nord Italia. Non ti vendiamo software, ti guidiamo in una trasformazione con ROI misurabile.' }},
+        { '@type': 'Question', name: 'Qual è la differenza tra Zoho CRM e Zoho One?', acceptedAnswer: { '@type': 'Answer', text: 'Zoho CRM è una sola applicazione, per le vendite. Zoho One include il CRM più tutte le altre aree aziendali, a un costo molto inferiore alla somma dei singoli moduli, con i dati che fluiscono tra tutte le funzioni.' }},
+        { '@type': 'Question', name: 'Quanto tempo richiede un\'implementazione?', acceptedAnswer: { '@type': 'Answer', text: 'Dipende dalla complessità. Un avvio base (CRM più contabilità) richiede in genere 4–8 settimane. Un progetto multi-reparto completo può estendersi a 3–6 mesi. Seguiamo un percorso in fasi: analisi, mappatura dei flussi, configurazione su misura, formazione e supporto post go-live.' }},
       ],
     },
   ],
@@ -79,20 +78,19 @@ const targets = [
 ]
 
 const benefits = [
-  { n: '01', title: 'Una visione unica del business', text: 'I dati di vendite, marketing, finanza e assistenza in un\'unica dashboard. Vedi cosa succede in azienda in tempo reale, senza dover rincorrere report da chissà chi.' },
-  { n: '02', title: 'Automazione che attraversa i reparti', text: 'Un ordine chiuso nel CRM genera la fattura in Books e apre il progetto in Projects. Senza copia-incolla, senza email tra colleghi per chiedersi le cose.' },
-  { n: '03', title: 'Reparti che si parlano sul serio', text: 'L\'assistenza vede cosa il cliente ha comprato. Il commerciale vede i ticket aperti. Tutti lavorano sugli stessi dati, in tempo reale.' },
-  { n: '04', title: 'Un solo abbonamento per tutto', text: 'Sostituisci decine di abbonamenti software con un\'unica licenza per dipendente. Sai esattamente quanto spendi, come scalerà se assumi, niente sorprese alla scadenza.' },
+  { n: '01', title: 'La direzione vede l\'azienda in tempo reale', text: 'Niente più attese per un report messo insieme a mano. I dati di vendite, finanza e operations in un\'unica dashboard, e le decisioni si prendono su numeri certi quando servono.' },
+  { n: '02', title: 'I reparti lavorano allineati', text: 'Il commerciale vede i ticket aperti, l\'assistenza vede cosa il cliente ha comprato, l\'amministrazione vede gli ordini chiusi. Spariscono i passaggi a vuoto e il tempo perso a mettere assieme i pezzi.' },
+  { n: '03', title: 'L\'organizzazione cresce senza diventare più complicata', text: 'Quando aumenti i volumi non aggiungi l\'ennesimo software scollegato: attivi una funzione in più sulla stessa piattaforma. La struttura regge invece di incepparsi.' },
+  { n: '04', title: 'I costi restano prevedibili', text: 'Un fornitore, un contratto, una spesa per dipendente che sai già quanto vale oggi e quanto varrà se assumi.' },
 ]
 
 const faqs = [
-  { q: "Cos'è esattamente Zoho One?", a: 'Zoho One è la suite aziendale di Zoho Corporation: oltre 45 applicazioni integrate in un\'unica piattaforma. Sostituisce decine di software separati con una soluzione dove vendite, marketing, finanza, HR, assistenza e operazioni condividono nativamente gli stessi dati. Un solo login, un solo abbonamento per dipendente.' },
-  { q: 'Quanto costa Zoho One in Italia?', a: 'Esistono due piani. Il piano "Tutti i Dipendenti" è il più conveniente: €37 a dipendente al mese con fatturazione annuale, ma richiede di licenziare l\'intero organico. Il piano "Utenti Flessibili" costa €90 a utente al mese e permette di pagare solo per chi effettivamente usa la piattaforma.' },
-  { q: 'Quante e quali app sono incluse?', a: 'Oltre 45 applicazioni che coprono ogni area aziendale: CRM e marketing automation (Zoho CRM, Campaigns, Social, Survey), risorse umane (People, Recruit, Shifts), analytics (Analytics, DataPrep), produttività e collaborazione (Projects, WorkDrive, Mail, Cliq, Meeting), assistenza clienti (Desk, SalesIQ, Assist), finanza e contabilità (Books, Expense, Inventory). Ogni app è integrata nativamente con le altre.' },
-  { q: 'Zoho One è conforme al GDPR e alle normative italiane?', a: 'Sì, pienamente. Zoho ha data center in Europa (Paesi Bassi), non vende mai i dati degli utenti, non include pubblicità e ha nominato un Data Protection Officer. Per le aziende italiane configuriamo la residenza dei dati esclusivamente in EU. Zoho Books supporta la fatturazione elettronica europea: per l\'integrazione con il Sistema di Interscambio italiano forniamo configurazione e supporto specializzato.' },
-  { q: "Perché scegliere Gosnail per l'implementazione?", a: 'Una licenza Zoho One è solo lo strumento. Il successo dipende da come la piattaforma viene configurata, personalizzata e integrata nei processi della tua azienda. Come Zoho Authorized Partner italiano, analizziamo il tuo modo di lavorare, disegniamo la soluzione su misura e formiamo il tuo team. Non ti vendiamo software, ti guidiamo in una trasformazione con ROI misurabile.' },
-  { q: 'Qual è la differenza tra Zoho CRM e Zoho One?', a: 'Zoho CRM è una singola applicazione per le vendite. Zoho One include Zoho CRM più altre 44 applicazioni per coprire ogni funzione aziendale: marketing, finanza, HR, support, collaborazione e analytics. Il costo di Zoho One è significativamente inferiore alla somma dei singoli moduli, e tutti i dati fluiscono automaticamente tra le applicazioni.' },
-  { q: "Quanto tempo richiede un'implementazione?", a: 'Dipende dalla complessità. Un\'implementazione base (CRM più contabilità) può richiedere 4–8 settimane. Un progetto multi-reparto completo può estendersi a 3–6 mesi. Gosnail segue un percorso in 5 fasi: analisi dei processi, mappatura dei flussi, configurazione su misura, formazione dei team e supporto post go-live.' },
+  { q: "Cos'è esattamente Zoho One?", a: 'È la piattaforma aziendale di Zoho: oltre 45 applicazioni integrate che coprono vendite, marketing, finanza, HR, assistenza e operations, condividendo nativamente gli stessi dati. Un solo login, un solo contratto, una sola fonte di verità per tutta l\'azienda.' },
+  { q: 'Quanto costa Zoho One in Italia?', a: 'Un\'unica edizione, due modelli di licenza con fatturazione annuale. «Tutti i dipendenti»: €37 a dipendente al mese, ma vanno licenziati tutti. «Utenti flessibili»: €90 a utente al mese, paghi solo chi la usa. Il costo dell\'implementazione è a parte e lo definiamo insieme in base al progetto.' },
+  { q: 'Zoho One è conforme al GDPR e alle normative italiane?', a: 'Sì. Zoho ha data center in Europa, non vende i dati degli utenti e non include pubblicità. Per le aziende italiane configuriamo la residenza dei dati in EU. Zoho Books supporta la fatturazione elettronica: per l\'integrazione con il Sistema di Interscambio (SDI) forniamo configurazione e supporto specializzato.' },
+  { q: "Perché scegliere Gosnail per l'implementazione?", a: 'Una licenza è solo lo strumento. Il risultato dipende da come la piattaforma viene disegnata sui tuoi processi, adottata dal team e fatta evolvere nel tempo. Come Zoho Authorized Partner analizziamo come lavori, configuriamo su misura e formiamo le persone. Siamo nel Nord-Est e raggiungiamo di persona le PMI in tutto il Nord Italia. Non ti vendiamo software, ti guidiamo in una trasformazione con ROI misurabile.' },
+  { q: 'Qual è la differenza tra Zoho CRM e Zoho One?', a: 'Zoho CRM è una sola applicazione, per le vendite. Zoho One include il CRM più tutte le altre aree aziendali, a un costo molto inferiore alla somma dei singoli moduli, con i dati che fluiscono tra tutte le funzioni.' },
+  { q: "Quanto tempo richiede un'implementazione?", a: 'Dipende dalla complessità. Un avvio base (CRM più contabilità) richiede in genere 4–8 settimane. Un progetto multi-reparto completo può estendersi a 3–6 mesi. Seguiamo un percorso in fasi: analisi, mappatura dei flussi, configurazione su misura, formazione e supporto post go-live.' },
 ]
 
 export default function ZohoOnePage() {
@@ -111,14 +109,14 @@ export default function ZohoOnePage() {
         <div className="ed-hero-grid">
           <div className="ed-hero-left">
             <h1 className="ed-display ed-reveal ed-reveal-1">
-              Un unico <em>sistema operativo</em> per gestire e far crescere la tua azienda.
+              Un unico <em>sistema operativo</em> per far funzionare tutta la tua azienda.
             </h1>
             <p className="ed-hero-intro ed-reveal ed-reveal-2">
-              La soluzione per superare la frammentazione tecnologica. Unifica vendite, marketing, finanza, HR e operations in una sola piattaforma integrata, intelligente, pronta per il futuro.
+              Zoho One mette vendite, marketing, finanza, assistenza, HR e operations sulla stessa piattaforma: un solo posto dove l&apos;azienda lavora allineata, sugli stessi dati. Noi la configuriamo intorno a come lavori davvero.
             </p>
             <div className="ed-hero-cta-row ed-reveal ed-reveal-3">
               <Link href="/contatti" className="btn-ed-primary">
-                <span>Prenota una demo</span>
+                <span>Prenota una consulenza</span>
                 <span aria-hidden>→</span>
               </Link>
               <a href="#benefici" className="btn-ed-outline">
@@ -158,8 +156,8 @@ export default function ZohoOnePage() {
 
           <div className="ed-stats">
             <div className="ed-reveal ed-reveal-4">
-              <div className="ed-stat-num">45<small>+</small></div>
-              <div className="ed-stat-label">App incluse nella suite</div>
+              <div className="ed-stat-num">4,5<small>/5</small></div>
+              <div className="ed-stat-label">Su oltre 19.000 recensioni</div>
             </div>
             <div className="ed-reveal ed-reveal-5">
               <div className="ed-stat-num">75<small>k+</small></div>
@@ -180,17 +178,17 @@ export default function ZohoOnePage() {
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              La frammentazione tecnologica<br />è il <em>nemico nascosto</em> della crescita.
+              La frammentazione che ti frena è <em>organizzativa</em>,<br />prima ancora che tecnologica.
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
-                La tua azienda probabilmente usa già diverse applicazioni cloud: una per il CRM, una per la contabilità, una per i progetti — e decine di fogli Excel a colmare i buchi.
+                La tua azienda è cresciuta. I tuoi strumenti no: si sono solo moltiplicati. Un software per il CRM, uno per la contabilità, uno per i progetti, più i soliti fogli Excel a tappare i buchi.
               </p>
               <p className="ed-reveal ed-reveal-3">
-                Ogni sistema ha i suoi costi, le sue password, i suoi dati isolati. Questo mosaico di strumenti che non si parlano crea inefficienze, rallenta le decisioni e impedisce al management di avere una visione affidabile dell&apos;azienda.
+                Gli abbonamenti che si sommano sono il meno. Il costo vero è un altro: ogni reparto lavora per conto suo, con i suoi dati. Le informazioni restano dove sono, le decisioni rallentano, e chi guida l&apos;azienda non ha mai un quadro affidabile di cosa sta succedendo adesso.
               </p>
               <div className="ed-problem-highlight ed-reveal ed-reveal-4">
-                <p>È un costo operativo nascosto che frena il potenziale della tua azienda.</p>
+                <p>Più l&apos;azienda cresce, più questa distanza tra i reparti pesa.</p>
               </div>
             </div>
           </div>
@@ -205,11 +203,17 @@ export default function ZohoOnePage() {
         <div className="ed-section-inner">
           <div className="ed-section-header ed-section-header--centered">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Zoho One, il sistema operativo<br /><em>unico</em> del tuo business.
+              Un solo sistema<br />per <em>tutta</em> la tua azienda.
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
-                Zoho One sostituisce decine di applicazioni con un&apos;unica suite integrata di oltre 45 strumenti che coprono ogni area aziendale. Dal primo contatto con un cliente alla fatturazione e al supporto post-vendita, ogni dato e ogni processo fluisce senza interruzioni tra i reparti.
+                La cosa importante di Zoho One è che, pur coprendo ogni area dell&apos;azienda, resta un&apos;unica piattaforma con un solo archivio di dati. Le app sono tante; il sistema è uno.
+              </p>
+              <p className="ed-reveal ed-reveal-3">
+                Quando vendite, marketing, finanza, assistenza, HR e operations lavorano sugli stessi dati, l&apos;azienda smette di essere un insieme di reparti separati e comincia a muoversi come una cosa sola. Un&apos;informazione inserita una volta è disponibile ovunque serve. Un ordine che passa per tre reparti non si blocca al confine di ognuno.
+              </p>
+              <p className="ed-reveal ed-reveal-4">
+                Non stai comprando un software. Stai dando all&apos;azienda un sistema nervoso unico.
               </p>
             </div>
           </div>
@@ -275,11 +279,11 @@ export default function ZohoOnePage() {
         <div className="ed-section-inner">
           <div className="ed-section-header ed-section-header--centered">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Cosa cambia davvero quando<br /><em>tutto è in un unico posto</em>.
+              Cosa cambia per le aziende che scelgono<br />Zoho One <em>con Gosnail</em>.
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
-                Unificare dati e processi, vendite e marketing, finanza e supporto vuol dire lavorare come un&apos;unica organizzazione efficiente.
+                Quello che cambia si vede nel lavoro di tutti i giorni.
               </p>
             </div>
           </div>
@@ -305,11 +309,11 @@ export default function ZohoOnePage() {
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Tutti i team. <em>Insieme</em>.<br />Meglio di prima.
+              Tutti i reparti.<br />Una sola <em>piattaforma</em>.
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
-                Sette aree funzionali, oltre quarantacinque app integrate nativamente. Esplora ogni reparto per scoprire gli strumenti inclusi nella suite.
+                Zoho One è, concretamente, una suite di oltre 45 applicazioni: una per le vendite, una per la contabilità, una per il marketing, una per l&apos;assistenza, e così via per ogni reparto. Si possono usare anche separate. Qui però sono già collegate e condividono gli stessi dati, così quello che inserisci una volta lo ritrovi dappertutto.
               </p>
             </div>
           </div>
@@ -330,17 +334,14 @@ export default function ZohoOnePage() {
             Una licenza Zoho One è uno strumento.<br />La nostra <em>partnership</em> è la strategia.
           </p>
           <p className="ed-pullquote-body ed-reveal ed-reveal-2">
-            Avere accesso a oltre 45 applicazioni è solo il primo passo. Il vero successo di un progetto Zoho One dipende da come la piattaforma viene configurata, personalizzata e integrata nei tuoi processi.
+            Attivare 45 applicazioni è il primo passo, e il più facile. Il valore di un progetto Zoho One dipende da cos&apos;altro succede: come la piattaforma viene disegnata intorno ai tuoi processi, come la adottano le persone, come continua a evolvere dopo il via.
           </p>
           <p className="ed-pullquote-body ed-reveal ed-reveal-3">
-            Il nostro ruolo come partner è proprio questo: analizziamo il modo in cui lavori, disegniamo la soluzione su misura per la tua azienda e formiamo il tuo team. Non ti vendiamo software, ti guidiamo in una trasformazione.
+            È il nostro mestiere. Prima analizziamo come lavori, poi configuriamo. Coinvolgiamo il team, perché un sistema che le persone non usano non serve a niente. E restiamo dopo il go-live, per far crescere la soluzione con l&apos;azienda. Siamo nel Nord-Est e raggiungiamo di persona le PMI in tutto il Nord Italia.
           </p>
           <div className="ed-pullquote-signature ed-reveal ed-reveal-4">
             <div className="ed-pullquote-signature-logo">
               <img src="/assets/zoho-authorized-partner.svg" alt="Zoho Authorized Partner" />
-            </div>
-            <div className="ed-pullquote-attr">
-              Il team Gosnail
             </div>
           </div>
         </div>
@@ -353,11 +354,11 @@ export default function ZohoOnePage() {
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Un prezzo. Tutto incluso.<br /><em>Nessuna sorpresa</em>.
+              Un prezzo. Tutta l&apos;azienda.<br /><em>Nessuna sorpresa</em>.
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
-                Zoho One ha due piani. Entrambi includono le stesse 45+ app. La differenza riguarda solo quanti utenti licenziare.
+                Zoho One ha un&apos;unica edizione, con tutte le 45+ app. Cambia solo il modello di licenza.
               </p>
             </div>
           </div>
@@ -370,8 +371,8 @@ export default function ZohoOnePage() {
                 <span className="ed-pricing-amount">€37</span>
                 <span className="ed-pricing-unit">/dipendente/mese</span>
               </div>
-              <div className="ed-pricing-note">Fatturazione annuale · Licenza per tutti i dipendenti</div>
-              <p className="ed-pricing-desc">Il piano più conveniente per azienda. Prezzo più basso per utente, ma vanno licenziati tutti i dipendenti — anche chi usa solo Zoho Mail.</p>
+              <div className="ed-pricing-note">Fatturazione annuale (€444/anno) · Licenza per tutti i dipendenti</div>
+              <p className="ed-pricing-desc">Il prezzo più basso per utente. Vanno licenziati tutti i dipendenti, anche chi usa solo la mail.</p>
               <ul className="ed-pricing-features">
                 <li>45+ app enterprise incluse</li>
                 <li>Single Sign-On su tutte le app</li>
@@ -389,8 +390,8 @@ export default function ZohoOnePage() {
                 <span className="ed-pricing-amount">€90</span>
                 <span className="ed-pricing-unit">/utente/mese</span>
               </div>
-              <div className="ed-pricing-note">Fatturazione annuale · Licenza per gli utenti effettivi</div>
-              <p className="ed-pricing-desc">Quando solo alcune funzioni hanno bisogno di Zoho One. Paghi solo per chi lo usa davvero, senza vincoli sull&apos;organico.</p>
+              <div className="ed-pricing-note">Fatturazione annuale (€1.080/anno) · Licenza per gli utenti effettivi</div>
+              <p className="ed-pricing-desc">Licenzi solo chi usa Zoho One davvero, senza vincoli sull&apos;organico.</p>
               <ul className="ed-pricing-features">
                 <li>Stesse 45+ app del piano precedente</li>
                 <li>Nessun vincolo sul numero di dipendenti</li>
@@ -405,7 +406,7 @@ export default function ZohoOnePage() {
 
           <div className="ed-pricing-callout ed-reveal">
             <p>
-              <strong>Confronto:</strong> una PMI da 20 persone che usa HubSpot, QuickBooks, Slack, BambooHR e altri tool spende mediamente €2.500–€4.000/mese. Con Zoho One (piano dipendenti) la stessa copertura costa <strong>€740/mese</strong>, tutto integrato e in italiano.
+              <strong>Confronto:</strong> una PMI da 20 persone con HubSpot, QuickBooks, Slack, BambooHR e altri strumenti spende in media €2.500–€4.000 al mese. Con Zoho One la stessa copertura costa circa <strong>€740 al mese</strong>, tutto integrato e in italiano.
             </p>
           </div>
         </div>
@@ -422,7 +423,7 @@ export default function ZohoOnePage() {
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
-                Confronto tra le principali alternative sul mercato per una PMI italiana da circa 20 utenti.
+                Confronto tra le principali alternative per una PMI italiana da circa 20 utenti.
               </p>
             </div>
           </div>
@@ -444,7 +445,7 @@ export default function ZohoOnePage() {
                   ['Marketing automation',            '✓ Incluso',                       '✗ Serve HubSpot/Mailchimp',      '✗ Marketing Cloud a parte'],
                   ['HR & Paghe',                      '✓ Zoho People incluso',           '✗ Serve BambooHR/Personio',      '✗ Non incluso'],
                   ['Business Intelligence',           '✓ Zoho Analytics incluso',        '✗ Power BI a parte',             '✗ Tableau a parte'],
-                  ['Integrazioni native',             '✓ Tutte le app si parlano',       '⚠ Richiedono Zapier/API',        '⚠ API costose e complesse'],
+                  ['Integrazioni native',             '✓ Tutte le app integrate',        '⚠ Richiedono Zapier/API',        '⚠ API costose e complesse'],
                   ['Dati in EU (GDPR)',               '✓ Data center NL',                '⚠ Opzionale a pagamento',        '⚠ Opzionale a pagamento'],
                   ['Privacy e ads',                   '✓ Zero ads, zero data selling',   '⚠ Dati usati per ads',           '✓ No ads'],
                   ['Stima (20 utenti)',               '~€740/mese (tutto incluso)',      '~€2.800/mese (equivalente)',     '~€3.500/mese (equivalente)'],
@@ -501,7 +502,7 @@ export default function ZohoOnePage() {
             Pronto a vedere come<br />Zoho One può <em>unificare</em><br />la tua azienda?
           </h2>
           <p className="ed-reveal ed-reveal-2">
-            Parlaci del tuo progetto: ti mostreremo come Zoho One può risolvere le tue sfide specifiche e potenziare i tuoi processi.
+            Parlaci di come lavori oggi. Ti mostriamo cosa cambierebbe con un solo sistema per tutta l&apos;azienda, e ti diciamo con onestà se ha senso per te.
           </p>
           <div className="ed-hero-cta-row ed-reveal ed-reveal-3" style={{ justifyContent: 'center' }}>
             <Link href="/contatti" className="btn-ed-primary">
