@@ -109,7 +109,7 @@ export default function ZohoOnePage() {
         <div className="ed-hero-grid">
           <div className="ed-hero-left">
             <h1 className="ed-display ed-reveal ed-reveal-1">
-              Un unico <em>sistema operativo</em> per far funzionare tutta la tua azienda.
+              Un unico <em>sistema operativo</em> per far funzionare tutta la tua azienda
             </h1>
             <p className="ed-hero-intro ed-reveal ed-reveal-2">
               Zoho One mette vendite, marketing, finanza, assistenza, HR e operations sulla stessa piattaforma: un solo posto dove l&apos;azienda lavora allineata, sugli stessi dati. Noi la configuriamo intorno a come lavori davvero.
@@ -178,7 +178,7 @@ export default function ZohoOnePage() {
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              La frammentazione che ti frena è <em>organizzativa</em>,<br />prima ancora che tecnologica.
+              La frammentazione che ti frena è <em>organizzativa</em>,<br />prima ancora che tecnologica
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
@@ -204,7 +204,7 @@ export default function ZohoOnePage() {
           <div className="ed-split">
             <div className="ed-reveal ed-reveal-1">
               <h2 className="ed-h2">
-                Un solo sistema<br />per <em>tutta</em> la tua azienda.
+                Un solo sistema<br />per <em>tutta</em> la tua azienda
               </h2>
               <div className="ed-section-header-body" style={{ marginTop: 24 }}>
                 <p>
@@ -233,7 +233,7 @@ export default function ZohoOnePage() {
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              È la scelta giusta se ti riconosci<br />in <em>una di queste situazioni</em>.
+              È la scelta giusta se ti riconosci<br />in <em>una di queste situazioni</em>
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
@@ -263,7 +263,7 @@ export default function ZohoOnePage() {
         <div className="ed-section-inner">
           <div className="ed-section-header ed-section-header--centered">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Cosa cambia per le aziende che scelgono<br />Zoho One <em>con Gosnail</em>.
+              Cosa cambia per le aziende che scelgono<br />Zoho One <em>con Gosnail</em>
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
@@ -293,7 +293,7 @@ export default function ZohoOnePage() {
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Tutti i reparti.<br />Una sola <em>piattaforma</em>.
+              Tutti i reparti.<br />Una sola <em>piattaforma</em>
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
@@ -344,7 +344,7 @@ export default function ZohoOnePage() {
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Un prezzo. Tutta l&apos;azienda.<br /><em>Nessuna sorpresa</em>.
+              Un prezzo. Tutta l&apos;azienda.<br /><em>Nessuna sorpresa</em>
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
@@ -409,7 +409,7 @@ export default function ZohoOnePage() {
         <div className="ed-section-inner">
           <div className="ed-section-header ed-section-header--centered">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Perché le PMI scelgono<br /><em>Zoho One</em> rispetto agli altri.
+              Perché le PMI scelgono<br /><em>Zoho One</em> rispetto agli altri
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
@@ -460,7 +460,7 @@ export default function ZohoOnePage() {
         <div className="ed-section-inner">
           <div className="ed-section-header ed-section-header--centered">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Le cose che ti starai chiedendo<br /><em>su Zoho One</em>.
+              Le cose che ti starai chiedendo<br /><em>su Zoho One</em>
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">

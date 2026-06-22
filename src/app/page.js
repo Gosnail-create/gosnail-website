@@ -64,7 +64,7 @@ export default function HomePage() {
         <div className="ed-hero-grid">
           <div className="ed-hero-left">
             <h1 className="ed-display ed-reveal ed-reveal-1">
-              Tecnologia e processi unificati per la <em>crescita</em> della tua <strong>azienda</strong>.
+              Tecnologia e processi unificati per la <em>crescita</em> della tua <strong>azienda</strong>
             </h1>
             <p className="ed-hero-intro ed-reveal ed-reveal-2">
               Lavoriamo con aziende che vogliono mettere ordine nei dati e nei processi. Il nostro mestiere non è installare software: è ridisegnare il modo in cui le persone lavorano.
@@ -122,7 +122,7 @@ export default function HomePage() {
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              La complessità tecnologica<br />è il <em>nemico nascosto</em> della crescita.
+              La complessità tecnologica<br />è il <em>nemico nascosto</em> della crescita
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
@@ -170,7 +170,7 @@ export default function HomePage() {
         <div className="ed-section-inner">
           <div className="ed-section-header ed-section-header--centered">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Un unico sistema operativo<br /><em>per tutta la tua azienda</em>.
+              Un unico sistema operativo<br /><em>per tutta la tua azienda</em>
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
@@ -241,7 +241,7 @@ export default function HomePage() {
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              <em>Dove</em> facciamo<br />la differenza.
+              <em>Dove</em> facciamo<br />la differenza
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
@@ -283,7 +283,7 @@ export default function HomePage() {
           <div className="ed-testimonial-col">
             <div className="ed-pill ed-reveal" style={{ marginBottom: 24 }}>Le persone al centro</div>
             <h3 className="ed-reveal ed-reveal-1">
-              Cambiare software è facile. Cambiare il <em>modo di lavorare</em>, meno.
+              Cambiare software è facile. Cambiare il <em>modo di lavorare</em>, meno
             </h3>
             <p className="ed-body ed-reveal ed-reveal-2" style={{ marginBottom: 32, color: 'var(--ink-soft)' }}>
               Il software è la parte facile. La parte difficile è far sì che tutte le persone adottino e sfruttino davvero la tecnologia. Per questo lavoriamo con il team intero, non solo con chi firma.
