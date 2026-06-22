@@ -218,26 +218,8 @@ export default function ZohoOnePage() {
             </div>
           </div>
 
-          <div className="ed-split">
-            <div className="ed-split-image ed-reveal ed-reveal-1">
-              <img src={IMG.dashboard} alt="Dashboard unificata Zoho One" />
-            </div>
-            <div className="ed-flow-visual ed-reveal ed-reveal-2">
-              <div className="ed-flow-visual-label">Il flusso unificato</div>
-              {[
-                { step: '01', text: 'Lead dal marketing' },
-                { step: '02', text: 'Opportunità in CRM' },
-                { step: '03', text: 'Proposta &amp; firma digitale' },
-                { step: '04', text: 'Fattura in Books' },
-                { step: '05', text: 'Report in Analytics', highlight: true },
-              ].map((r, i, arr) => (
-                <div key={i} className="ed-flow-visual-row" style={r.highlight ? { borderTop: '1px solid var(--coral)', marginTop: 8, paddingTop: 18 } : {}}>
-                  <div className="ed-flow-visual-step">{r.step}</div>
-                  <div className="ed-flow-visual-text" style={r.highlight ? { color: 'var(--coral)' } : {}} dangerouslySetInnerHTML={{ __html: r.text }}></div>
-                  {i < arr.length - 1 && <div className="ed-flow-visual-arrow">↓</div>}
-                </div>
-              ))}
-            </div>
+          <div className="ed-solution-image ed-reveal ed-reveal-1">
+            <img src={IMG.dashboard} alt="Dashboard unificata Zoho One" />
           </div>
         </div>
       </section>
@@ -253,7 +235,7 @@ export default function ZohoOnePage() {
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
-                Zoho One è pensato per aziende che hanno superato la fase di startup ma vogliono evitare di costruire un&apos;infrastruttura tecnologica frammentata e costosa.
+                Zoho One è pensato per aziende di ogni dimensione che vogliono un&apos;infrastruttura tecnologica unificata, senza la frammentazione e i costi che frenano la crescita.
               </p>
             </div>
           </div>
@@ -331,14 +313,17 @@ export default function ZohoOnePage() {
         <div className="ed-pullquote-inner">
           <div className="ed-pullquote-mark ed-reveal">&ldquo;</div>
           <p className="ed-reveal ed-reveal-1">
-            Una licenza Zoho One è uno strumento.<br />La nostra <em>partnership</em> è la strategia.
+            La nostra <em>partnership</em> è strategica.<br />Zoho One è lo strumento.
           </p>
           <p className="ed-pullquote-body ed-reveal ed-reveal-2">
-            Attivare 45 applicazioni è il primo passo, e il più facile. Il valore di un progetto Zoho One dipende da cos&apos;altro succede: come la piattaforma viene disegnata intorno ai tuoi processi, come la adottano le persone, come continua a evolvere dopo il via.
+            Attivare 45 applicazioni è il primo passo, e il più facile. Il valore di un progetto Zoho One dipende da come la piattaforma è disegnata attorno ai tuoi processi, come la adottano le persone e come continua a evolvere dopo il via.
           </p>
-          <p className="ed-pullquote-body ed-reveal ed-reveal-3">
-            È il nostro mestiere. Prima analizziamo come lavori, poi configuriamo. Coinvolgiamo il team, perché un sistema che le persone non usano non serve a niente. E restiamo dopo il go-live, per far crescere la soluzione con l&apos;azienda. Siamo nel Nord-Est e raggiungiamo di persona le PMI in tutto il Nord Italia.
-          </p>
+          <div className="ed-pullquote-cta ed-reveal ed-reveal-3">
+            <Link href="/contatti" className="btn-ed-primary">
+              <span>Prenota una consulenza</span>
+              <span aria-hidden>→</span>
+            </Link>
+          </div>
           <div className="ed-pullquote-signature ed-reveal ed-reveal-4">
             <div className="ed-pullquote-signature-logo">
               <img src="/assets/zoho-authorized-partner.svg" alt="Zoho Authorized Partner" />
@@ -358,7 +343,7 @@ export default function ZohoOnePage() {
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
-                Zoho One ha un&apos;unica edizione, con tutte le 45+ app. Cambia solo il modello di licenza.
+                Zoho One è sempre al massimo delle sue capacità: un&apos;unica edizione con tutte le 45+ app. Cambia solo il modello di licenza, e il vantaggio maggiore lo hai attivandolo per tutti gli utenti.
               </p>
             </div>
           </div>

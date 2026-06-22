@@ -1451,6 +1451,9 @@ footer::before {
 .ed-pullquote p.ed-pullquote-body:first-of-type { margin-top: 40px; }
 
 /* Pull quote signature: logo + attribution */
+.ed-pullquote-cta {
+  margin-top: 36px;
+}
 .ed-pullquote-signature {
   margin-top: 48px;
   display: flex;
@@ -2178,6 +2181,16 @@ footer::before {
   box-shadow: 0 24px 60px rgba(15,22,56,0.15);
 }
 .ed-split-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* Solution: single centered image */
+.ed-solution-image {
+  max-width: 880px;
+  margin: 64px auto 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(15,22,56,0.15);
+}
+.ed-solution-image img { width: 100%; height: auto; display: block; }
 
 /* Highlight box — soft tinted background with thin matching border */
 .ed-problem-highlight {
