@@ -201,25 +201,27 @@ export default function ZohoOnePage() {
       <section className="ed-section ed-section--lavender">
         <div className="ed-deco-blob ed-deco-blob--celestial" style={{ width: 340, height: 340, top: '20%', right: '-8%', opacity: 0.25 }}></div>
         <div className="ed-section-inner">
-          <div className="ed-section-header ed-section-header--centered">
-            <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Un solo sistema<br />per <em>tutta</em> la tua azienda.
-            </h2>
-            <div className="ed-section-header-body">
-              <p className="ed-reveal ed-reveal-2">
-                La cosa importante di Zoho One è che, pur coprendo ogni area dell&apos;azienda, resta un&apos;unica piattaforma con un solo archivio di dati. Le app sono tante; il sistema è uno.
-              </p>
-              <p className="ed-reveal ed-reveal-3">
-                Quando vendite, marketing, finanza, assistenza, HR e operations lavorano sugli stessi dati, l&apos;azienda smette di essere un insieme di reparti separati e comincia a muoversi come una cosa sola. Un&apos;informazione inserita una volta è disponibile ovunque serve. Un ordine che passa per tre reparti non si blocca al confine di ognuno.
-              </p>
-              <p className="ed-reveal ed-reveal-4">
-                Non stai comprando un software. Stai dando all&apos;azienda un sistema nervoso unico.
-              </p>
+          <div className="ed-split">
+            <div className="ed-reveal ed-reveal-1">
+              <h2 className="ed-h2">
+                Un solo sistema<br />per <em>tutta</em> la tua azienda.
+              </h2>
+              <div className="ed-section-header-body" style={{ marginTop: 24 }}>
+                <p>
+                  La cosa importante di Zoho One è che, pur coprendo ogni area dell&apos;azienda, resta un&apos;unica piattaforma con un solo archivio di dati. Le app sono tante; il sistema è uno.
+                </p>
+                <p>
+                  Quando vendite, marketing, finanza, assistenza, HR e operations lavorano sugli stessi dati, l&apos;azienda smette di essere un insieme di reparti separati e comincia a muoversi come una cosa sola. Un&apos;informazione inserita una volta è disponibile ovunque serve. Un ordine che passa per tre reparti non si blocca al confine di ognuno.
+                </p>
+                <p>
+                  Non stai comprando un software. Stai dando all&apos;azienda un sistema nervoso unico.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="ed-solution-image ed-reveal ed-reveal-1">
-            <img src={IMG.dashboard} alt="Dashboard unificata Zoho One" />
+            <div className="ed-split-image ed-reveal ed-reveal-2">
+              <img src={IMG.dashboard} alt="Dashboard unificata Zoho One" />
+            </div>
           </div>
         </div>
       </section>
@@ -295,7 +297,7 @@ export default function ZohoOnePage() {
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
-                Zoho One è, concretamente, una suite di oltre 45 applicazioni: una per le vendite, una per la contabilità, una per il marketing, una per l&apos;assistenza, e così via per ogni reparto. Si possono usare anche separate. Qui però sono già collegate e condividono gli stessi dati, così quello che inserisci una volta lo ritrovi dappertutto.
+                Zoho One è una suite di oltre 45 applicazioni pensata per coprire ogni esigenza e dipartimento aziendale: vendite, marketing, customer care e così via. Si possono usare anche separate. Qui però sono già collegate e condividono gli stessi dati, così quello che inserisci una volta lo ritrovi dappertutto.
               </p>
             </div>
           </div>
