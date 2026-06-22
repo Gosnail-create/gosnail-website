@@ -1451,6 +1451,9 @@ footer::before {
 .ed-pullquote p.ed-pullquote-body:first-of-type { margin-top: 40px; }
 
 /* Pull quote signature: logo + attribution */
+.ed-pullquote-cta {
+  margin-top: 36px;
+}
 .ed-pullquote-signature {
   margin-top: 48px;
   display: flex;
