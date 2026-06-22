@@ -318,13 +318,16 @@ export default function ZohoOnePage() {
           <p className="ed-pullquote-body ed-reveal ed-reveal-2">
             Attivare 45 applicazioni è il primo passo, e il più facile. Il valore di un progetto Zoho One dipende da come la piattaforma è disegnata attorno ai tuoi processi, come la adottano le persone e come continua a evolvere dopo il via.
           </p>
-          <div className="ed-pullquote-cta ed-reveal ed-reveal-3">
+          <p className="ed-pullquote-body ed-reveal ed-reveal-3">
+            È il nostro mestiere. Prima analizziamo come lavori, poi configuriamo. Coinvolgiamo il team, perché un sistema che le persone non usano non serve a niente. E restiamo dopo il go-live, per far crescere la soluzione con l&apos;azienda. Siamo nel Nord-Est e raggiungiamo di persona le PMI in tutto il Nord Italia.
+          </p>
+          <div className="ed-pullquote-cta ed-reveal ed-reveal-4">
             <Link href="/contatti" className="btn-ed-primary">
               <span>Prenota una consulenza</span>
               <span aria-hidden>→</span>
             </Link>
           </div>
-          <div className="ed-pullquote-signature ed-reveal ed-reveal-4">
+          <div className="ed-pullquote-signature ed-reveal ed-reveal-5">
             <div className="ed-pullquote-signature-logo">
               <img src="/assets/zoho-authorized-partner.svg" alt="Zoho Authorized Partner" />
             </div>
