@@ -160,7 +160,7 @@ button { font-family: inherit; }
 
 /* ── HERO ── */
 .hero {
-  min-height: 100vh; background: var(--color-night);
+  min-height: min(100vh, 900px); background: var(--color-night);
   display: flex; flex-direction: column; justify-content: center;
   padding: 120px 48px 80px; position: relative; overflow: hidden;
 }
@@ -1100,7 +1100,7 @@ footer::before {
 /* ── EDITORIAL HERO ── */
 .ed-hero {
   background: var(--bg-glacier);
-  min-height: 100vh;
+  min-height: min(100vh, 900px);
   padding: 160px 56px 100px;
   position: relative;
   overflow: hidden;
@@ -2137,7 +2137,7 @@ footer::before {
 /* ── PLACEHOLDER PAGE ── */
 .ed-placeholder {
   background: var(--bg-glacier);
-  min-height: 100vh;
+  min-height: min(100vh, 900px);
   padding: 180px 56px 100px;
   position: relative;
   overflow: hidden;

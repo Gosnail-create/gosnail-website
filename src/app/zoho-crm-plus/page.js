@@ -137,7 +137,7 @@ export default function ZohoCRMPlusPage() {
         <div className="ed-hero-grid">
           <div className="ed-hero-left">
             <h1 className="ed-display ed-reveal ed-reveal-1">
-              Vendite, marketing e assistenza. <em>Stessa piattaforma</em>, stesso cliente.
+              Vendite, marketing e assistenza. <em>Stessa piattaforma</em>, stesso cliente
             </h1>
             <p className="ed-hero-intro ed-reveal ed-reveal-2">
               Zoho CRM Plus mette i sei strumenti che servono ai team a contatto col cliente in un&apos;unica interfaccia. Ogni reparto vede lo storico completo, in tempo reale. Il cliente non si accorge mai del passaggio da una mano all&apos;altra.
@@ -204,7 +204,7 @@ export default function ZohoCRMPlusPage() {
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Quando i team non comunicano,<br />il cliente <em>se ne accorge</em>.
+              Quando i team non comunicano,<br />il cliente <em>se ne accorge</em>
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
@@ -229,7 +229,7 @@ export default function ZohoCRMPlusPage() {
         <div className="ed-section-inner">
           <div className="ed-section-header ed-section-header--centered">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Una piattaforma per <em>tutto</em><br />il percorso del cliente.
+              Una piattaforma per <em>tutto</em><br />il percorso del cliente
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
@@ -269,7 +269,7 @@ export default function ZohoCRMPlusPage() {
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              È la scelta giusta se la tua priorità<br />è l&apos;<em>esperienza del cliente</em>.
+              È la scelta giusta se la tua priorità<br />è l&apos;<em>esperienza del cliente</em>
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
@@ -299,7 +299,7 @@ export default function ZohoCRMPlusPage() {
         <div className="ed-section-inner">
           <div className="ed-section-header ed-section-header--centered">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Cosa cambia davvero<br />quando i team <em>lavorano insieme</em>.
+              Cosa cambia davvero<br />quando i team <em>lavorano insieme</em>
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
@@ -329,7 +329,7 @@ export default function ZohoCRMPlusPage() {
         <div className="ed-section-inner">
           <div className="ed-section-header">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Le sei applicazioni incluse,<br /><em>integrate nativamente</em>.
+              Le sei applicazioni incluse,<br /><em>integrate nativamente</em>
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
@@ -389,7 +389,7 @@ export default function ZohoCRMPlusPage() {
         <div className="ed-section-inner">
           <div className="ed-section-header ed-section-header--centered">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              CRM Plus o <em>Zoho One</em>?<br />Una decisione di scope.
+              CRM Plus o <em>Zoho One</em>?<br />Una decisione di scope
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
@@ -443,7 +443,7 @@ export default function ZohoCRMPlusPage() {
         <div className="ed-section-inner">
           <div className="ed-section-header ed-section-header--centered">
             <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Le cose che ti starai chiedendo<br /><em>su CRM Plus</em>.
+              Le cose che ti starai chiedendo<br /><em>su CRM Plus</em>
             </h2>
             <div className="ed-section-header-body">
               <p className="ed-reveal ed-reveal-2">
