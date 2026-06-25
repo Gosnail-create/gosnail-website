@@ -3074,136 +3074,61 @@ footer::before {
   .ed-apps-grid { grid-template-columns: 1fr; }
 }
 
-/* ════════ ANTEPRIMA VARIANTI BENEFICI — TEMPORANEO, rimuovere dopo la scelta ════════ */
-.lab-label {
-  font-family: var(--font-mono);
-  font-size: 16px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--coral);
-  display: block;
-  margin-bottom: 28px;
-}
-.lab-note {
-  font-family: var(--font-body);
-  font-size: 18px;
-  color: var(--ink-soft);
-  max-width: 720px;
-}
-
-/* Variante A — griglia di card con icona */
-.lab-bgrid {
+/* Benefits — lista + immagine su blob coral (sezione "Cosa cambia") */
+.ed-benefit-split {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-top: 56px;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 80px;
+  margin-top: 64px;
+  align-items: center;
 }
-.lab-bcard {
-  position: relative;
-  padding: 36px 32px;
-  background: #fff;
-  border: 1px solid rgba(15,22,56,0.08);
-  border-radius: 20px;
-  transition: transform 250ms ease, box-shadow 250ms ease;
+.ed-benefit-list { display: flex; flex-direction: column; }
+.ed-benefit-item {
+  padding: 28px 0;
+  border-top: 1px solid rgba(15,22,56,0.1);
 }
-.lab-bcard:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(15,22,56,0.1); }
-.lab-bcard-top {
-  display: flex; align-items: center; justify-content: space-between;
-  margin-bottom: 22px;
-}
-.lab-bcard-icon {
-  width: 48px; height: 48px; border-radius: 12px;
-  background: var(--bg-lavender);
-  display: flex; align-items: center; justify-content: center;
-}
-.lab-bcard-num {
-  font-family: var(--font-display);
-  font-style: italic; font-weight: 400;
-  font-size: 3rem; line-height: 0.9;
-  color: var(--coral); opacity: 0.85;
-  font-variation-settings: 'opsz' 144, 'SOFT' 100, 'WONK' 1;
-}
-.lab-bcard h3 {
+.ed-benefit-item:first-child { border-top: none; padding-top: 0; }
+.ed-benefit-item h3 {
   font-family: var(--font-display);
   font-style: italic; font-weight: 500;
-  font-size: 1.5rem; line-height: 1.2;
-  color: var(--ink); margin-bottom: 12px;
+  font-size: clamp(1.3rem, 1.8vw, 1.55rem);
+  line-height: 1.2; color: var(--ink); margin-bottom: 10px;
   font-variation-settings: 'opsz' 96, 'SOFT' 80, 'WONK' 1;
 }
-.lab-bcard p {
+.ed-benefit-item p {
   font-family: var(--font-body); font-size: 16px;
   line-height: 1.7; color: var(--ink-soft);
 }
-.lab-bcard--celestial .lab-bcard-num { color: var(--celestial); }
-.lab-bcard--celestial .lab-bcard-icon { background: rgba(52,154,186,0.1); }
-.lab-bcard--purple .lab-bcard-num { color: var(--purple); }
-.lab-bcard--purple .lab-bcard-icon { background: rgba(122,101,207,0.1); }
-.lab-bcard--coral .lab-bcard-icon { background: rgba(255,107,107,0.1); }
-
-/* Variante B — zig-zag editoriale con immagini */
-.lab-zig { margin-top: 56px; display: flex; flex-direction: column; gap: 64px; }
-.lab-zig-row {
-  display: grid; grid-template-columns: 1fr 1fr;
-  gap: 64px; align-items: center;
+.ed-benefit-visual {
+  position: relative;
+  aspect-ratio: 4 / 5;
 }
-.lab-zig-row--rev .lab-zig-text { order: 2; }
-.lab-zig-num {
-  display: block;
-  font-family: var(--font-display); font-style: italic;
-  font-size: 3.5rem; line-height: 0.9; color: var(--coral);
-  opacity: 0.85; margin-bottom: 16px;
-  font-variation-settings: 'opsz' 144, 'SOFT' 100, 'WONK' 1;
+.ed-benefit-blob {
+  position: absolute; inset: 0;
+  background: var(--coral);
+  border-radius: 62% 38% 55% 45% / 55% 48% 52% 45%;
 }
-.lab-zig-text h3 {
-  font-family: var(--font-display); font-style: italic; font-weight: 500;
-  font-size: clamp(1.6rem, 2.4vw, 2.1rem); line-height: 1.15;
-  color: var(--ink); margin-bottom: 16px;
-  font-variation-settings: 'opsz' 96, 'SOFT' 80, 'WONK' 1;
+.ed-benefit-photo {
+  position: absolute;
+  inset: 8% 4% 12% 12%;
+  border-radius: 58% 42% 52% 48% / 52% 46% 54% 48%;
+  overflow: hidden;
+  box-shadow: 0 24px 50px rgba(15,22,56,0.18);
 }
-.lab-zig-text p {
-  font-family: var(--font-body); font-size: 1.05rem;
-  line-height: 1.75; color: var(--ink-soft); max-width: 460px;
+.ed-benefit-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ed-benefit-visual::before {
+  content: ''; position: absolute;
+  top: -6%; left: -8%;
+  width: 90px; height: 90px; border-radius: 50%;
+  background: rgba(122,101,207,0.12);
 }
-.lab-zig-img {
-  border-radius: 20px; overflow: hidden; aspect-ratio: 4/3;
-  box-shadow: 0 24px 60px rgba(15,22,56,0.15);
+.ed-benefit-visual::after {
+  content: ''; position: absolute;
+  bottom: 2%; right: 4%;
+  width: 60px; height: 60px; border-radius: 50%;
+  background: rgba(52,154,186,0.14);
 }
-.lab-zig-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
-/* Variante C — lista + visual affiancato */
-.lab-csplit {
-  display: grid; grid-template-columns: 1fr 0.85fr;
-  gap: 72px; margin-top: 56px; align-items: start;
-}
-.lab-clist { display: flex; flex-direction: column; }
-.lab-citem {
-  display: grid; grid-template-columns: 64px 1fr; gap: 20px;
-  padding: 28px 0; border-top: 1px solid rgba(15,22,56,0.1);
-}
-.lab-citem:first-child { border-top: none; padding-top: 0; }
-.lab-cnum {
-  font-family: var(--font-display); font-style: italic;
-  font-size: 2.4rem; line-height: 1; color: var(--coral); opacity: 0.85;
-  font-variation-settings: 'opsz' 144, 'SOFT' 100, 'WONK' 1;
-}
-.lab-citem h3 {
-  font-family: var(--font-display); font-style: italic; font-weight: 500;
-  font-size: 1.3rem; line-height: 1.2; color: var(--ink); margin-bottom: 8px;
-  font-variation-settings: 'opsz' 96, 'SOFT' 80, 'WONK' 1;
-}
-.lab-citem p { font-family: var(--font-body); font-size: 16px; line-height: 1.65; color: var(--ink-soft); }
-.lab-cvisual {
-  position: sticky; top: 100px;
-  border-radius: 20px; overflow: hidden; aspect-ratio: 3/4;
-  box-shadow: 0 24px 60px rgba(15,22,56,0.15);
-}
-.lab-cvisual img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
 @media (max-width: 900px) {
-  .lab-bgrid { grid-template-columns: 1fr; }
-  .lab-zig-row { grid-template-columns: 1fr; gap: 28px; }
-  .lab-zig-row--rev .lab-zig-text { order: 0; }
-  .lab-csplit { grid-template-columns: 1fr; gap: 40px; }
-  .lab-cvisual { position: static; aspect-ratio: 16/10; }
+  .ed-benefit-split { grid-template-columns: 1fr; gap: 48px; }
+  .ed-benefit-visual { max-width: 360px; margin: 0 auto; width: 100%; }
 }
-/* ════════ FINE ANTEPRIMA VARIANTI ════════ */

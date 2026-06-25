@@ -272,16 +272,21 @@ export default function ZohoOnePage() {
             </div>
           </div>
 
-          <div className="ed-benefits">
-            {benefits.map((b, i) => (
-              <div key={b.n} className={`ed-benefit ed-reveal ed-reveal-${(i % 4) + 1}`}>
-                <div className="ed-benefit-num">{b.n}</div>
-                <div className="ed-benefit-body">
+          <div className="ed-benefit-split">
+            <div className="ed-benefit-list">
+              {benefits.map((b, i) => (
+                <div key={b.title} className={`ed-benefit-item ed-reveal ed-reveal-${(i % 4) + 1}`}>
                   <h3>{b.title}</h3>
                   <p>{b.text}</p>
                 </div>
+              ))}
+            </div>
+            <div className="ed-benefit-visual ed-reveal ed-reveal-2">
+              <div className="ed-benefit-blob"></div>
+              <div className="ed-benefit-photo">
+                <img src={IMG.team} alt="" />
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
