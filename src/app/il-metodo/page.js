@@ -62,15 +62,6 @@ export default function IlMetodoPage() {
             <p className="ed-hero-intro ed-reveal ed-reveal-3">
               Il software è solo l&apos;ultimo miglio. Il valore di Gosnail sta prima: nell&apos;ascolto, nell&apos;analisi dei processi e nel ridisegno dei flussi di lavoro. La tecnologia arriva dopo, quando sappiamo esattamente cosa deve fare.
             </p>
-            <div className="ed-hero-cta-row ed-reveal ed-reveal-4">
-              <Link href="/contatti" className="btn-ed-primary">
-                <span>Prenota una consulenza</span>
-                <span aria-hidden>→</span>
-              </Link>
-              <a href="#fasi" className="btn-ed-outline">
-                <span>Guarda le fasi</span>
-              </a>
-            </div>
           </div>
 
           <div className="ed-hero-visual ed-reveal ed-reveal-2">
@@ -123,8 +114,7 @@ export default function IlMetodoPage() {
 
           <div style={{ maxWidth: 780, margin: '56px auto 0' }}>
             {steps.map((s, i) => (
-              <div key={s.n} className={`ed-pillar ed-reveal ed-reveal-${(i % 5) + 1}`}>
-                <div className="ed-pillar-num">{s.n}</div>
+              <div key={s.title} className={`ed-pillar ed-pillar--nonum ed-reveal ed-reveal-${(i % 5) + 1}`}>
                 <div>
                   <h4>{s.title}</h4>
                   <p>{s.text}</p>
