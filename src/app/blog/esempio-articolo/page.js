@@ -29,17 +29,19 @@ export default function ArticoloEsempioPage() {
       <article>
         {/* ── Intestazione articolo ── */}
         <div className="article-wrap">
-          <Link href="/blog" className="article-back"><span aria-hidden>←</span> Torna al blog</Link>
-          <span className="article-cat">Processi &amp; Metodo</span>
+          <div className="article-topbar">
+            <Link href="/blog" className="article-back"><span aria-hidden>←</span> Torna al blog</Link>
+            <div className="article-meta">
+              <div className="article-meta-avatar">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=120&q=80&auto=format&fit=crop&crop=faces" alt="" />
+              </div>
+              <span><strong>Team Gosnail</strong> · 12 giugno 2026 · 6 min di lettura</span>
+            </div>
+          </div>
           <h1 className="article-title">
             Digitalizzare i processi di una PMI: <em>da dove iniziare</em>
           </h1>
-          <div className="article-meta">
-            <div className="article-meta-avatar">
-              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=120&q=80&auto=format&fit=crop&crop=faces" alt="" />
-            </div>
-            <span><strong>Team Gosnail</strong> · 12 giugno 2026 · 6 min di lettura</span>
-          </div>
+          <span className="article-cat">Processi &amp; Metodo</span>
         </div>
 
         {/* ── Cover ── */}
