@@ -31,7 +31,7 @@ const DEFAULT_POSTS = [
 ]
 
 export default function BlogTeaser({
-  eyebrow = 'Dal blog',
+  eyebrow = null,
   title = 'Storie, scenari e processi da mettere in ordine',
   intro = 'Spunti pratici per capire dove nascono gli attriti tra reparti e come un sistema unico può ridurli.',
   posts = DEFAULT_POSTS,
@@ -42,7 +42,7 @@ export default function BlogTeaser({
     <section className={`ed-section ${variant ? `ed-section--${variant}` : ''}`}>
       <div className="ed-section-inner">
         <div className="ed-blog-head">
-          <span className="ed-eyebrow-mono ed-blog-eyebrow ed-reveal ed-reveal-1">{eyebrow}</span>
+          {eyebrow && <span className="ed-eyebrow-mono ed-blog-eyebrow ed-reveal ed-reveal-1">{eyebrow}</span>}
           <h2 className="ed-h2 ed-reveal ed-reveal-2">{title}</h2>
           <p className="ed-blog-intro ed-reveal ed-reveal-3">{intro}</p>
         </div>
