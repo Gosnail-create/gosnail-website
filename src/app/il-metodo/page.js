@@ -123,8 +123,7 @@ export default function IlMetodoPage() {
 
           <div style={{ maxWidth: 780, margin: '56px auto 0' }}>
             {steps.map((s, i) => (
-              <div key={s.n} className={`ed-pillar ed-reveal ed-reveal-${(i % 5) + 1}`}>
-                <div className="ed-pillar-num">{s.n}</div>
+              <div key={s.title} className={`ed-pillar ed-pillar--nonum ed-reveal ed-reveal-${(i % 5) + 1}`}>
                 <div>
                   <h4>{s.title}</h4>
                   <p>{s.text}</p>
