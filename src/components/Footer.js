@@ -27,7 +27,6 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Contatti</h4>
           <Link href="/contatti">Prenota una demo</Link>
-          <a href="mailto:info@gosnail.it">info@gosnail.it</a>
           <a href="#">Via Nazionale, 40 — Tavagnacco UD</a>
         </div>
       </div>
