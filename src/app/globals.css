@@ -3208,3 +3208,48 @@ footer::before {
 @media (max-width: 900px) {
   .ed-blog-grid { grid-template-columns: 1fr; }
 }
+
+/* ── FORM CONTATTI: consensi, honeypot, errore ── */
+.form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 18px;
+}
+.form-consent input[type="checkbox"] {
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  accent-color: var(--coral);
+  cursor: pointer;
+}
+.form-consent label {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+.form-consent a {
+  color: var(--coral);
+  text-decoration: underline;
+}
+/* Honeypot: fuori schermo ma raggiungibile dai bot */
+.form-hp {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.form-error {
+  margin-top: 16px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  background: rgba(255,107,107,0.1);
+  border: 1px solid rgba(255,107,107,0.3);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+}

@@ -45,7 +45,7 @@ const jsonLd = {
       url: 'https://gosnail.it',
       description: "Partner autorizzato Zoho in Italia. Implementazione, formazione e supporto dell'ecosistema Zoho per medie imprese italiane.",
       address: { '@type': 'PostalAddress', streetAddress: 'Via Nazionale, 40', addressLocality: 'Tavagnacco', addressRegion: 'UD', postalCode: '33010', addressCountry: 'IT' },
-      contactPoint: { '@type': 'ContactPoint', email: 'info@gosnail.it', contactType: 'customer service', availableLanguage: 'Italian' },
+      contactPoint: { '@type': 'ContactPoint', url: 'https://gosnail.it/contatti', contactType: 'customer service', availableLanguage: 'Italian' },
     },
     {
       '@type': 'Product',

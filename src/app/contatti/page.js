@@ -2,11 +2,11 @@ import EdNav from '@/components/EdNav'
 import EdFooter from '@/components/EdFooter'
 import ClientEffects from '@/components/ClientEffects'
 import ContactForm from '@/components/ContactForm'
-import { MapPin, Mail } from 'lucide-react'
+import { MapPin } from 'lucide-react'
 
 export const metadata = {
-  title: 'Contatti — Gosnail',
-  description: 'Prenota una consulenza gratuita con Gosnail. Scopri come l\'ecosistema Zoho può trasformare la tua azienda.',
+  title: 'Contatti — Gosnail, partner Zoho nel Nord-Est',
+  description: 'Raccontaci la tua azienda: compila il form e ti ricontattiamo per una prima call gratuita di 30 minuti. Sedi a Tavagnacco (UD) e Padova.',
 }
 
 export default function ContattiPage() {
@@ -17,7 +17,6 @@ export default function ContattiPage() {
 
       <section className="contact" style={{ paddingTop: 108 }}>
         <div className="section-inner">
-          <div className="section-overline reveal">Parliamo del tuo progetto</div>
           <h1
             className="reveal reveal-delay-1"
             style={{
@@ -34,31 +33,32 @@ export default function ContattiPage() {
             <div className="contact-info reveal reveal-delay-1">
               <h3>Inizia il percorso verso un&apos;azienda più efficiente</h3>
               <p>
-                In una prima call di 30 minuti capiremo insieme la tua situazione attuale, i tuoi obiettivi e come l&apos;ecosistema Zoho può supportare la crescita della tua azienda.
+                In una prima call di 30 minuti guardiamo insieme come lavori oggi, dove sei diretto e se Zoho può aiutarti ad arrivarci.
               </p>
               <div className="contact-detail">
                 <div className="contact-detail-icon">
                   <MapPin size={18} />
                 </div>
                 <p>
+                  <strong>Sede legale</strong><br />
                   Via Nazionale, 40<br />
-                  33010 Tavagnacco (UD) — Italia
+                  33010 Tavagnacco (UD)
                 </p>
               </div>
               <div className="contact-detail">
                 <div className="contact-detail-icon">
-                  <Mail size={18} />
+                  <MapPin size={18} />
                 </div>
                 <p>
-                  <a href="mailto:info@gosnail.it" style={{ color: 'inherit', textDecoration: 'none' }}>
-                    info@gosnail.it
-                  </a>
+                  <strong>Sede operativa</strong><br />
+                  Via Praarie, 28<br />
+                  35010 Padova (PD)
                 </p>
               </div>
               <div className="contact-guarantee">
-                <div className="contact-guarantee-title">Risposta garantita entro 24 ore</div>
+                <div className="contact-guarantee-title">Cosa succede dopo</div>
                 <div className="contact-guarantee-text">
-                  Prima consulenza gratuita e senza impegno. Nessuna vendita aggressiva.
+                  Leggiamo quello che ci scrivi e ti ricontattiamo noi, non un centralino, per fissare una prima call di 30 minuti. Gratuita, senza impegno, senza vendita aggressiva.
                 </div>
               </div>
             </div>

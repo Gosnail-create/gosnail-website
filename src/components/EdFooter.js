@@ -35,7 +35,6 @@ export default function EdFooter() {
           <Link href="/chi-siamo">Chi Siamo</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/contatti">Contatti</Link>
-          <a href="mailto:info@gosnail.it">info@gosnail.it</a>
         </div>
       </div>
       <div className="ed-footer-bottom">
