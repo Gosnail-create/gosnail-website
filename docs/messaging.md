@@ -118,6 +118,16 @@ Zoho lo vendono in tanti. Quello che fa la differenza è come lo implementiamo:
 - **Lavoriamo con le persone, non solo con i processi.** La tecnologia fallisce quando le persone non la adottano. Per questo coinvolgiamo il team dall'inizio.
 - **Restiamo dopo il go-live.** Ogni 2-3 mesi facciamo il punto: cosa funziona, cosa va aggiustato, dove possiamo migliorare.
 
+### Il metodo — versione canonica (5 fasi)
+Il metodo Gosnail ha una versione ufficiale a cinque fasi. Tutte le pagine devono usare questi nomi:
+1. **Ascolto e Diagnosi** — sessioni di scoperta per capire come lavori e dove nascono i colli di bottiglia.
+2. **Mappatura dei Processi** — documentiamo e ridisegniamo i flussi prima di toccare il software.
+3. **Configurazione su Misura** — implementiamo Zoho adattandolo alla realtà dell'azienda.
+4. **Formazione e Adozione** — formiamo i team e costruiamo una cultura del dato.
+5. **Supporto Continuo e Misurazione** — dopo il go-live monitoriamo i KPI e sosteniamo la crescita.
+
+Riconciliazione: la Home può mostrare una versione condensata come teaser (fasi 1+2 = "Analisi"), ma con gli stessi nomi e un link a `/il-metodo`. La pagina Il Metodo è la versione completa e canonica.
+
 ### I valori di relazione
 Quello che i clienti apprezzano: **empatia, precisione, affidabilità**.
 - *Empatia*: capiamo il contesto prima di proporre soluzioni. Non vendiamo la stessa cosa a tutti.
