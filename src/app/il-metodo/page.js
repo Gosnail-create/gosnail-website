@@ -2,6 +2,7 @@ import Link from 'next/link'
 import EdNav from '@/components/EdNav'
 import EdFooter from '@/components/EdFooter'
 import EdEffects from '@/components/EdEffects'
+import BlogTeaser from '@/components/BlogTeaser'
 import { CurveDivider, BlobDivider } from '@/components/OrganicShapes'
 
 const C = {
@@ -55,9 +56,6 @@ export default function IlMetodoPage() {
 
         <div className="ed-hero-grid">
           <div className="ed-hero-left">
-            <div className="ed-eyebrow-mono ed-reveal ed-reveal-1" style={{ display: 'block', marginBottom: 22 }}>
-              Il metodo
-            </div>
             <h1 className="ed-display ed-reveal ed-reveal-2">
               Strategia <em>prima</em> della tecnologia
             </h1>
@@ -170,21 +168,8 @@ export default function IlMetodoPage() {
 
       <CurveDivider from={C.glacier} to={C.lavender} accent={C.celestial} />
 
-      {/* ═══════════ COME SI COMINCIA ═══════════ */}
-      <section className="ed-section ed-section--lavender">
-        <div className="ed-section-inner">
-          <div className="ed-section-header ed-section-header--centered">
-            <h2 className="ed-h2 ed-reveal ed-reveal-1">
-              Come si comincia
-            </h2>
-            <div className="ed-section-header-body">
-              <p className="ed-reveal ed-reveal-2">
-                Ogni percorso parte da una sessione di analisi, senza impegno. Ci racconti come lavori oggi e quali sono i tuoi obiettivi; noi ti diciamo con onestà se e come possiamo aiutarti, e cosa comporterebbe un progetto per la tua azienda. Nessun preventivo al buio, nessuna promessa che non possiamo mantenere.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ═══════════ DAL BLOG ═══════════ */}
+      <BlogTeaser variant="lavender" />
 
       <CurveDivider from={C.lavender} to={C.linen} accent={C.coral} />
 
@@ -197,7 +182,7 @@ export default function IlMetodoPage() {
             Partiamo dai tuoi <em>processi</em>?
           </h2>
           <p className="ed-reveal ed-reveal-2">
-            Raccontaci come lavori oggi. La prima sessione di analisi è gratuita e senza impegno.
+            La prima sessione di analisi è gratuita e senza impegno. Ci racconti come lavori oggi e noi ti diciamo con onestà se e come possiamo aiutarti. Niente preventivi al buio, niente promesse che non possiamo mantenere.
           </p>
           <div className="ed-hero-cta-row ed-reveal ed-reveal-3" style={{ justifyContent: 'center' }}>
             <Link href="/contatti" className="btn-ed-primary">

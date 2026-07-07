@@ -71,17 +71,18 @@ La tecnologia, a quel punto, non è più qualcosa da gestire: è una leva per cr
 
 ---
 
-## 5. Come si comincia (NUOVA)
+## 5. CTA finale (unifica "Come si comincia" + CTA)
 
-**Titolo:** Come si comincia
+> La sezione "Come si comincia" è stata fusa nella CTA: erano due chiusure ravvicinate con lo stesso messaggio. La parte che vale — l'onestà, niente preventivi al buio — è assorbita qui, così resta un solo momento di conversione, più forte.
 
-Ogni percorso parte da una sessione di analisi, senza impegno. Ci racconti come lavori oggi e quali sono i tuoi obiettivi; noi ti diciamo con onestà se e come possiamo aiutarti, e cosa comporterebbe un progetto per la tua azienda. Nessun preventivo al buio, nessuna promessa che non possiamo mantenere.
+**Titolo:** Partiamo dai tuoi processi?
 
-> Abbassa la barriera al contatto e fa da ponte alla CTA sottostante. Il prezzo del progetto resta fuori (si affronta in consulenza).
+**Sottotitolo:** La prima sessione di analisi è gratuita e senza impegno. Ci racconti come lavori oggi e noi ti diciamo con onestà se e come possiamo aiutarti. Niente preventivi al buio, niente promesse che non possiamo mantenere.
 
----
+**CTA primaria:** Prenota una consulenza gratuita
+**CTA secondaria:** Scopri Zoho One
 
-## [Segue: CTA di conversione + footer — già presenti]
+> Il prezzo del progetto resta fuori (si affronta in consulenza).
 
 ---
 
