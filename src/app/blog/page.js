@@ -16,6 +16,8 @@ const HERO_BG = 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=
 
 // Categorie blog (da strategy) — "Tutti" attiva di default
 const CATEGORIES = ['Tutti', 'Zoho One', 'CRM & Vendite', 'Finanza', 'Business Intelligence', 'Processi & Metodo', 'Case Study']
+// Colore palette per l'hover di ogni pillola filtro
+const FILTER_COLORS = ['#FF6B6B', '#7A65CF', '#349ABA', '#1C318C', '#FF6B6B', '#7A65CF', '#349ABA']
 
 // Articoli placeholder (mockup) — testi dal corpus fondativo della strategy
 const POSTS = [
@@ -46,7 +48,6 @@ export default function BlogPage() {
           <img src={HERO_BG} alt="" />
         </div>
         <div className="blog-hero-inner">
-          <span className="ed-eyebrow-mono blog-hero-eyebrow ed-reveal ed-reveal-1">Insights e case study</span>
           <h1 className="ed-display ed-reveal ed-reveal-2">
             Storie, scenari, articoli. <em>In arrivo.</em>
           </h1>
@@ -70,8 +71,7 @@ export default function BlogPage() {
         <div className="ed-section-inner">
           <div className="blog-archive-head">
             <div>
-              <span className="blog-archive-label">Archivio</span>
-              <h2 className="ed-h2 ed-reveal ed-reveal-1">Articoli in evidenza</h2>
+              <h2 className="ed-h2 ed-reveal ed-reveal-1">Insights e case study</h2>
             </div>
             <p className="blog-archive-intro ed-reveal ed-reveal-2">
               Una selezione di temi che guideranno i prossimi approfondimenti su processi, dati e piattaforme Zoho.
@@ -81,7 +81,11 @@ export default function BlogPage() {
           {/* Filtri categoria (mockup: "Tutti" attiva; il filtro diventa funzionale col componente) */}
           <div className="blog-filters ed-reveal ed-reveal-1">
             {CATEGORIES.map((cat, i) => (
-              <span key={cat} className={`blog-filter ${i === 0 ? 'blog-filter--active' : ''}`}>
+              <span
+                key={cat}
+                className={`blog-filter ${i === 0 ? 'blog-filter--active' : ''}`}
+                style={{ '--pill': FILTER_COLORS[i % FILTER_COLORS.length] }}
+              >
                 {cat}
               </span>
             ))}

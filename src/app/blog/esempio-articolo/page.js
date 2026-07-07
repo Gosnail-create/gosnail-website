@@ -69,6 +69,11 @@ export default function ArticoloEsempioPage() {
             Quasi sempre, mappando un processo si scopre che metà degli attriti si risolvono senza tecnologia: eliminando un passaggio inutile, definendo chi fa cosa, mettendo d&apos;accordo due reparti su una regola. Il software serve dopo, per rendere solido quello che hai già rimesso in ordine.
           </p>
 
+          <figure className="article-figure">
+            <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=1200&q=80&auto=format&fit=crop" alt="" />
+            <figcaption>Mappare un flusso prima di automatizzarlo: dove si ferma il lavoro e chi aspetta cosa.</figcaption>
+          </figure>
+
           <h2>Da dove partire concretamente</h2>
           <p>
             Non serve digitalizzare tutta l&apos;azienda in una volta. Si parte dal punto dove il dolore è più evidente e il ritorno più rapido:
