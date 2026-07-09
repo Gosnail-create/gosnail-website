@@ -168,6 +168,27 @@ Siamo radicati nel Nord-Est italiano. Conosciamo il tessuto produttivo locale �
 
 ---
 
+## 7-bis. Regole di prosa: anti-pattern AI
+
+> Aggiornamento luglio 2026, nato dal confronto con la prosa de Il Post (sezione tecnologia) e validato con Fabio. Si applica a tutti gli articoli del blog.
+> Principio generale: scrivere come una persona che spiega, non come una presentazione che scandisce.
+
+1. Ogni frase ha un verbo. Vietate le frasi nominali a effetto ("Un solo listino, tutte le applicazioni").
+2. Variare la lunghezza delle frasi: in ogni paragrafo almeno una frase lunga con incisi o subordinate. Non iniziare tutte le frasi col soggetto — usare complementi di tempo, avverbi, concessive.
+3. I due punti servono per spiegare o elencare, non come pausa drammatica. Massimo uno "a effetto" per articolo.
+4. Vietati chiasmi e simmetrie costruite ("lo sconto ha una scadenza, i costi di uscita no").
+5. Niente bullet con grassetto iniziale nei post: prosa piena. Elenchi solo per dati veri (prezzi, specifiche); le tabelle restano.
+6. Niente grassetto nel corpo del testo (eccezione: le domande delle FAQ).
+7. Paragrafi di 4-7 frasi che sviluppano un pensiero, non coppie di frasi staccate.
+8. Apposizione esplicativa alla prima menzione di ogni entità ("Account Engagement, lo strumento di marketing automation di Salesforce").
+9. Dosare la certezza: "in genere", "nella maggior parte dei casi", "a giudicare dai listini". Le cose variabili non si affermano come assolute.
+10. Attribuire quando possibile: "secondo il listino ufficiale", "secondo le stime di settore", "come raccontano i clienti che arrivano da...".
+11. Chiudere i paragrafi finendo il pensiero, senza aforisma.
+12. H2 piani o in forma di domanda, non slogan ("Cosa considerare se ti offrono uno sconto" invece di "Il preventivo con lo sconto: perché la licenza è la voce sbagliata da guardare").
+13. Test finale a voce alta: se una frase sembra scritta per essere citata su LinkedIn, va riscritta.
+
+---
+
 ## 8. Frasi canoniche — da usare e variare
 
 ### Tag line attuale (in uso sulla home)
