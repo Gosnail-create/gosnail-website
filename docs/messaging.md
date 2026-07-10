@@ -168,6 +168,58 @@ Siamo radicati nel Nord-Est italiano. Conosciamo il tessuto produttivo locale �
 
 ---
 
+## 7-bis. Regole di prosa: anti-pattern AI
+
+> Aggiornamento luglio 2026, nato dal confronto con la prosa de Il Post (sezione tecnologia) e validato con Fabio. Si applica a tutti gli articoli del blog.
+> Principio generale: scrivere come una persona che spiega, non come una presentazione che scandisce.
+
+1. Ogni frase ha un verbo. Vietate le frasi nominali a effetto ("Un solo listino, tutte le applicazioni").
+2. Variare la lunghezza delle frasi: in ogni paragrafo almeno una frase lunga con incisi o subordinate. Non iniziare tutte le frasi col soggetto — usare complementi di tempo, avverbi, concessive.
+3. I due punti servono per spiegare o elencare, non come pausa drammatica. Massimo uno "a effetto" per articolo.
+4. Vietati chiasmi e simmetrie costruite ("lo sconto ha una scadenza, i costi di uscita no").
+5. Niente bullet con grassetto iniziale nei post: prosa piena. Elenchi solo per dati veri (prezzi, specifiche); le tabelle restano.
+6. Niente grassetto nel corpo del testo (eccezione: le domande delle FAQ).
+7. Paragrafi di 4-7 frasi che sviluppano un pensiero, non coppie di frasi staccate.
+8. Apposizione esplicativa alla prima menzione di ogni entità ("Account Engagement, lo strumento di marketing automation di Salesforce").
+9. Dosare la certezza: "in genere", "nella maggior parte dei casi", "a giudicare dai listini". Le cose variabili non si affermano come assolute.
+10. Attribuire quando possibile: "secondo il listino ufficiale", "secondo le stime di settore", "come raccontano i clienti che arrivano da...".
+11. Chiudere i paragrafi finendo il pensiero, senza aforisma.
+12. H2 piani o in forma di domanda, non slogan ("Cosa considerare se ti offrono uno sconto" invece di "Il preventivo con lo sconto: perché la licenza è la voce sbagliata da guardare").
+13. Test finale a voce alta: se una frase sembra scritta per essere citata su LinkedIn, va riscritta.
+
+---
+
+## 7-ter. Regole di prosa: estensione empirica (luglio 2026)
+
+> Sezione già replicata nella pagina Notion "Messaging & Tone of Voice".
+
+Regole aggiunte dopo la lettura di Sciandra, Dal Cero, Cortelazzo e Tuzzi, *AI detection in Italian essays through different text representations and adversarial robustness evaluation* (Scientific Reports, 2026), studio su 1.000 temi in italiano scritti da studenti universitari e da ChatGPT. Le differenze misurate più forti tra prosa umana e prosa AI in italiano: varianza della lunghezza delle frasi doppia negli umani, il 58% di avverbi in più, il 76% di pronomi in più (in particolare il "si"), più "perché" espliciti e più negazioni; l'AI usa invece più parole lunghe, un lessico più ripetitivo e chiuse formulari ("conclusione" è risultato il marcatore AI più forte dello studio). Le regole valgono per tutti i contenuti del blog e del marketing, in scrittura e in revisione, e integrano il §7 e il §7-bis.
+
+**Integrazione alla regola 2 — conta la varianza, non la lunghezza.** Il segnale umano non è la frase lunga ma l'alternanza: periodi lunghi con subordinate accanto a frasi brevi di 5-10 parole con verbo pieno. Un testo fatto solo di frasi lunghe è riconoscibile quanto uno fatto solo di frasi corte. Frasi brevi nei punti di svolta dell'argomentazione.
+
+14. **Vietate le chiuse formulari.** Mai "in conclusione", "concludendo", "per concludere", "in sintesi" in apertura dell'ultimo paragrafo: l'articolo finisce sviluppando l'ultimo pensiero. "Inoltre" e "tuttavia" come attacco di paragrafo al massimo una volta per articolo.
+
+15. **Avverbi e pronomi.** La prosa che prende posizione usa avverbi di giudizio e frequenza ("spesso", "raramente", "ormai", "davvero", "quasi sempre", "parecchio") e il "si" impersonale ("si finisce per", "si vede in molte PMI"). Un paragrafo che non contiene nessuno di questi elementi va riletto con sospetto.
+
+16. **Parole corte e lessico vario.** In revisione, cercare le parole lunghe e formali e preferire l'alternativa corta quando esiste ("usare" per "utilizzare", "mettere in pratica" per "implementare" dove il contesto lo consente); i nomi tecnici e di prodotto restano intoccabili. Se una parola non tecnica compare più di tre o quattro volte nella stessa pagina, va variata. La regola vale anche **tra articoli diversi**: le formule ricorrenti del corpus ("il confronto pende", "per confronto", "gioca una partita diversa") sono un tic riconoscibile quanto quelli dell'AI, e vanno tenute d'occhio a ogni nuovo pezzo.
+
+17. **Causali esplicite e negazioni piane.** Preferire "perché" alle costruzioni causali implicite ("grazie a", "consentendo di", "il che permette"). Le negazioni informative ("non si paga a parte", "non prevede eccezioni", "non esistono scorciatoie") sono un tratto della scrittura umana e vanno usate senza timore; restano invece limitate dalla regola 13 e dal §7 le antitesi retoriche "non è X, è Y", che sono un'altra cosa.
+
+### Checklist rapida di revisione (§7-bis + §7-ter)
+
+Da passare su ogni articolo prima della pubblicazione:
+
+1. Ogni frase ha un verbo; lunghezze alternate (lunghe con subordinate + brevi da 5-10 parole).
+2. Nessun "in conclusione" / "in sintesi" nell'ultimo paragrafo; "inoltre"/"tuttavia" a inizio paragrafo max una volta.
+3. In ogni sezione compaiono avverbi di giudizio o frequenza e il "si" impersonale.
+4. Nessuna parola non tecnica ripetuta più di 3-4 volte nella pagina; controllare le formule ricorrenti rispetto agli altri articoli del corpus.
+5. Causali con "perché" al posto di gerundi e "grazie a"; negazioni informative presenti dove naturali.
+6. Antitesi "non è X, è Y" max 1-2 per pagina; niente aforismi in chiusura di paragrafo; niente frasi da citazione LinkedIn.
+7. Personificazioni ("dati che vivono", "software che non si parlano") max 1-2 per pagina.
+8. Un solo "due punti a effetto" per articolo; H2 descrittivi; niente grassetto nel corpo (eccetto domande FAQ); niente bullet col grassetto iniziale.
+
+---
+
 ## 8. Frasi canoniche — da usare e variare
 
 ### Tag line attuale (in uso sulla home)
