@@ -1,344 +1,125 @@
-# Messaging — Gosnail
+# messaging.md — Riferimento tecnico per la generazione dei testi
 
-Documento di riferimento per tutta la comunicazione del sito: headline, copy, CTA, blog, pillar page.
-Claude Code legge questo file prima di scrivere qualsiasi testo.
-Complementare a `strategy.md` (architettura) e `design-decisions.md` (tono visivo).
-
----
-
-## 1. Chi è Gosnail — in una frase
-
-Gosnail è il partner operativo che aiuta le PMI italiane a trasformare la complessità organizzativa in chiarezza, efficienza e capacità di crescere — usando l'ecosistema Zoho come piattaforma.
-
-**Non siamo**: un rivenditore di licenze software, un'agenzia di digital transformation generica, un system integrator.
-**Siamo**: consulenti di processo che usano Zoho come strumento per ridisegnare come un'azienda lavora davvero.
+> **Fonte di verità.** Questo file è la fonte autorevole per tutto il copy del sito e del blog Gosnail. Va letto prima di scrivere o revisionare qualsiasi testo. La versione discorsiva "per persone" vive su Notion (pagina *Messaging & Tone of Voice*); in caso di discrepanza, questo file prevale sui contenuti tecnici, Notion prevale sulla leggibilità.
+>
+> Se stai usando questo file come contesto per generare testo con un assistente AI: applica le regole della sezione §7 come vincoli rigidi, non come suggerimenti.
 
 ---
 
-## 2. Le due anime del sito — usarle consapevolmente
+## 1. Identità in una frase
 
-Il sito serve due tipi di visitatori con intenzioni diverse. Ogni pagina deve sapere a quale si rivolge.
+Gosnail è il partner operativo che aiuta le PMI italiane a trasformare la complessità organizzativa in chiarezza, efficienza e capacità di crescere, usando l'ecosistema Zoho come piattaforma.
 
-### Anima A — Consulenza di processo
-*"Ho un problema di business, non so ancora che Zoho è la risposta."*
+- **Non è:** rivenditore di licenze, agenzia di digital transformation generica, system integrator.
+- **È:** consulente di processo che usa Zoho per ridisegnare come un'azienda lavora.
 
-Il visitatore sente la frustrazione di processi caotici, dati dispersi, reparti che non si parlano. Non cerca Zoho — cerca qualcuno che lo aiuti a mettere ordine. Deve prima fidarsi di Gosnail come consulente, poi arrivare agli strumenti.
+## 2. Doppia anima — instradamento dei contenuti
 
-**Pagine con anima A:** Home, Il Metodo, Chi Siamo, Blog
-**Tono:** Il problema prima, la soluzione dopo. Zoho appare come strumento, non come protagonista.
-
-### Anima B — Partner Zoho certificato
-*"Voglio implementare Zoho, cerco il partner giusto."*
-
-Il visitatore sa già cosa vuole. Ha sentito parlare di Zoho, o vuole migrare da un'altra piattaforma. Valuta Gosnail rispetto ad altri partner. Vuole capire competenza, metodo, affidabilità.
-
-**Pagine con anima B:** Zoho One, Zoho CRM Plus, tutte le pillar verticali (Vendite, Marketing, BI, Finanza, Customer Service, Operations, HR)
-**Tono:** Competenza tecnica e di processo. Partnership Zoho in primo piano. Casi d'uso concreti per settore.
-
-### La regola pratica
-- Home e Metodo → non aprire mai con "Zoho". Aprire con il problema del cliente.
-- Pillar page → Zoho in primo piano, ma sempre con "implementato da Gosnail" — non solo rivendita.
-- Blog → anima A per gli articoli di problema, anima B per le guide tecniche su Zoho.
-
----
-
-## 3. A chi parliamo — buyer persona
-
-### Persona primaria: il Manager frustrato dalla complessità
-
-**Chi è:**
-Manager o direttore (CEO, Sales Manager, Operations Manager, IT Manager) di una PMI italiana tra 20 e 500 dipendenti, fatturato da 1M€ in su. Settori prevalenti: manifatturiero, servizi professionali, software/tech, distribuzione, installazione impianti.
-
-**La sua giornata:**
-Sa che la sua azienda potrebbe fare di più. Il team è capace. I clienti ci sono. Ma ogni giorno perde ore — sue e del suo team — a rincorrere informazioni che dovrebbero essere a portata di mano.
-
-**La sua frustrazione — nelle sue parole:**
-- "Devo aspettare che qualcuno produca un report per sapere dove siamo"
-- "Ogni reparto lavora bene per sé, ma quando dobbiamo coordinarci perdiamo un sacco di tempo"
-- "Il metodo di lavoro non è scritto da nessuna parte — ognuno fa del suo meglio ma poi dobbiamo mettere assieme i pezzi"
-- "Ho le informazioni, ma sono nascoste in un Excel che qualcuno deve aggiornare a mano"
-- "Non ho presidio in tempo reale su quello che succede"
-
-**Cosa vuole davvero:**
-Non vuole "digitalizzarsi" in astratto. Vuole **chiarezza**: sapere cosa succede in azienda, quando vuole, senza dipendere da qualcuno che gli prepari un report. Vuole che il suo team smetta di perdere tempo in attività che non creano valore. Vuole poter crescere senza che la complessità cresca proporzionalmente.
-
-**Come prende decisioni:**
-È pragmatico. Diffida dei consulenti che vendono soluzioni prima di capire i problemi. Apprezza chi ascolta, chi è preciso, chi mantiene quello che promette. Vuole sapere quanto costa e cosa otterrà — non in termini di funzionalità software, ma di risultati concreti.
-
-### Persona secondaria: il Valutatore Zoho
-
-**Chi è:**
-Stesso profilo anagrafico, ma arriva già convinto di voler usare Zoho. Sta confrontando i partner disponibili in Italia, con preferenza per chi conosce il territorio e il suo settore.
-
-**Cosa cerca:**
-Competenza tecnica verificabile, referenze, metodo di implementazione chiaro, supporto post go-live. Vuole capire perché Gosnail e non CRMpartners o un altro partner nazionale.
-
----
-
-## 4. Il problema che risolviamo — nel linguaggio del cliente
-
-### Il dolore centrale
-Le aziende che crescono accumulano complessità: processi non scritti, dati sparsi, reparti che non si coordinano. A un certo punto questa complessità diventa un freno — non alla sopravvivenza, ma alla crescita e alla serenità operativa.
-
-### Le tre manifestazioni concrete
-
-**1. Il dato che non c'è mai quando serve**
-Le informazioni esistono, ma sono sepolte in Excel, email, gestionali separati. Produrre un dato affidabile richiede ore di lavoro manuale — e nel frattempo le decisioni si prendono a intuito o si rimandano.
-
-**2. Il tempo perso a "mettere assieme i pezzi"**
-Ogni reparto lavora bene nel suo perimetro. Ma quando serve coordinamento — handoff tra commerciale e amministrazione, allineamento su uno stato avanzamento — si perdono ore. Il metodo non è definito, ognuno interpreta.
-
-**3. La crescita che si inceppa**
-Aumentare i volumi con gli stessi strumenti porta inevitabilmente a colli di bottiglia. Chi non aggiorna i processi prima di crescere si trova a gestire più chaos, non più business.
-
----
-
-## 5. La promessa — cosa ottiene il cliente
-
-### Promessa primaria
-**Chiarezza e controllo sulla propria azienda.**
-Sapere cosa succede, quando vuole, senza dipendere da qualcuno che produca un report.
-
-### Promessa secondaria
-**Un'organizzazione che scala senza aumentare la complessità.**
-Processi definiti, dati centralizzati, reparti che lavorano sulle stesse informazioni in tempo reale.
-
-### Come la diciamo
-> "Non ti vendiamo software. Ti aiutiamo a capire come lavora davvero la tua azienda, poi costruiamo il sistema che la supporta."
-
-> "Il risultato non è un CRM installato. È un'azienda dove le informazioni fluiscono, le decisioni si prendono sui dati, e il tuo team smette di perdere tempo a cercare i pezzi."
-
----
-
-## 6. Perché Gosnail — il differenziante reale
-
-### Non il prodotto, il metodo
-Zoho lo vendono in tanti. Quello che fa la differenza è come lo implementiamo:
-- **Prima l'analisi, poi il software.** Non installiamo niente finché non capiamo come lavori davvero.
-- **Lavoriamo con le persone, non solo con i processi.** La tecnologia fallisce quando le persone non la adottano. Per questo coinvolgiamo il team dall'inizio.
-- **Restiamo dopo il go-live.** Ogni 2-3 mesi facciamo il punto: cosa funziona, cosa va aggiustato, dove possiamo migliorare.
-
-### Il metodo — versione canonica (5 fasi)
-Il metodo Gosnail ha una versione ufficiale a cinque fasi. Tutte le pagine devono usare questi nomi:
-1. **Ascolto e Diagnosi** — sessioni di scoperta per capire come lavori e dove nascono i colli di bottiglia.
-2. **Mappatura dei Processi** — documentiamo e ridisegniamo i flussi prima di toccare il software.
-3. **Configurazione su Misura** — implementiamo Zoho adattandolo alla realtà dell'azienda.
-4. **Formazione e Adozione** — formiamo i team e costruiamo una cultura del dato.
-5. **Supporto Continuo e Misurazione** — dopo il go-live monitoriamo i KPI e sosteniamo la crescita.
-
-Riconciliazione: la Home può mostrare una versione condensata come teaser (fasi 1+2 = "Analisi"), ma con gli stessi nomi e un link a `/il-metodo`. La pagina Il Metodo è la versione completa e canonica.
-
-### I valori di relazione
-Quello che i clienti apprezzano: **empatia, precisione, affidabilità**.
-- *Empatia*: capiamo il contesto prima di proporre soluzioni. Non vendiamo la stessa cosa a tutti.
-- *Precisione*: i progetti hanno scope, tempi e deliverable definiti. Niente sorprese.
-- *Affidabilità*: siamo presenti. Quando qualcosa non funziona, rispondiamo.
-
-### Il territorio
-Siamo radicati nel Nord-Est italiano. Conosciamo il tessuto produttivo locale — manifatturiero, servizi, distribuzione — e il modo di fare impresa di questa area. Non siamo un call center nazionale: quando serve, siamo in azienda.
-
----
-
-## 7. Tono di voce — regole operative
-
-### Come parliamo
-- **Diretto.** Frasi corte. Concetti chiari al primo livello di lettura.
-- **Concreto.** Esempi reali, numeri quando ci sono, niente astrazioni.
-- **Umano.** Non "ottimizziamo i flussi aziendali" — "aiutiamo il tuo team a smettere di perdere tempo".
-- **Senza arroganza.** Non promettiamo miracoli. Diciamo cosa facciamo e per chi funziona.
-
-### Pattern da evitare
-❌ "Trasformiamo il modo di lavorare delle aziende italiane"
-❌ "Soluzioni innovative per le sfide del business moderno"
-❌ "Veloce, semplice, scalabile" (rule of three forzata)
-❌ "In un'era in cui..." (eyebrow pretenzioso)
-❌ Gerundi posticci: "Ottimizzando i processi, enabling la crescita..."
-❌ Em dash a raffica
-❌ "Ecosistema" usato più di una volta per pagina
-❌ Antitesi forzata "non è X, è Y" usata di riflesso (es. "non è un'idea astratta, è una suite concreta"). È la figura-firma del brand: tenerla solo dove pesa davvero, una o due volte per pagina, non a ogni paragrafo.
-❌ Frasi che annunciano la struttura del testo ("ecco cosa significa", "qui sotto vediamo", "come abbiamo detto", "in questa sezione"). Il lettore non ha bisogno del narratore.
-❌ Personificazione degli strumenti ripetuta ("software che non si parlano", "dati che vivono in...", "app che dialogano"). Una volta passa, tre volte è un tic.
-
-### Pattern da usare
-✅ Frasi che iniziano con il problema del cliente, non con noi
-✅ "Il tuo team", "la tua azienda", "i tuoi dati" — prospettiva del cliente
-✅ Numeri concreti quando disponibili (settimane di implementazione, costo mensile)
-✅ Domande retoriche che il cliente si riconosce: "Quante ore passa il tuo team a produrre report?"
-✅ Prima persona plurale con sostanza: "Lavoriamo con te" non "Siamo al tuo fianco nel percorso"
-
----
-
-## 7-bis. Regole di prosa: anti-pattern AI
-
-> Aggiornamento luglio 2026, nato dal confronto con la prosa de Il Post (sezione tecnologia) e validato con Fabio. Si applica a tutti gli articoli del blog.
-> Principio generale: scrivere come una persona che spiega, non come una presentazione che scandisce.
-
-1. Ogni frase ha un verbo. Vietate le frasi nominali a effetto ("Un solo listino, tutte le applicazioni").
-2. Variare la lunghezza delle frasi: in ogni paragrafo almeno una frase lunga con incisi o subordinate. Non iniziare tutte le frasi col soggetto — usare complementi di tempo, avverbi, concessive.
-3. I due punti servono per spiegare o elencare, non come pausa drammatica. Massimo uno "a effetto" per articolo.
-4. Vietati chiasmi e simmetrie costruite ("lo sconto ha una scadenza, i costi di uscita no").
-5. Niente bullet con grassetto iniziale nei post: prosa piena. Elenchi solo per dati veri (prezzi, specifiche); le tabelle restano.
-6. Niente grassetto nel corpo del testo (eccezione: le domande delle FAQ).
-7. Paragrafi di 4-7 frasi che sviluppano un pensiero, non coppie di frasi staccate.
-8. Apposizione esplicativa alla prima menzione di ogni entità ("Account Engagement, lo strumento di marketing automation di Salesforce").
-9. Dosare la certezza: "in genere", "nella maggior parte dei casi", "a giudicare dai listini". Le cose variabili non si affermano come assolute.
-10. Attribuire quando possibile: "secondo il listino ufficiale", "secondo le stime di settore", "come raccontano i clienti che arrivano da...".
-11. Chiudere i paragrafi finendo il pensiero, senza aforisma.
-12. H2 piani o in forma di domanda, non slogan ("Cosa considerare se ti offrono uno sconto" invece di "Il preventivo con lo sconto: perché la licenza è la voce sbagliata da guardare").
-13. Test finale a voce alta: se una frase sembra scritta per essere citata su LinkedIn, va riscritta.
-
----
-
-## 7-ter. Regole di prosa: estensione empirica (luglio 2026)
-
-> Sezione già replicata nella pagina Notion "Messaging & Tone of Voice".
-
-Regole aggiunte dopo la lettura di Sciandra, Dal Cero, Cortelazzo e Tuzzi, *AI detection in Italian essays through different text representations and adversarial robustness evaluation* (Scientific Reports, 2026), studio su 1.000 temi in italiano scritti da studenti universitari e da ChatGPT. Le differenze misurate più forti tra prosa umana e prosa AI in italiano: varianza della lunghezza delle frasi doppia negli umani, il 58% di avverbi in più, il 76% di pronomi in più (in particolare il "si"), più "perché" espliciti e più negazioni; l'AI usa invece più parole lunghe, un lessico più ripetitivo e chiuse formulari ("conclusione" è risultato il marcatore AI più forte dello studio). Le regole valgono per tutti i contenuti del blog e del marketing, in scrittura e in revisione, e integrano il §7 e il §7-bis.
-
-**Integrazione alla regola 2 — conta la varianza, non la lunghezza.** Il segnale umano non è la frase lunga ma l'alternanza: periodi lunghi con subordinate accanto a frasi brevi di 5-10 parole con verbo pieno. Un testo fatto solo di frasi lunghe è riconoscibile quanto uno fatto solo di frasi corte. Frasi brevi nei punti di svolta dell'argomentazione.
-
-14. **Vietate le chiuse formulari.** Mai "in conclusione", "concludendo", "per concludere", "in sintesi" in apertura dell'ultimo paragrafo: l'articolo finisce sviluppando l'ultimo pensiero. "Inoltre" e "tuttavia" come attacco di paragrafo al massimo una volta per articolo.
-
-15. **Avverbi e pronomi.** La prosa che prende posizione usa avverbi di giudizio e frequenza ("spesso", "raramente", "ormai", "davvero", "quasi sempre", "parecchio") e il "si" impersonale ("si finisce per", "si vede in molte PMI"). Un paragrafo che non contiene nessuno di questi elementi va riletto con sospetto.
-
-16. **Parole corte e lessico vario.** In revisione, cercare le parole lunghe e formali e preferire l'alternativa corta quando esiste ("usare" per "utilizzare", "mettere in pratica" per "implementare" dove il contesto lo consente); i nomi tecnici e di prodotto restano intoccabili. Se una parola non tecnica compare più di tre o quattro volte nella stessa pagina, va variata. La regola vale anche **tra articoli diversi**: le formule ricorrenti del corpus ("il confronto pende", "per confronto", "gioca una partita diversa") sono un tic riconoscibile quanto quelli dell'AI, e vanno tenute d'occhio a ogni nuovo pezzo.
-
-17. **Causali esplicite e negazioni piane.** Preferire "perché" alle costruzioni causali implicite ("grazie a", "consentendo di", "il che permette"). Le negazioni informative ("non si paga a parte", "non prevede eccezioni", "non esistono scorciatoie") sono un tratto della scrittura umana e vanno usate senza timore; restano invece limitate dalla regola 13 e dal §7 le antitesi retoriche "non è X, è Y", che sono un'altra cosa.
-
-### Checklist rapida di revisione (§7-bis + §7-ter)
-
-Da passare su ogni articolo prima della pubblicazione:
-
-1. Ogni frase ha un verbo; lunghezze alternate (lunghe con subordinate + brevi da 5-10 parole).
-2. Nessun "in conclusione" / "in sintesi" nell'ultimo paragrafo; "inoltre"/"tuttavia" a inizio paragrafo max una volta.
-3. In ogni sezione compaiono avverbi di giudizio o frequenza e il "si" impersonale.
-4. Nessuna parola non tecnica ripetuta più di 3-4 volte nella pagina; controllare le formule ricorrenti rispetto agli altri articoli del corpus.
-5. Causali con "perché" al posto di gerundi e "grazie a"; negazioni informative presenti dove naturali.
-6. Antitesi "non è X, è Y" max 1-2 per pagina; niente aforismi in chiusura di paragrafo; niente frasi da citazione LinkedIn.
-7. Personificazioni ("dati che vivono", "software che non si parlano") max 1-2 per pagina.
-8. Un solo "due punti a effetto" per articolo; H2 descrittivi; niente grassetto nel corpo (eccetto domande FAQ); niente bullet col grassetto iniziale.
-
----
-
-## 8. Frasi canoniche — da usare e variare
-
-### Tag line attuale (in uso sulla home)
-> "Tecnologia e processi unificati per la crescita della tua azienda."
-
-### Hook emotivo alternativo (da testare)
-> "Smetti di cercare i dati. Inizia a usarli."
-> "La tua azienda sa già tutto. Il problema è che quelle informazioni non si trovano."
-
-### Proposta di valore sintetica
-> "Aiutiamo le PMI italiane a mettere ordine nei processi e nei dati, con Zoho come piattaforma e un metodo che parte dalle persone."
-
-### Quote firma del brand
-> "Non ti vendiamo software, ti guidiamo in una trasformazione."
-
-### CTA canoniche
-- Primaria: **"Prenota una call"** / **"Prenota una consulenza gratuita"**
-- Secondaria: **"Scopri il metodo"**
-- Blog/nurturing: **"Leggi come funziona"**
-
-### CTA da non usare
-❌ "Inizia la tua trasformazione digitale"
-❌ "Scopri le nostre soluzioni"
-❌ "Contattaci per maggiori informazioni"
-
----
-
-## 9. Angolo per pagina — reference rapido
-
-| Pagina | Anima | Angolo principale | Promessa specifica |
+| Anima | Trigger del lettore | Pagine | Regola d'apertura |
 |---|---|---|---|
-| Home | A | Il problema della complessità organizzativa | Chiarezza e controllo, con Zoho come strumento |
+| A — Consulenza di processo | "Ho un problema, non so che Zoho è la risposta" | Home, Il Metodo, Chi Siamo, blog anima A | Apre col problema, mai con "Zoho" |
+| B — Partner Zoho certificato | "Voglio Zoho, cerco il partner" | Pillar, verticali per dipartimento | Zoho in primo piano, sempre "implementato da Gosnail" |
+
+## 3. Buyer persona
+
+- **Primaria:** manager di PMI 20-500 dipendenti, fatturato ≥1M€. Settori: manifatturiero, servizi, software, distribuzione, impianti. Vuole chiarezza e controllo; diffida di chi vende prima di capire.
+- **Secondaria:** stesso profilo, già deciso su Zoho, confronta i partner.
+
+## 4. Promessa
+
+- Primaria: chiarezza e controllo sulla propria azienda.
+- Secondaria: scalare senza aumentare la complessità.
+
+## 5. CTA
+
+- Consentite: "Prenota una call", "Prenota una consulenza gratuita" (primaria); "Scopri il metodo" (secondaria).
+- Vietate: "Inizia la tua trasformazione digitale", "Scopri le nostre soluzioni", "Contattaci per maggiori informazioni".
+
+## 6. Focus per pagina
+
+| Pagina | Anima | Leva | Promessa |
+|---|---|---|---|
+| Home | A | Complessità organizzativa | Chiarezza e controllo |
 | Il Metodo | A | Prima capiamo, poi costruiamo | Niente installazioni prima dell'analisi |
-| Chi Siamo | A | Persone concrete, Nord-Est, esperienza sul campo | Empatia, precisione, affidabilità |
-| Zoho One | B | La frammentazione tecnologica costa | Un solo sistema per tutta l'azienda |
-| Zoho CRM Plus | B | Vendite e customer experience unificati | Pipeline, supporto e marketing sulla stessa piattaforma |
-| Vendite/CRM | B | Pipeline opaca, forecast impossibile | Visibilità sul commerciale in tempo reale |
-| Marketing | B | Lead che spariscono, ROI invisibile | Nurturing automatizzato, dati tracciati |
-| Business Intelligence | B | Decisioni a intuito | Dashboard con dati certi, sempre disponibili |
-| Finanza | B | Fatturazione manuale, flussi non tracciati | Contabilità integrata con il resto dell'azienda |
-| Customer Service | B | Ticket dispersi, clienti che aspettano | Helpdesk multicanale, storico cliente completo |
-| Operations | B | Progetti che slittano, avanzamenti invisibili | Coordinamento in tempo reale tra reparti |
-| Blog (anima A) | A | Problemi di business, non prodotti | Educare prima di vendere |
-| Blog (anima B) | B | Guide tecniche Zoho | Posizionarsi come riferimento tecnico |
+| Chi Siamo | A | Persone, Nord-Est, esperienza | Empatia, precisione, affidabilità |
+| Zoho One | B | La frammentazione costa | Un solo sistema per tutta l'azienda |
+| Zoho CRM Plus | B | Vendite e CX unificati | Stessa piattaforma per pipeline, supporto, marketing |
+| Vendite/CRM | B | Pipeline opaca | Visibilità sul commerciale in tempo reale |
+| Marketing | B | Lead che spariscono | Nurturing automatizzato, dati tracciati |
+| Business Intelligence | B | Decisioni a intuito | Dashboard con dati certi |
+| Finanza | B | Fatturazione manuale | Contabilità integrata |
+| Customer Service | B | Ticket dispersi | Helpdesk multicanale, storico completo |
+| Operations | B | Progetti che slittano | Coordinamento tra reparti |
 
 ---
 
-## 10. Linee guida blog — per il team editoriale
+## §7 — Regole di prosa anti-pattern AI (vincoli rigidi)
 
-Il blog ha due funzioni distinte che non vanno confuse.
+Ambito: si applicano integralmente ai **blocchi di prosa** (intro di sezione, paragrafi, FAQ, testi del metodo). Su **titoli, card e CTA** valgono le regole 3, 4, 9, 11, 12, 16, 17, tollerando la frase nominale dove il formato la richiede.
 
-### Articoli di problema (anima A) — intercettano il Visitatore B
-Rispondono a domande che un manager si fa senza sapere che la risposta è Zoho.
-- "Come faccio a sapere se ho bisogno di un CRM?"
-- "Come centralizzare i dati aziendali senza cambiare tutto"
-- "Perché il mio team perde tempo a produrre report"
-- "Gestione processi in una PMI manifatturiera: da dove si inizia"
+### 7.1 — Struttura frasi/paragrafi
+1. Ogni frase ha un verbo. Vietate le frasi nominali a effetto ("Un solo listino, tutte le applicazioni").
+2. Varianza di lunghezza obbligatoria: in ogni paragrafo almeno una frase lunga (incisi/subordinate) e almeno una breve (5-10 parole, verbo pieno). Il segnale umano è l'alternanza, non la lunghezza. Frasi brevi nei punti di svolta.
+3. Non iniziare tutte le frasi col soggetto: usare complementi di tempo, avverbi, concessive.
+4. Paragrafi di 4-7 frasi che sviluppano un pensiero, non coppie di frasi staccate.
 
-**Regola:** Zoho non appare nel titolo. Appare come soluzione possibile nel corpo, con link alla pillar page corrispondente.
+### 7.2 — Punteggiatura e figure
+5. Due punti solo per spiegare/elencare. Max 1 "a effetto" per articolo.
+6. Vietati chiasmi e simmetrie costruite ("lo sconto ha una scadenza, i costi di uscita no").
+7. Antitesi "non è X, è Y": max 1-2 per pagina, solo dove pesa. È la figura-firma del brand, non un riflesso.
+8. Vietate le frasi che annunciano la struttura del testo ("ecco cosa significa", "come abbiamo detto", "in questa sezione").
+9. Personificazione degli strumenti ("software che non si parlano", "dati che vivono in…"): max 2 occorrenze per pagina.
 
-### Articoli tecnici Zoho (anima B) — intercettano il Valutatore Zoho
-Rispondono a domande di chi sta già valutando Zoho.
-- "Zoho One vs Salesforce: confronto per PMI italiana"
-- "Come configurare il pipeline in Zoho CRM"
-- "Zoho Books e la fatturazione elettronica SDI: guida pratica"
+### 7.3 — Formattazione
+10. Nei post: prosa piena. Niente bullet con grassetto iniziale. Elenchi solo per dati veri (prezzi, specifiche). Tabelle ammesse.
+11. Niente grassetto nel corpo. Eccezione: le domande delle FAQ.
+12. H2 piani o in forma di domanda, non slogan. Es. "Cosa considerare se ti offrono uno sconto", non "Il preventivo con lo sconto: perché la licenza è la voce sbagliata".
 
-**Regola:** tecnici ma leggibili. Niente wall of text. Struttura chiara con H2/H3, esempi concreti, CTA alla fine verso la consulenza.
+### 7.4 — Attribuzione e misura
+13. Dosare la certezza sulle cose variabili: "in genere", "nella maggior parte dei casi", "a giudicare dai listini".
+14. Attribuire quando possibile: "secondo il listino ufficiale", "secondo le stime di settore".
+15. Apposizione esplicativa alla prima menzione di ogni entità ("Account Engagement, lo strumento di marketing automation di Salesforce").
 
-### Tono editoriale per il team
-- Scrivere come se stessi spiegando a un collega intelligente che non è del settore
-- Primo paragrafo: il problema, non la soluzione
-- Evitare i tic AI elencati nella sezione 7
-- Ogni articolo finisce con una domanda aperta o un invito alla call — mai con "Contattaci per maggiori informazioni"
+### 7.5 — Chiusure e lessico
+16. Vietate le chiuse formulari: mai aprire l'ultimo paragrafo con "in conclusione", "concludendo", "per concludere", "in sintesi". L'articolo finisce sviluppando l'ultimo pensiero.
+17. "Inoltre" e "tuttavia" come attacco di paragrafo: max 1 volta per articolo.
+18. Vietati gli aforismi da citazione. Test: se una frase sembra scritta per essere condivisa su LinkedIn, riscrivere.
+19. Usare avverbi di giudizio/frequenza ("spesso", "raramente", "ormai", "davvero", "quasi sempre") e il "si" impersonale ("si finisce per", "si vede in molte PMI"). Un paragrafo che non ne contiene nessuno va riletto con sospetto.
+20. Preferire parole corte a quelle lunghe/formali dove esistono ("usare" > "utilizzare"). Nomi tecnici e di prodotto intoccabili. Parola non tecnica ripetuta >3-4 volte per pagina → variare. La regola vale anche tra articoli diversi (le formule ricorrenti del corpus sono un tic riconoscibile).
+21. Preferire "perché" alle causali implicite ("grazie a", "consentendo di", "il che permette").
+22. Negazioni informative ("non si paga a parte", "non prevede eccezioni") sono un tratto umano: usarle. Restano limitate dalle regole 7 e 18 le antitesi retoriche "non è X, è Y", che sono un'altra cosa.
 
----
+### Base empirica
+Le regole 2, 16-22 derivano da: Sciandra, Dal Cero, Cortelazzo, Tuzzi, *AI detection in Italian essays through different text representations and adversarial robustness evaluation* (Scientific Reports, 2026). Differenze misurate umano vs AI in italiano: varianza lunghezza frasi doppia negli umani, +58% avverbi, +76% pronomi (specie "si"), più "perché" espliciti e più negazioni; l'AI usa più parole lunghe, lessico più ripetitivo, chiuse formulari ("conclusione" = marcatore AI più forte).
 
-## 11. Alberatura del sito — reference
-
-```
-gosnail.it
-│
-├── Home                              (anima A)
-│
-├── Soluzioni
-│   │
-│   ├─ PILLAR PAGES
-│   │   ├── Zoho One                  (anima B)
-│   │   └── Zoho CRM Plus             (anima B)
-│   │
-│   └─ VERTICAL PAGES (per dipartimento)
-│       ├── Vendite          → Zoho CRM             (anima B)
-│       ├── Marketing        → Zoho Campaigns        (anima B)
-│       ├── Business Intell. → Zoho Analytics        (anima B)
-│       ├── Finanza          → Zoho Books            (anima B)
-│       ├── Customer Service → Zoho Desk             (anima B)
-│       ├── Operations       → Zoho Projects         (anima B)
-│       └── Risorse Umane    → Zoho People           (anima B, priorità bassa)
-│
-├── Il Metodo                         (anima A)
-│
-├── Chi Siamo                         (anima A)
-│
-├── Blog                              (anima A + B)
-│   ├── /blog (lista articoli)
-│   └── /blog/[slug] (singolo post)
-│
-└── Contatti
-```
+Le regole 1, 3-15 derivano dal confronto con la prosa de *Il Post* (sezione tecnologia).
 
 ---
 
-## 12. Domande aperte — da definire prima del lancio
+## Checklist pre-pubblicazione
 
-- [ ] Testimonianze reali: raccogliere nome, ruolo, azienda, frase chiave da almeno 3 clienti
-- [ ] Numeri reali: anni di attività, progetti completati, aziende seguite
-- [ ] Prezzi sul sito: mostrare la soglia di ingresso (7.000€) o solo in call?
-- [ ] Pagine verticali per settore (manifatturiero, servizi): priorità e timing
-- [ ] Frequenza editoriale blog: quanti articoli al mese può sostenere il team?
+Da eseguire su ogni articolo prima del merge/publish:
+
+- [ ] Nessuna frase nominale a effetto nei blocchi di prosa
+- [ ] Varianza di lunghezza delle frasi verificata (almeno una lunga e una breve per paragrafo)
+- [ ] Antitesi "non è X, è Y" ≤ 2 per pagina
+- [ ] Personificazione strumenti ≤ 2 per pagina
+- [ ] Nessun bullet col grassetto iniziale nei post; grassetto solo nelle domande FAQ
+- [ ] H2 piani o interrogativi, non slogan
+- [ ] Ultimo paragrafo non apre con formula di chiusura
+- [ ] Presenza di avverbi di giudizio e "si" impersonale
+- [ ] Prezzi/dati variabili dosati e, dove possibile, attribuiti a una fonte
+- [ ] Nessuna formula ricorrente ripetuta da altri articoli del corpus
+- [ ] Lettura a voce alta effettuata
 
 ---
 
-*Ultimo aggiornamento: maggio 2025 — sessione strategia Claude Project Gosnail*
+## Vincoli di contenuto sempre validi
+
+- Non citare mai "Zoho One Essentials" (non esiste nel mercato EU).
+- Il prezzo d'ingresso dei progetti non compare sul sito; si comunica solo in call.
+- La pagina Contatti è solo form: niente telefono, niente email visibile (footer compreso).
+- I nomi delle app Zoho restano sempre visibili accanto alle descrizioni per beneficio.
+- Anti-cannibalizzazione "Zoho CRM": Home → "partner Zoho + geo"; CRM Plus → "Zoho CRM Plus"; Vendite → "implementazione/consulenza Zoho CRM"; blog costo → "quanto costa zoho crm" (informativo).
+- Autore blog: "Redazione Gosnail" con un revisore reale nominato. Vietate personas fittizie.
+- Ritratti generati da AI esclusi: fotografia reale del team obbligatoria.
