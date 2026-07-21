@@ -1,131 +1,113 @@
-# strategy.md — Strategia e architettura dei contenuti
+# strategy.md
 
-> **Fonte di verità** per posizionamento, architettura del sito, categorie blog e mappa SEO. La versione discorsiva "per persone" vive su Notion (*Strategia & Posizionamento*, *SEO — Keyword Map*).
+> Versione tecnica in forma sintetica per chi implementa: posizionamento, architettura contenuti, mappa SEO. La versione leggibile per le persone vive su Notion ("Strategia & Posizionamento").
 
----
+## Sintesi
+
+Mercato dei partner Zoho italiani: differenziazione tecnica minima, tutti implementano gli stessi prodotti. Il vantaggio è nel *come* si comunica e si lavora. Spazio libero: parlare al management delle PMI nel linguaggio dei loro problemi di business, non del software. Tre leve difendibili: radicamento Nord-Est, metodo che parte dall'analisi e dalle persone, voce editoriale che nessun concorrente presidia.
+
+## Competitor
+
+- **CRMpartners**: riferimento del mercato, unico Premium partner italiano, 15+ anni. Comunicazione istituzionale e fredda, centrata sulle funzionalità. Nessun focus geografico.
+- **Sooite**: value partner sull'intera suite, tono poco distintivo.
+- **Altri** (STESA, CRM Innovation, Svennis, Allbound, Leonardo Computing): posizionamenti vari, nessuno presidia il canale editoriale sul problema di business.
+- Gap comune: nessuno parla al management nel linguaggio del business.
 
 ## Posizionamento
 
-Gosnail = consulente di processo che usa Zoho, non rivenditore di licenze. Tre pilastri: territoriale (Nord-Est), metodologico (analisi prima del software), editoriale (fonte italiana più leggibile su Zoho).
+Partner operativo che trasforma la complessità organizzativa in chiarezza, efficienza e crescita, con Zoho come piattaforma. Tre pilastri:
+1. **Territoriale** — riferimento per le PMI del Nord-Est.
+2. **Metodologico** — capire il settore del cliente prima del software.
+3. **Editoriale** — la fonte italiana più leggibile su Zoho e digitalizzazione PMI.
 
-Valori riconosciuti dai clienti: empatia, precisione, affidabilità.
+## Doppia anima (strategia)
+
+- Anima A: problem-aware, non sa ancora che serve Zoho. Meno conteso, percorso di fiducia più lungo → **blog** (medio termine).
+- Anima B: Zoho-ready, valuta il partner. Più facile da convertire ma più conteso → **pillar** (breve termine).
 
 ## Target
 
-Manager PMI 20-500 dipendenti, fatturato ≥1M€. Soglia progetto d'ingresso ~7.000€ (off-site). Settori: manifatturiero, servizi professionali, software/tech, distribuzione, impianti.
+Manager di PMI 20–500 dipendenti, €1M+ fatturato (soglia = capacità di spesa reale; progetto più semplice da ~€7.000). Settori: manifatturiero, servizi professionali, software/tech, distribuzione, impianti. Frustrazione quotidiana: ore perse a cercare dati in Excel, nessun presidio in tempo reale, reparti che non si passano i dati, metodo non definito. Desidera chiarezza, controllo, crescita senza aumento di complessità.
 
-## Offerta
+## Differenziante
 
-100% consulenza di processo + ecosistema Zoho. I servizi di marketing digitale pre-2024 (siti, SEA, e-commerce, landing) sono dismessi.
+Non il prodotto (uguale ai concorrenti), ma metodo e relazione. Metodo: analisi prima del software, persone prima dei processi, presenza dopo il go-live. Valori: empatia, precisione, affidabilità. Più prossimità territoriale.
 
-**Azione tecnica pre-lancio:** mappa redirect 301 dalle vecchie pagine indicizzate → pagina nuova più affine. Zero 404.
+## Decisioni operative (luglio 2026)
 
----
+**Offerta**
+- Servizi di marketing digitale (siti, SEA, e-commerce, landing) dismessi nel 2024. Gosnail = 100% consulenza di processo + Zoho. Materiale vecchio = archivio storico.
+- Pre-lancio: mappa redirect 301 dalle vecchie pagine indicizzate alle nuove più affini. Nessun 404.
 
-## Architettura contenuti — mapping categoria → pagina
+**Blog — piano a tre fasi**
+- Fase 0 (corpus fondativo): 10–15 articoli al go-live. Mix: 6–8 tecnici (B), 3–4 di problema (A), 2–3 case study.
+- Fase 1 (mesi 1–6): 2 articoli/settimana, minimo 1. Peso sull'anima B (query tecniche Zoho, poco contese in italiano).
+- Fase 2 (dal mese 7): 3–4/mese + aggiornamento sistematico dei pezzi esistenti.
+- Principio: la costanza batte il volume. Bozza AI su brief + revisione umana.
 
-| Categoria blog (slug) | Alimenta | Articoli corpus |
+**Email marketing (post go-live, su ZMA + Campaigns)**
+1. Nurture nuovi lead: 4–5 email in 3–4 settimane (benvenuto/metodo → case study → contenuto tecnico → invito call). Attivazione da form → CRM.
+2. Cross/upsell clienti: segmentazione per adozione prodotto letta dal CRM, max 1 email/mese/segmento.
+3. Newsletter mensile: riuso dei contenuti migliori del blog.
+- Verifica GDPR prima del primo invio: clienti = ipotesi legittimo interesse; ex-prospect e contatti fiera = consenso marketing valido. Da chiudere con consulente privacy.
+
+**LinkedIn**
+- Brand Gosnail, non personal branding. 2–3 post/settimana derivati dal blog. Formati: case study con numeri, caroselli, prese di posizione sul metodo. Moltiplicatore: ricondivisione dei dipendenti. Ads: opzione futura.
+
+**Testimonianze**
+- Obiettivo 3–4 reali (nome, ruolo, azienda). Metodo: intervista 20 min → 3 asset (citazione sito, case study blog, post LinkedIn).
+
+## Architettura contenuti — pillar ↔ blog
+
+Le pillar convertono; il blog porta traffico, nutre, alimenta la visibilità AI. Categorie attive al lancio:
+
+| Categoria | Alimenta | Articoli |
 |---|---|---|
-| zoho-one | /zoho-one | 1, 2, 3, 4 |
-| crm-vendite | /zoho-crm-plus, /vendite | 5, 6, 9 |
-| finanza | /finanza | 7 |
-| business-intelligence | /business-intelligence | 8, 10 |
-| metodo-processi | Home, /il-metodo | 11, 12 |
-| case-study | Home, /chi-siamo | 13, 14 |
+| Zoho One | /zoho-one | 1, 2, 3, 4 |
+| CRM & Vendite | /zoho-crm-plus, /vendite | 5, 6, 9 |
+| Finanza | /finanza | 7 |
+| Business Intelligence | /business-intelligence | 8, 10 |
+| Processi & Metodo | Home, /il-metodo | 11, 12 |
+| Case Study | Home, /chi-siamo | 13, 14 |
 
-Regole categorie:
-- Una categoria per articolo, tematica (non per anima).
-- Categorie future (marketing, customer-service, operations, hr) solo con ≥2-3 articoli. Mai categorie vuote o con un pezzo solo.
-- Settori (manifatturiero, servizi, distribuzione, impianti) = tag trasversali nel frontmatter, non categorie.
-- Verticali di settore: nascono come case study nel blog (1/settore), si promuovono a landing solo con evidenza SEO.
+Regole: una categoria per articolo (per tema, non per anima). Categorie future (Marketing, Customer Service, Operations, HR) solo con 2–3 articoli pronti, mai vuote. Settori = etichette trasversali, non categorie: base per le future landing. Verticali di settore nascono come case study, si promuovono a landing solo con evidenze SEO.
 
-## Distribuzione card blog
+Distribuzione card: Home 3 (ultimo case study + 2 da Processi & Metodo); /zoho-one 3 di categoria; /zoho-crm-plus 3 di categoria; fine articolo 2–3 correlati + invito pillar. Archivio: filtri = pagine di categoria indicizzabili; categorie con <3 articoli in `noindex`.
 
-- Home → 3 card: ultimo case study + 2 da metodo-processi.
-- /zoho-one → 3 card zoho-one. /zoho-crm-plus → 3 card crm-vendite.
-- Verticali future → propria categoria; se assente, sezione non renderizzata.
-- Fine articolo → 2-3 correlati stessa categoria + CTA pillar.
-- Componente: `<BlogCards category="..." limit={3} />`, categoria dal frontmatter.
+## Mappa keyword — pagine principali
 
-## Archivio /blog
+Prezzi di riferimento per i contenuti (da verificare prima della pubblicazione): Zoho One ~$45/utente/mese (piano organico); Zoho CRM ~$14/utente/mese (Standard). Title tag e H1 possono divergere: H1 umano, title tag con la keyword commerciale.
 
-- Pillole filtro = link reali a `/blog/categoria/[slug]`, pagine indicizzabili con title+meta propri.
-- Categorie <3 articoli → `noindex`.
+| Pagina | Anima | KW primaria | Intento |
+|---|---|---|---|
+| Home | A | partner Zoho Nord-Est | commerciale + brand |
+| Zoho One | B | Zoho One | commerciale + informativo |
+| Zoho CRM Plus | B | Zoho CRM Plus | commerciale |
+| Vendite | B | implementazione Zoho CRM | transazionale |
+| Marketing | B | Zoho marketing automation | commerciale |
+| Business Intelligence | B | Zoho Analytics | commerciale |
+| Finanza | B | Zoho Books | transazionale |
+| Customer Service | B | Zoho Desk | commerciale |
+| Operations | B | Zoho Projects | commerciale |
+| Risorse Umane | B | Zoho People | commerciale |
+| Il Metodo | A | consulenza digitalizzazione processi | informativo |
+| Chi Siamo | A | consulenti Zoho Veneto | brand + locale |
+| Contatti | A | consulenza Zoho Veneto | locale + navigazionale |
 
----
+## Geografia: identità stretta, copertura larga
 
-## Mappa SEO — pagine core
+- Commerciale (largo): messaggio = raggiungibilità. Da Padova e Tavagnacco, Milano/Udine/Bologna in tempi simili. "Nati nel Nord-Est, raggiungiamo di persona le PMI del Nord Italia."
+- SEO (stretto): etichetta geografica ancorata al Nord-Est reale (Veneto e Friuli). Milano/Bologna/Brescia si aggrediscono con articoli o landing dedicati, non allargando "Nord-Est".
+- In pratica: Home, Chi Siamo, Contatti tengono l'identità Nord-Est + riga raggiungibilità; profilo Google Business presidia le ricerche locali.
 
-> Validare con volumi reali (Keyword Planner, Search Console, Ahrefs/Semrush) prima del definitivo.
-> Title tag ≠ H1: il title porta la keyword commerciale, l'H1 resta umano.
+## Regole SEO ferme
 
-| Pagina | Anima | KW primaria | KW secondarie | Title tag |
-|---|---|---|---|---|
-| Home | A | partner Zoho Nord-Est | consulenza Zoho PMI · digitalizzazione processi aziendali | Gosnail — Partner Zoho per PMI del Nord-Est |
-| Zoho One | B | Zoho One | Zoho One prezzi · Zoho One cos'è · Zoho One partner Italia | Zoho One per PMI: cos'è, prezzi e implementazione |
-| Zoho CRM Plus | B | Zoho CRM Plus | Zoho CRM Plus prezzi · differenza Zoho One e CRM Plus | Zoho CRM Plus: vendite, marketing e assistenza uniti |
-| Vendite | B | implementazione Zoho CRM | consulenza Zoho CRM · Zoho CRM prezzi · configurazione | Implementazione Zoho CRM per le vendite |
-| Marketing | B | Zoho marketing automation | Zoho Campaigns · email marketing automation PMI | Marketing automation con Zoho per PMI |
-| Business Intelligence | B | Zoho Analytics | dashboard aziendali · business intelligence PMI | Zoho Analytics: dashboard e BI per PMI |
-| Finanza | B | Zoho Books | Zoho Books fatturazione elettronica SDI · software contabilità PMI | Zoho Books: contabilità e fatturazione elettronica SDI |
-| Customer Service | B | Zoho Desk | helpdesk PMI · software ticketing assistenza clienti | Zoho Desk: helpdesk multicanale per PMI |
-| Operations | B | Zoho Projects | software gestione commesse · gestione progetti PMI | Zoho Projects: gestione progetti e commesse |
-| Risorse Umane | B | Zoho People | software HR PMI · gestione risorse umane software | Zoho People: gestione HR per PMI |
-| Il Metodo | A | consulenza digitalizzazione processi | reingegnerizzazione processi aziendali | Il nostro metodo: prima i processi, poi il software |
-| Chi Siamo | A | consulenti Zoho Veneto | Gosnail · partner Zoho Nord-Est | Chi siamo — Consulenti Zoho nel Nord-Est |
-| Contatti | A | consulenza Zoho Veneto | contatti Gosnail · partner Zoho Nord-Est | Contatti — Gosnail, partner Zoho nel Nord-Est |
+- Anti-cannibalizzazione "Zoho CRM": Home → "partner Zoho + geografia"; CRM Plus → solo "Zoho CRM Plus"; Vendite → "implementazione/consulenza Zoho CRM".
+- E-E-A-T: testimonianze, numeri, case study, pagine autore reali.
+- Dati strutturati: Organization + Product + FAQ sulle pillar; Article + FAQ sugli articoli.
+- Redirect 301 pre-lancio, nessun 404.
+- Quick win: attivare e ottimizzare Google Business.
 
-Riferimenti prezzo per i contenuti: Zoho One ~45$/utente/mese (all-employee); Zoho CRM ~14$/utente/mese (Standard).
+## Visibilità sui motori AI
 
-## Anti-cannibalizzazione "Zoho CRM"
-
-Home → "partner Zoho + geo" · CRM Plus → "Zoho CRM Plus" · Vendite → "implementazione/consulenza Zoho CRM" · blog art.5 → "quanto costa zoho crm" (informativo).
-
-## Strategia geografica: identità stretta, copertura larga
-
-- **SEO (identità stretta):** Home/Chi Siamo/Contatti ancorate a Nord-Est reale (Veneto + Friuli). Milano/Bologna/Brescia solo via articoli/landing geo-dedicati, non allargando l'etichetta "Nord-Est".
-- **Commerciale (copertura larga):** claim = raggiungibilità. "Nati nel Nord-Est, raggiungiamo di persona le PMI del Nord Italia."
-- Google Business su sede → ricerche locali.
-
-## E-E-A-T e dati strutturati
-
-- Testimonianze reali, numeri reali, case study, pagine autore vere (schema Person).
-- Schema: Organization + Product + FAQPage sulle pillar; Article + FAQPage sugli articoli.
-
-## Visibilità AI (GEO)
-
-- Coerenza entità: nome/sede/descrizione identici su sito, Google Business, directory partner Zoho, LinkedIn.
-- FAQ strutturate, dati concreti, date di aggiornamento visibili.
-- Fonti terze citabili: scheda partner Zoho, stampa locale/economica Nord-Est.
-
----
-
-## Piano editoriale — fasi
-
-- **Fase 0 (corpus):** 10-15 articoli al go-live. Mix: 6-8 tecnici B, 3-4 problema A, 2-3 case study.
-- **Fase 1 (mesi 1-6):** target 2/settimana, min 1/settimana. Peso su anima B.
-- **Fase 2 (dal mese 7):** 3-4/mese + aggiornamento sistematico dei pezzi esistenti.
-- Flusso: bozza assistita AI su brief definito → revisione umana.
-
-## Email marketing (post go-live)
-
-Piattaforma: Zoho Marketing Automation / Campaigns.
-1. Nurture nuovi lead — trigger form→CRM, 4-5 email in 3-4 settimane.
-2. Cross/upsell clienti — segmentazione per adozione prodotto da CRM, max 1/mese.
-3. Newsletter mensile — riuso blog, tutta la lista.
-
-⚠️ Verifica GDPR lista prima del primo invio (consulente privacy).
-
-## Stato punti aperti
-
-| Punto | Stato |
-|---|---|
-| Testimonianze reali | In corso — target 3-4 via intervista |
-| Numeri reali | In corso — verificare pre-lancio |
-| Posizionamento geografico | Risolto |
-| Prezzi sul sito | Risolto — soglia off-site |
-| Hook della home | Aperto — da testare |
-| Verticali di settore | Risolto — via blog case study |
-| Frequenza editoriale | Risolto — piano a fasi |
-| Budget SEA/LinkedIn Ads | Aperto |
-| Data go-live | Aperta |
+Coerenza assoluta dei dati azienda (nome, sede, descrizione) su sito, Google Business, directory partner Zoho, LinkedIn. Contenuti che rispondono a domande precise con FAQ, dati e date di aggiornamento. Presenza in fonti terze citabili (scheda partner Zoho, stampa locale). Obiettivo: essere la fonte citata dagli assistenti AI per "partner Zoho Italia".
